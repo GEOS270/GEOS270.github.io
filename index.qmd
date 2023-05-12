@@ -1,0 +1,259 @@
+---
+title: "Syllabus"
+format: 
+  html:
+    css: styles.css
+echo: false
+---
+
+This course will introduce you to key concepts and tools used to collect, map, and interpret geographic data.  We will learn how geospatial data can be used to aid decision-making, complement scientific analysis, assist with urban planning, and help inform policy-making.  You will gain practical experience using geospatial data to solve problems in both the natural and human realms.  This term we will cover:
+
+## Learning Outcomes
+
+* How GIS functions and how it can be applied to solve problems.
+* How phenomena are represented as geospatial data in a GIS.
+* How to implement geospatial analysis methods.
+* Visualizing geospatial data and principles of good map design. 
+* Sources of error in GIS analysis and output.
+* The ethical implications of GIS analysis.
+* GIS workflows and collaborating to complete a GIS project.
+
+
+# Territorial and Cultural Acknowledgement
+
+
+:::: {.columns}
+
+:::{.column width="63%"}
+
+
+The University of British Columbia and the city of Vancouver are on the traditional, ancestral, and unceded territory of the Coast Salish Peoples.  Specifically the UBC Vancouver campus is on xʷməθkʷəy̓əm (Musqueam) land. 
+
+* There are nearly 200 First Nations spread through BC, and many more across the continent.  
+* It is essential to recognize Indigenous territories and Indigenous sovereignty, especially within the context of geography courses.
+* To learn more about the Indigenous people, culture, and languages where you live and around the world, check out [native-land.ca](https://native-land.ca/).
+
+:::
+
+:::{.column width="35%"}
+
+![[Map Source](https://opentextbc.ca/indigenizationfoundations/chapter/acknowledging-traditional-territories/)](images/first-nations-bc.jpg)
+
+:::
+
+::::
+
+
+
+
+## Why Do an Acknowledgement?
+
+A land acknowledgement is meant to convey a deep rooted cultural connection to the land and the historical and present day injustices and violence enacted on Indigenous communities through colonialism.  For centuries, settler societies have perpetuated a genocide against Indigenous people across the globe.  In many ways this genocide is still ongoing here in British Columbia and across Canada.  There has been concerted effort by the government, religious organizations, and educational institutions to erase Indigenous cultures and identity from both the land and the map.  Historically, maps have been used as tools of oppression and we must work to de-colonize our practices in GIS.
+
+* An acknowledgement is one small way to help with that, but it cannot be treated as a formality.  It is a time to reflect and build understanding. 
+
+### What does it mean?
+
+:::: {.columns}
+
+:::{.column width="65%"}
+
+**Traditional** and **Ancestral** Recognize by whom the lands were traditionally used and/or occupied and the cultures have been handed down from generation to generation.  The area around UBC was used by many different people, including the [xʷməθkʷəy̓əm](https://native-land.ca/maps/territories/x%ca%b7m%c9%99%ce%b8k%ca%b7%c9%99y%cc%93%c9%99m/), [əl̓ilwətaɁɬ](https://native-land.ca/maps/territories/tsleil-waututh-s%c9%99l%cc%93ilw%c9%99ta%c9%82%c9%ac/), and [Skwxwú7mesh-ulh](https://native-land.ca/maps/territories/skwxwu7mesh-uxwumixw/) Nations.  
+
+These people are are part of a broader linguistic / cultural group of Coast Salish speaking people.  The xʷməθkʷəy̓əm and əl̓ilwətaɁɬ speak dialects of [Hul’q’umi’num’ / Halq’eméylem / hən̓q̓əmin̓əm̓](https://native-land.ca/maps/languages/hulquminum-halqemeylem-h%c9%99n%cc%93q%cc%93%c9%99min%cc%93%c9%99m%cc%93/) and the Skwxwú7mesh-ulh speak [Sḵwx̱wú7mesh sníchim](https://native-land.ca/maps/languages/s%e1%b8%b5wx%cc%b1wu7mesh-snichim/).
+
+:::
+
+:::{.column width="35%"}
+
+
+<iframe src="https://native-land.ca/api/embed/embed.html?maps=languages&&name=coast-salish" style="height:300px; border:none;"></iframe>
+
+
+:::
+
+::::
+
+:::: {.columns}
+
+:::{.column width="65%"}
+
+
+**Unceded**: Refers to land that was not turned over to the government by a treaty or other agreement.  Over 95% of the land in BC, and many lands elsewhere in the world were never ceded by treaty.  Without treaties, these lands remain the sovereign territory of the First Nations that call them home.  Yet at the same time, the lands have been claimed by Canada and these First Nations living on these lands lack a framework to express their sovereignty.  This by no means absolves the Canadian government of their crimes where lands were "ceded" by treaty.  Treaties were more frequently reached by coercion than negotiation.  The [RCMP](https://www.cbc.ca/listen/cbc-podcasts/203-the-secret-life-of-canada/episode/15798131-s3-the-mounties-always-get-their-land-part-1) was created specifically to force indigenous people off their lands by any means necessary.
+
+:::
+
+::: {.column width="35%"}
+
+
+<iframe src="https://native-land.ca/api/embed/embed.html?maps=treaties" style="height:300px; border:none;"></iframe>
+
+:::
+
+::::
+
+
+
+
+
+# Your Instructor
+
+:::: {.columns}
+
+:::{.column width="30%"}
+
+![](images/{{< var instructor.photo >}}){width=85%}
+
+:::
+
+::: {.column width="70%"}
+
+::: {.table-reduced}
+
+ |
+-----|:-----
+Name|{{< var instructor.name >}}
+Pronouns|{{< var instructor.pronouns >}}
+Email|{{< var instructor.email >}}
+Office|{{< var instructor.office >}}
+Office Hours|{{< var instructor.office_hours >}}
+Zoom Office Hours|{{< var instructor.zoom_office_hours >}} 
+Zoom Office Hours Link|[Office Hours Link]({{< var instructor.zoom_office_hours_link >}})
+
+:::
+
+::: 
+
+::::
+
+{{< var instructor.about >}}
+
+
+# Course Overview
+
+The course is arranged in a modular format, following the schedule shown below.  The modules are designed to introduce and cover specific topics within GIS, and are published as separate webpages.  Each module consist of lecture material and lab work. Lecture attendance/participation is assessed using TopHat, and the first six have lab quizzes that are submitted via canvas.  Module 7 consist of a final project along with an extra credit opportunity, and review for the final exam.  The final exam is cumulative, covering material from both lecture and lab.  
+
+* **Note**: course content is already available for those who would like to look ahead, **but** specific content may change up to date each module is introduced in lecture.
+
+```{r include=FALSE}
+
+library(knitr)
+```
+
+```{r}
+#| label: tbl-schedule
+#| tbl-cap: "Tentative Schedule for 2023 S1"
+#| tbl-colwidths: [20,65,15]
+
+schedule <- read.csv(file = 'sheets/Schedule.csv',sep='|')
+kable(schedule, col.names = gsub("[.]", " ", names(schedule)))
+
+```
+
+## Evaluation
+
+Lab quizzes will make up the largest portion of your grade, followed by the final exam and final project which will be weighted equally, with Lecture Participation (via TopHat) making up the rest of your grade.
+
+```{r}
+#| label: tbl-grades
+#| tbl-cap: "Components of your final grade"
+#| tbl-colwidths: [20,65]
+
+grades <- read.csv(file = 'sheets/GradeBreakdown.csv',sep='|')
+kable(grades, col.names = gsub("[.]", " ", names(grades)))
+
+```
+
+## Lab Quizzes
+
+The first six modules each have a lab assignment with a corresponding lab quiz that will be due on the date listed in the.  The quizzes will primarily pertain to the lab assignment, but will also build on concepts covered in lecture.
+
+* You will be allowed multiple attempts for quizzes in case you make a mistake or would like to update your answers, only your final submission will be marked.
+* Everyone gets one **"free pass"**: your lowest scoring lab quiz will be dropped at the end of term.
+
+### Feedback & Deadlines 
+
+Quizzes will be marked by your TA using a standard rubric.  Short comments will be provided where applicable on written answers & map submissions.  Submissions will be accepted without late penalty for {{< var Lab.grace_period >}} days after their due date.
+
+* Quizzes submitted **by the due date** will be graded and returned with feedback {{< var Lab.grace_period >}} days of the due date.
+* Late submissions **waive their right** to prompt grading/feedback.  
+  * Late quiz submissions **will not** receive written feedback from your TA.
+  * Late quiz submissions will be marked whenever is convenient for your TA, which could be as late as the end of term
+  * After the {{< var Lab.grace_period >}} day grace period, the quiz submission window will **close**, no exceptions.
+* This policy only applies to the lab quizzes, not the final project or exam.
+
+## Final Project
+
+GIS is a collaborative discipline so your final project will be a group assignment (2-4 members).  The project can be on any topic you choose, but I will also provide you with a set of project ideas to help get you started.
+
+* Your project should be done with a group unless special circumstances necessitate otherwise.
+  * You may only work on the project alone **only** if you get instructor approval.
+* The project will be introduced in depth later half-way through term.
+  * There will be a brief project proposal to help make sure your group is on track with the expectations.
+
+
+## Final Exam
+
+The final exam will be will be cumulative, drawing from both lecture and lab material.  It will consist of a flowchart question illustrating how to complete a GIS task, essays/short answers, and miscellaneous fill in the blanks, matching, multiple choice, etc. type questions.  It will be {{< var exam.type >}} and is scheduled for **`r tail(schedule$Due.Date, 1)`**.  More info will be available closer to the exam date.
+
+## Participation
+
+### Lectures
+
+Lectures will cover module topics in depth and serve as your chance to ask questions and engage in discussion about the material. Lectures are held in person {{< var lecture.time >}} in room {{< var lecture.room >}} with a remote attendance option available on [on zoom]({{< var lecture.zoom >}}). Recordings will be made available [here]({{< var lecture.recordings >}}).
+
+Lecture participation will be gauged using [TopHat](https://tophat.com/students/).  The course **Join Code** is: **{{< var lecture.tophat_code >}}**.  
+
+* TopHat Questions can **only** be answered during the lecture session
+  * They will be available to in person and remote attendees
+  * They can be answered via mobile device or laptop
+  * Questions will be marked based on participation (50%) and correctness (50%)
+    * Anonymized answers will be reviewed in lecture to help gauge comprehension
+
+### Piazza
+
+The course also has a [piazza]({{< var piazza.link >}}) page which can be used to ask/answer questions about assignments and course materials.
+
+* The participation grade (P) will be calculated using the :
+  * $P = S/T*1.05$, where S is the sum of your TopHat points and T is the total points available
+  * This means that if you can miss a lecture without being penalized and you can get extra credit for perfect attendance!
+ 
+
+# Course Policies
+
+My aim for this semester is to provide a flexible and supportive learning environment while respecting the boundaries of myself and your TAs.  These course policies are intended to establish a framework for navigating the course.
+
+## Absences
+
+If you are sick (with COVID or otherwise), please stay home to protect others and take care of yourself.  Lectures are streamed [on zoom]({{< var lecture.zoom >}}) so that you may still attend online and get TopHat participation credit.  Lecture recordings are also [here]({{< var lecture.recordings >}}).  If you miss a lab session, you can attend an alternate session, just make sure to check in with TA running that session.
+
+##  Accommodations
+
+Please contact the [Center for Accessibility](https://students.ubc.ca/about-student-services/centre-for-accessibility) if you require accommodations for a disability.  Once you are registered please make me aware of any necessary accommodations by email in a timely manner.
+
+I will make accommodations on a case by case basis for extenuating circumstances that prevent you completing course work.  It is your responsibility to communicate your needs in a timely fashion (i.e. **before** a due date).
+* If you require an accommodation please contact {{< var instructor.name >}} by email: {{< var instructor.email >}}
+* My typical approach is to give an alternative assignment rather than giving extensions on lab quizzes because we post the answers after submission deadlines:
+  * An alternative lab might consist of writing up an essay or two pertaining to the lecture material + making any maps/figures from the lab, then submitting directly to me by email anytime before the last day of class.
+
+## Academic Concessions
+
+If you require an [Academic Concession](https://www.arts.ubc.ca/degree-planning/academic-performance/academic-concession/) please email me promptly so that we can work together to figure out an accommodation for your situation.  You are not obligated to explain your personal circumstances to me to justify the concession, my inent is to be accomodating.  However, you must to communicate any need for a concession in a timely manner.  If you require multiple concessions I may refer you to [Arts Advising](https://www.arts.ubc.ca/student-support/academic-support/academic-advising/).
+
+
+# Academic Integrity
+
+The academic enterprise is founded on honesty, civility, and integrity. As members of this enterprise, all students are expected to know, understand, and follow the codes of conduct regarding academic integrity. At the most basic level, this means submitting only original work done by you and acknowledging all sources of information or ideas and attributing them to others as required. This also means you should not cheat, copy, or mislead others about what is your work. Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed.
+
+Plagiarism and cheating will be taken very seriously.  The first incident of plagiarism/copying/cheating will result in a zero for the assignment.  Further incidents will be reported to the President’s Advisory Committee on Student Discipline in addition to a zero.  A more detailed description of academic integrity, including the University’s policies and procedures, may be found [here](https://learningcommons.ubc.ca/academic-integrity/Links)
+
+Though you may work together with your classmates on the assignments and help each other, ALL STUDENTS MUST SUBMIT THEIR OWN ORIGINAL WORK. This means that your maps must be your own, and your answers must be in your own words. Failure to submit your own work can result in failing the assignment or worse, so please be careful. See the Academic Integrity section of the Syllabus for more information.
+
+# Strategies for Success
+
+**Be proactive!** 
+* Keep track of deadlines & note the late submission policies
+  * Timely communication is important!  If you have an issue, please bring it to my attention.
+  * Partial credit is better than no credit.  If you can't finish a lab before the deadline - just submit what you've got done already. 
+* Drop by office hours & ask questions!
+* Don't wait until the last minute to set up ArcGIS Pro, do it now to save yourself a headache down the road.

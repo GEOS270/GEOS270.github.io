@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "GEOS 270"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Syllabus
+      - href: labinfo.qmd
+        text: Lab Info
+      - href: Modules/Module1.qmd
+        text: Module 1
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    tophat: https://ubc.zoom.us/j/68713181849?pwd=SThIWUkvVTVtbkpwME11c1NDYlFVZz09
+
+
+

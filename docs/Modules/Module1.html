@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GEOS 270 - History of GIS &amp; Intro to ArcGIS Pro</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">GEOS 270</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../labinfo.html">
+ <span class="menu-text">Lab Info</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../Modules/Module1.html" aria-current="page">
+ <span class="menu-text">Module 1</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#what-is-gis" id="toc-what-is-gis" class="nav-link" data-scroll-target="#what-is-gis">What is GIS?</a>
+  <ul class="collapse">
+  <li><a href="#what-is-giscience" id="toc-what-is-giscience" class="nav-link" data-scroll-target="#what-is-giscience">What is GIScience?</a></li>
+  <li><a href="#what-is-a-gisystem" id="toc-what-is-a-gisystem" class="nav-link" data-scroll-target="#what-is-a-gisystem">What is a GISystem?</a></li>
+  <li><a href="#what-can-be-done-with-gis" id="toc-what-can-be-done-with-gis" class="nav-link" data-scroll-target="#what-can-be-done-with-gis">What can be done with GIS?</a></li>
+  </ul></li>
+  <li><a href="#tophat-question-1" id="toc-tophat-question-1" class="nav-link" data-scroll-target="#tophat-question-1">TopHat Question 1</a></li>
+  <li><a href="#history-of-gis" id="toc-history-of-gis" class="nav-link" data-scroll-target="#history-of-gis">History of GIS</a></li>
+  <li><a href="#evolution-of-cartography" id="toc-evolution-of-cartography" class="nav-link" data-scroll-target="#evolution-of-cartography">Evolution of Cartography</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  <li><a href="#proliferation-of-gis" id="toc-proliferation-of-gis" class="nav-link" data-scroll-target="#proliferation-of-gis">Proliferation of GIS</a></li>
+  <li><a href="#proprietary-gis-software" id="toc-proprietary-gis-software" class="nav-link" data-scroll-target="#proprietary-gis-software">Proprietary GIS Software</a>
+  <ul class="collapse">
+  <li><a href="#arcgis-pro" id="toc-arcgis-pro" class="nav-link" data-scroll-target="#arcgis-pro">ArcGIS Pro</a></li>
+  </ul></li>
+  <li><a href="#open-source-gis" id="toc-open-source-gis" class="nav-link" data-scroll-target="#open-source-gis">Open Source GIS</a>
+  <ul class="collapse">
+  <li><a href="#qgis" id="toc-qgis" class="nav-link" data-scroll-target="#qgis">QGIS</a></li>
+  <li><a href="#open-street-maps" id="toc-open-street-maps" class="nav-link" data-scroll-target="#open-street-maps">Open Street Maps</a></li>
+  <li><a href="#programming-languages" id="toc-programming-languages" class="nav-link" data-scroll-target="#programming-languages">Programming Languages</a></li>
+  </ul></li>
+  <li><a href="#fremium-services" id="toc-fremium-services" class="nav-link" data-scroll-target="#fremium-services">Fremium Services</a></li>
+  <li><a href="#tophat-questions" id="toc-tophat-questions" class="nav-link" data-scroll-target="#tophat-questions">Tophat Questions</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">1</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">History of GIS &amp; Intro to ArcGIS Pro</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This module is intended to give a broad overview of the discipline and get you started with using GIS software.</p>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h2>
+<ul>
+<li>Overview of the development of GIS
+<ul>
+<li>The first maps &amp; surveys</li>
+<li>Creation of map projections and spatial analysis methods</li>
+<li>Development and proliferation of GIS technology</li>
+</ul></li>
+<li>Get your bearings with ArcGSI Pro software package
+<ul>
+<li>Introductory tutorials from ESIR</li>
+</ul></li>
+<li>Recreate a historical analysis using modern methods
+<ul>
+<li>Brief overview of digitizing and georeferencing</li>
+<li>Introduction to spatial analysis</li>
+<li>Create and share a map</li>
+</ul></li>
+</ul>
+</section>
+<section id="what-is-gis" class="level1">
+<h1>What is GIS?</h1>
+<p>The <strong>GI</strong> stands for <strong>Geographic Information</strong>. The <strong>S</strong> can be either <strong>Science</strong> or <strong>System</strong>. You will often see them used interchangeably because they are very closely related. Basically, you do GI<em>Science</em> with a GI<em>System</em>.</p>
+<section id="what-is-giscience" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-giscience">What is GIScience?</h2>
+<p>The science and study of geospatial information: GIScience is a framework we use to understand spatial information. It is rooted in Cartography, the art and science of graphically mapping but it is inherently multidisciplinary and drawing on Computer Science, Mathematics &amp; Statistics, Remote Sensing, and many other fields.</p>
+</section>
+<section id="what-is-a-gisystem" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-gisystem">What is a GISystem?</h2>
+<p>Any system or tool we use to store and analyze geospatial information can broadly be considered a GISystem. Until a the late 20th century, atlases and library map catalogues were our most advanced GIS. Now we have a wide range of computer and web based GISystems. Ranging from the “desktop” GIS applications like ArcGIS Pro that you will be using to cloud computing systems that can Terabytes of planetary scale data.</p>
+</section>
+<section id="what-can-be-done-with-gis" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-be-done-with-gis">What can be done with GIS?</h2>
+<p>GIS can be used to help solve a wide range of geographic problems in different fields:</p>
+<ul>
+<li>Epidemiology/Public Health</li>
+<li>Planning (Urban, Hazards)</li>
+<li>Conservation &amp; Resource Management</li>
+<li>Economics</li>
+<li>Climate Science</li>
+<li>Ecology/Biology</li>
+<li>Social Justice</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="tophat-question-1" class="level1">
+<h1>TopHat Question 1</h1>
+<p>GIS is an acronym that stands for:</p>
+<ul>
+<li>Geographic Information Science</li>
+<li>Geographic Information System</li>
+<li>Both Geographic Information Science and Geographic Information System</li>
+</ul>
+</section>
+<section id="history-of-gis" class="level1">
+<h1>History of GIS</h1>
+<p>A holistic understanding of GIS can help you use it effectively <strong>and</strong> responsibly. A good way to start off is to look at the history of the GIS and Cartography more broadly.</p>
+<ul>
+<li>In this section of the module, I will give a sweeping overview of the development of the discipline.
+<ul>
+<li>We’ll start with the very first maps and end with the widespread adoption of GIS and proliferation of geospatial technology.</li>
+</ul></li>
+</ul>
+</section>
+<section id="evolution-of-cartography" class="level1">
+<h1>Evolution of Cartography</h1>
+<p>The earliest maps presented diverse and abstract representations of reality. They used very different medium than we do today today, and are sometimes quite difficult to see as maps today.</p>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="content/HistoyGIS.html" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+<p><a href="content/HistoyGIS.html" target="_blank">View slides in new tab</a></p>
+<!-- Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module1_GEOS270/main/docs/content/EarlyHistoy.pdf)
+ -->
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Gartner, W. (1998). Mapmaking in the Central Andes (pp.&nbsp;257–300).</p>
+<p>Jorge, M. del C., Williams, B. J., Garza-Hume, C. E., &amp; Olvera, A. (2011). Mathematical accuracy of Aztec land surveys assessed from records in the Codex Vergara. Proceedings of the National Academy of Sciences, 108(37), 15053–15057. https://doi.org/10.1073/pnas.1107737108</p>
+<p>Lewis, G. M. (2008). Maps and Mapmaking of the Native North Americans. In H. Selin (Ed.), Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures (pp.&nbsp;1322–1325). Springer Netherlands. https://doi.org/10.1007/978-1-4020-4425-0_9029</p>
+<p>Schulze Bäing, A. (2014). Spatial Analysis. In A. C. Michalos (Ed.), Encyclopedia of Quality of Life and Well-Being Research (pp.&nbsp;6259–6261). Springer Netherlands. https://doi.org/10.1007/978-94-007-0753-5_2818</p>
+<p>Smith, C. D. (1982). The Emergence of “Maps” in European Rock Art: A Prehistoric Preoccupation with Place. Imago Mundi, 34, 9–25. JSTOR.</p>
+<p>Washburn, D. K. (2000). Cartography in the Traditional African, American, Arctic, Australian, and Pacific Societies. American Anthropologist, 102(1), 151–152.</p>
+</section>
+</section>
+<section id="proliferation-of-gis" class="level1">
+<h1>Proliferation of GIS</h1>
+<p>GIS has become a powerful, widely used tool for GIS in recent decades.</p>
+<details open="">
+<summary>
+Table of contents
+</summary>
+{: .text-delta } 1. TOC {:toc}
+</details>
+<hr>
+</section>
+<section id="proprietary-gis-software" class="level1">
+<h1>Proprietary GIS Software</h1>
+<p>GIS is very much rooted in capitalism and the capitalist enterprise. Consequently many of the initial developments in GIS were by for profit companies. For example, <a href="https://www.esri.com/en-us/home">ESRI</a> is a leading producer of GIS software. They make ArcGIS Pro, the software package we will be working with most in this class.</p>
+<p><strong>Proprietary</strong> software requires users to purchase a license in order to gain access and restricts access to source code, meaning users have no right to view or edit source code (inner workings of a program). Common examples of proprietary technology include: * Operating Systems: Windows OS, Mac OS, IOS * Programming Languages: MATLAB, VBScript * Software Packages: Microsoft Office (Word, Excel, Power Point etc.), Adobe Illustrator, IOS, ArcMap</p>
+<p>Proprietary software licenses are often very expensive. They pose a significant barrier to access for uses that aren’t affiliated with large institutions.</p>
+<section id="arcgis-pro" class="level2">
+<h2 class="anchored" data-anchor-id="arcgis-pro">ArcGIS Pro</h2>
+<p><img src="content/images/ESRI_license.png" width="1000"></p>
+<hr>
+</section>
+</section>
+<section id="open-source-gis" class="level1">
+<h1>Open Source GIS</h1>
+<p>There are alternatives! Open source software packages have proliferated in recent years and are a viable alternative to the traditional options. The the internet has connected like-minded developers and allowed for collaboration across the globe.</p>
+<p><strong>Open Source</strong> software is free to use, published under an open copyright license. Users have the right to view, edit, and distribute the source code. Common examples of open source technology include:</p>
+<ul>
+<li>Operating Systems: Linux OS, Android</li>
+<li>Programming Languages: Python, R, Java, etc.</li>
+<li>Software Packages: Libre Office (Writer, Calc, Impress, etc.), Ink Scape, QGIS</li>
+</ul>
+<p>Open source software is more accessible because its free to download and use.</p>
+<section id="qgis" class="level2">
+<h2 class="anchored" data-anchor-id="qgis">QGIS</h2>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="https://www.qgis.org/en/site/" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+<p><a href="https://www.qgis.org/en/site/" target="_blank">View slides in new tab</a></p>
+</section>
+<section id="open-street-maps" class="level2">
+<h2 class="anchored" data-anchor-id="open-street-maps">Open Street Maps</h2>
+<p><a href="https://www.openstreetmap.org/#map=10/49.2839/-122.8340&amp;layers=T">Open Street Maps</a> is a freely available public database of geospatial information.</p>
+<p><img src="../images/OSM.png" class="img-fluid"></p>
+</section>
+<section id="programming-languages" class="level2">
+<h2 class="anchored" data-anchor-id="programming-languages">Programming Languages</h2>
+<p>Programming languages like Python and JavaScript can be used to conduct a variety of geospatial analysis and make webmaps. I created the map below using JavaScript. I’ll talk a bit more about these methods later on in the term.</p>
+<p>Webmap for navigating to UBC micromet field sites.</p>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="https://ubc-micromet.github.io/FieldSiteMaps/" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+</section>
+</section>
+<section id="fremium-services" class="level1">
+<h1>Fremium Services</h1>
+<p>Companies like <a href="https://www.mapbox.com/mapbox-studio/">mapbox</a> and google provide some geospatial services that are “free” to a point. For example, <a href="https://code.earthengine.google.com/">Google earth engine</a> provides its cloud based computational capabilities to non-commercial users free of charge.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gKGOeTFHnKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="tophat-questions" class="level1">
+<h1>Tophat Questions</h1>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">1</h2>
+<p>Which term describes freely accessible software that can be accessed, edited, and distributed by anyone?</p>
+<ul>
+<li>Proprietary</li>
+<li>Open Source</li>
+<li>Fremium</li>
+</ul>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2</h2>
+<p>ArcGIS Pro is a proprietary software package. It is created and maintained by a private company and requires users to purchase a license to access it.</p>
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

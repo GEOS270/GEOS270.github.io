@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "This course will introduce you to key concepts and tools used to collect, map, and interpret geographic data. We will learn how geospatial data can be used to aid decision-making, complement scientific analysis, assist with urban planning, and help inform policy-making. You will gain practical experience using geospatial data to solve problems in both the natural and human realms. This term we will cover:"
+  },
+  {
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
+    "title": "Syllabus",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nHow GIS functions and how it can be applied to solve problems.\nHow phenomena are represented as geospatial data in a GIS.\nHow to implement geospatial analysis methods.\nVisualizing geospatial data and principles of good map design.\nSources of error in GIS analysis and output.\nThe ethical implications of GIS analysis.\nGIS workflows and collaborating to complete a GIS project."
+  },
+  {
+    "objectID": "index.html#why-do-an-acknowledgement",
+    "href": "index.html#why-do-an-acknowledgement",
+    "title": "Syllabus",
+    "section": "Why Do an Acknowledgement?",
+    "text": "Why Do an Acknowledgement?\nA land acknowledgement is meant to convey a deep rooted cultural connection to the land and the historical and present day injustices and violence enacted on Indigenous communities through colonialism. For centuries, settler societies have perpetuated a genocide against Indigenous people across the globe. In many ways this genocide is still ongoing here in British Columbia and across Canada. There has been concerted effort by the government, religious organizations, and educational institutions to erase Indigenous cultures and identity from both the land and the map. Historically, maps have been used as tools of oppression and we must work to de-colonize our practices in GIS.\n\nAn acknowledgement is one small way to help with that, but it cannot be treated as a formality. It is a time to reflect and build understanding.\n\n\nWhat does it mean?\n\n\nTraditional and Ancestral Recognize by whom the lands were traditionally used and/or occupied and the cultures have been handed down from generation to generation. The area around UBC was used by many different people, including the xʷməθkʷəy̓əm, əl̓ilwətaɁɬ, and Skwxwú7mesh-ulh Nations.\nThese people are are part of a broader linguistic / cultural group of Coast Salish speaking people. The xʷməθkʷəy̓əm and əl̓ilwətaɁɬ speak dialects of Hul’q’umi’num’ / Halq’eméylem / hən̓q̓əmin̓əm̓ and the Skwxwú7mesh-ulh speak Sḵwx̱wú7mesh sníchim.\n\n\n\n\n\n\n\nUnceded: Refers to land that was not turned over to the government by a treaty or other agreement. Over 95% of the land in BC, and many lands elsewhere in the world were never ceded by treaty. Without treaties, these lands remain the sovereign territory of the First Nations that call them home. Yet at the same time, the lands have been claimed by Canada and these First Nations living on these lands lack a framework to express their sovereignty. This by no means absolves the Canadian government of their crimes where lands were “ceded” by treaty. Treaties were more frequently reached by coercion than negotiation. The RCMP was created specifically to force indigenous people off their lands by any means necessary."
+  },
+  {
+    "objectID": "index.html#evaluation",
+    "href": "index.html#evaluation",
+    "title": "Syllabus",
+    "section": "Evaluation",
+    "text": "Evaluation\nLab quizzes will make up the largest portion of your grade, followed by the final exam and final project which will be weighted equally, with Lecture Participation (via TopHat) making up the rest of your grade.\n\n\n\n\nTable 2: Components of your final grade\n\n\n\n\n\n\nPoints Distribution\nPercent of Points\n\n\n\n\nLab Quizzes (Top 5)\n40%\n\n\nFinal Project\n25%\n\n\nFinal Exam\n25%\n\n\nParticipation\n10%"
+  },
+  {
+    "objectID": "index.html#lab-quizzes",
+    "href": "index.html#lab-quizzes",
+    "title": "Syllabus",
+    "section": "Lab Quizzes",
+    "text": "Lab Quizzes\nThe first six modules each have a lab assignment with a corresponding lab quiz that will be due on the date listed in the. The quizzes will primarily pertain to the lab assignment, but will also build on concepts covered in lecture.\n\nYou will be allowed multiple attempts for quizzes in case you make a mistake or would like to update your answers, only your final submission will be marked.\nEveryone gets one “free pass”: your lowest scoring lab quiz will be dropped at the end of term.\n\n\nFeedback & Deadlines\nQuizzes will be marked by your TA using a standard rubric. Short comments will be provided where applicable on written answers & map submissions. Submissions will be accepted without late penalty for 4 days after their due date.\n\nQuizzes submitted by the due date will be graded and returned with feedback 4 days of the due date.\nLate submissions waive their right to prompt grading/feedback.\n\nLate quiz submissions will not receive written feedback from your TA.\nLate quiz submissions will be marked whenever is convenient for your TA, which could be as late as the end of term\nAfter the 4 day grace period, the quiz submission window will close, no exceptions.\n\nThis policy only applies to the lab quizzes, not the final project or exam."
+  },
+  {
+    "objectID": "index.html#final-project",
+    "href": "index.html#final-project",
+    "title": "Syllabus",
+    "section": "Final Project",
+    "text": "Final Project\nGIS is a collaborative discipline so your final project will be a group assignment (2-4 members). The project can be on any topic you choose, but I will also provide you with a set of project ideas to help get you started.\n\nYour project should be done with a group unless special circumstances necessitate otherwise.\n\nYou may only work on the project alone only if you get instructor approval.\n\nThe project will be introduced in depth later half-way through term.\n\nThere will be a brief project proposal to help make sure your group is on track with the expectations."
+  },
+  {
+    "objectID": "index.html#final-exam",
+    "href": "index.html#final-exam",
+    "title": "Syllabus",
+    "section": "Final Exam",
+    "text": "Final Exam\nThe final exam will be will be cumulative, drawing from both lecture and lab material. It will consist of a flowchart question illustrating how to complete a GIS task, essays/short answers, and miscellaneous fill in the blanks, matching, multiple choice, etc. type questions. It will be asynchronous over Canvas and is scheduled for June 28. More info will be available closer to the exam date."
+  },
+  {
+    "objectID": "index.html#participation",
+    "href": "index.html#participation",
+    "title": "Syllabus",
+    "section": "Participation",
+    "text": "Participation\n\nLectures\nLectures will cover module topics in depth and serve as your chance to ask questions and engage in discussion about the material. Lectures are held in person Tuesday & Thursday, 12:00 - 14:00 in room 101 with a remote attendance option available on on zoom. Recordings will be made available here.\nLecture participation will be gauged using TopHat. The course Join Code is: 495132.\n\nTopHat Questions can only be answered during the lecture session\n\nThey will be available to in person and remote attendees\nThey can be answered via mobile device or laptop\nQuestions will be marked based on participation (50%) and correctness (50%)\n\nAnonymized answers will be reviewed in lecture to help gauge comprehension\n\n\n\n\n\nPiazza\nThe course also has a piazza page which can be used to ask/answer questions about assignments and course materials.\n\nThe participation grade (P) will be calculated using the :\n\n\\(P = S/T*1.05\\), where S is the sum of your TopHat points and T is the total points available\nThis means that if you can miss a lecture without being penalized and you can get extra credit for perfect attendance!"
+  },
+  {
+    "objectID": "index.html#absences",
+    "href": "index.html#absences",
+    "title": "Syllabus",
+    "section": "Absences",
+    "text": "Absences\nIf you are sick (with COVID or otherwise), please stay home to protect others and take care of yourself. Lectures are streamed on zoom so that you may still attend online and get TopHat participation credit. Lecture recordings are also here. If you miss a lab session, you can attend an alternate session, just make sure to check in with TA running that session."
+  },
+  {
+    "objectID": "index.html#accommodations",
+    "href": "index.html#accommodations",
+    "title": "Syllabus",
+    "section": "Accommodations",
+    "text": "Accommodations\nPlease contact the Center for Accessibility if you require accommodations for a disability. Once you are registered please make me aware of any necessary accommodations by email in a timely manner.\nI will make accommodations on a case by case basis for extenuating circumstances that prevent you completing course work. It is your responsibility to communicate your needs in a timely fashion (i.e. before a due date). * If you require an accommodation please contact Dr. June skeeter by email: june.skeeter@ubc.ca * My typical approach is to give an alternative assignment rather than giving extensions on lab quizzes because we post the answers after submission deadlines: * An alternative lab might consist of writing up an essay or two pertaining to the lecture material + making any maps/figures from the lab, then submitting directly to me by email anytime before the last day of class."
+  },
+  {
+    "objectID": "index.html#academic-concessions",
+    "href": "index.html#academic-concessions",
+    "title": "Syllabus",
+    "section": "Academic Concessions",
+    "text": "Academic Concessions\nIf you require an Academic Concession please email me promptly so that we can work together to figure out an accommodation for your situation. You are not obligated to explain your personal circumstances to me to justify the concession, my inent is to be accomodating. However, you must to communicate any need for a concession in a timely manner. If you require multiple concessions I may refer you to Arts Advising."
+  },
+  {
+    "objectID": "labinfo.html",
+    "href": "labinfo.html",
+    "title": "Lab Info and Software Access",
+    "section": "",
+    "text": "Labs assignments build on the topics covered in lecture. They focus on GIS applications, giving you a chance to get hands on practice working with GIS software (ArcGIS Pro). Most labs have associated videos and/or readings. There is no textbook for the course, pdf files will be provided where applicable. You can work through the labs in your lab section but they may also require some extra time outside of scheduled lab hours."
+  },
+  {
+    "objectID": "labinfo.html#option-1-geography-lab-computers",
+    "href": "labinfo.html#option-1-geography-lab-computers",
+    "title": "Lab Info and Software Access",
+    "section": "Option 1: Geography Lab Computers",
+    "text": "Option 1: Geography Lab Computers\nThe Geography Department has two computer labs (rooms 115 and 237). They may be accessed in-person when the geography building is open or they can be accessed via remote desktop connection 24 hours a day, 7 days a week. All students will be given a UBC Geography logon, you should receive logon credentials by email before the first day of lab.\n\nNote: There is a lab fee to use geography computers. You must pay the lab fee or you will loose access to your account.\nIf you have not received logon credentials, contact {{<var lab.LabHelp.name>}} at: {{<var lab.LabHelp.emial>}}\n\n\nRemote Access\nTo remotely access lab computers, follow these instructions. Information about the Geography Computer Labs can be found here.\n\nNote the lab schedule and refrain from remotely accessing a computer while other courses are holding lab session in that room. When accessing computers remotely - try to use computers that are located in room 239 as those are less likely to result in conflicts with in-person users.\n\nIf you are having trouble logging on remotely try: adding “geoglab\" in front of your username."
+  },
+  {
+    "objectID": "labinfo.html#option-2-purchase-a-student-license",
+    "href": "labinfo.html#option-2-purchase-a-student-license",
+    "title": "Lab Info and Software Access",
+    "section": "Option 2: Purchase a Student License",
+    "text": "Option 2: Purchase a Student License\nYou may purchase a student version of the software to install on your own computer for $20. ArcGIS Pro requires a PC (i.e. a computer running Windows).\n\nIf you have a Mac or Linux machine you can get around this by building a Windows partition on your hard drive or using a virtual machine.\n\nWe cannot provide any support for this step of the installation and it will likely be easier for you to use Option 1 instead.\n\n\n1 Check that your computer meets the system requirements for ArcPro using this link.\n2 Go here to purchase, ArcGIS Pro. Fill out the info, make your payment, and you should be given and ArcOnline Account and a link to download ArcGIS Pro. * If you run into any issues, contact Jose Aparicio at: labhelp@geog.ubc.ca"
+  },
+  {
+    "objectID": "labinfo.html#initialize-your-h-drive",
+    "href": "labinfo.html#initialize-your-h-drive",
+    "title": "Lab Info and Software Access",
+    "section": "Initialize your H:/ Drive",
+    "text": "Initialize your H:/ Drive\nWhen you first logon to geography lab computers with your account find C:.bat in the file manager. Double click on it to run it. This will initialize your account and set up access to your H:/ drive."
+  },
+  {
+    "objectID": "labinfo.html#work-locally",
+    "href": "labinfo.html#work-locally",
+    "title": "Lab Info and Software Access",
+    "section": "Work Locally",
+    "text": "Work Locally\nDuring your lab, you should save your work to **C:*. This is a folder stored locally on the computer you are working on. Since it’s the same machine you’re working on, ArcGIS Pro can easily and quickly access and save files in this folder.\n\nAvoid saving files to the Desktop or Documents folders and try to empty the Downloads folder frequently. These folders are all part of your user profile which travels to/from the server when you log in/off. The more data there is in the profile the longer it will take to log in/off. We had a student with 106GB on profile and it took 45 minutes to get in!"
+  },
+  {
+    "objectID": "labinfo.html#save-remotely",
+    "href": "labinfo.html#save-remotely",
+    "title": "Lab Info and Software Access",
+    "section": "Save Remotely",
+    "text": "Save Remotely\nThe C:* drive can accessed by multiple users. A single computer in room 115 might have 20-30 different students accessing it (in person + remotely) in a given week. Each time a new user logs on, the C:/temp** folder is at risk for being overwritten.\n\nIt is EXTREMELY IMPORTANT that you save your work elsewhere before you log off. When you sign up for your Geography lab account, you will be given server space known as your H:/ drive folder; you should save your work here. To do so, follow these steps:\n\n1 Save your Map document and close ArcGIS Pro or any other software you may be using (Word, Excel, etc. …)\n2 Launch My Computer, and navigate to **C:*\n3 Right click on your lab folder in C:* and select Copy**\n4 Navigate to H:/ and paste your lab folder here"
+  },
+  {
+    "objectID": "labinfo.html#steps-for-retrieving-work-from-h",
+    "href": "labinfo.html#steps-for-retrieving-work-from-h",
+    "title": "Lab Info and Software Access",
+    "section": "Steps for Retrieving Work from H:/",
+    "text": "Steps for Retrieving Work from H:/\nWhen you come back next time to complete the assignment, you will transfer the files in the reverse direction. This is because the H:/ drive is stored on a networked server, not the local machine. ArcGIS Pro will run slowly if you try to work directly from the H:/ drive, which is why you must transfer your files first. To transfer your files:\n1{: .label .label-blue } Log in\n2{: .label .label-blue } Use My Computer to find **C:* and delete all the files you find there since they are likely not yours and you don’t want to get mixed up.\n3{: .label .label-blue } Navigate to your H:/ drive, select your current lab’s folder , and copy it to **C:*\n4{: .label .label-blue } Resume your work"
+  },
+  {
+    "objectID": "labinfo.html#windows-tips-for-mac-users",
+    "href": "labinfo.html#windows-tips-for-mac-users",
+    "title": "Lab Info and Software Access",
+    "section": "Windows Tips for Mac Users",
+    "text": "Windows Tips for Mac Users\nThe geography lab computers are currently running the Windows 10 OS. Windows is quite different than the Mac OS, and for those who have little familiarity with Windows, there can be step (but short!) learning curve. Here are a few resources that Mac users might find helpful to look through before starting lab:\n\n15 Windows 10 Tips for Mac Users\n16 tips for Mac users who must use Windows"
+  },
+  {
+    "objectID": "Modules/Module1.html",
+    "href": "Modules/Module1.html",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "",
+    "text": "This module is intended to give a broad overview of the discipline and get you started with using GIS software."
+  },
+  {
+    "objectID": "Modules/Module1.html#learning-outcomes",
+    "href": "Modules/Module1.html#learning-outcomes",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nOverview of the development of GIS\n\nThe first maps & surveys\nCreation of map projections and spatial analysis methods\nDevelopment and proliferation of GIS technology\n\nGet your bearings with ArcGSI Pro software package\n\nIntroductory tutorials from ESIR\n\nRecreate a historical analysis using modern methods\n\nBrief overview of digitizing and georeferencing\nIntroduction to spatial analysis\nCreate and share a map"
+  },
+  {
+    "objectID": "Modules/Module1.html#what-is-giscience",
+    "href": "Modules/Module1.html#what-is-giscience",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "What is GIScience?",
+    "text": "What is GIScience?\nThe science and study of geospatial information: GIScience is a framework we use to understand spatial information. It is rooted in Cartography, the art and science of graphically mapping but it is inherently multidisciplinary and drawing on Computer Science, Mathematics & Statistics, Remote Sensing, and many other fields."
+  },
+  {
+    "objectID": "Modules/Module1.html#what-is-a-gisystem",
+    "href": "Modules/Module1.html#what-is-a-gisystem",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "What is a GISystem?",
+    "text": "What is a GISystem?\nAny system or tool we use to store and analyze geospatial information can broadly be considered a GISystem. Until a the late 20th century, atlases and library map catalogues were our most advanced GIS. Now we have a wide range of computer and web based GISystems. Ranging from the “desktop” GIS applications like ArcGIS Pro that you will be using to cloud computing systems that can Terabytes of planetary scale data."
+  },
+  {
+    "objectID": "Modules/Module1.html#what-can-be-done-with-gis",
+    "href": "Modules/Module1.html#what-can-be-done-with-gis",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "What can be done with GIS?",
+    "text": "What can be done with GIS?\nGIS can be used to help solve a wide range of geographic problems in different fields:\n\nEpidemiology/Public Health\nPlanning (Urban, Hazards)\nConservation & Resource Management\nEconomics\nClimate Science\nEcology/Biology\nSocial Justice"
+  },
+  {
+    "objectID": "Modules/Module1.html#references",
+    "href": "Modules/Module1.html#references",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "References",
+    "text": "References\nGartner, W. (1998). Mapmaking in the Central Andes (pp. 257–300).\nJorge, M. del C., Williams, B. J., Garza-Hume, C. E., & Olvera, A. (2011). Mathematical accuracy of Aztec land surveys assessed from records in the Codex Vergara. Proceedings of the National Academy of Sciences, 108(37), 15053–15057. https://doi.org/10.1073/pnas.1107737108\nLewis, G. M. (2008). Maps and Mapmaking of the Native North Americans. In H. Selin (Ed.), Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures (pp. 1322–1325). Springer Netherlands. https://doi.org/10.1007/978-1-4020-4425-0_9029\nSchulze Bäing, A. (2014). Spatial Analysis. In A. C. Michalos (Ed.), Encyclopedia of Quality of Life and Well-Being Research (pp. 6259–6261). Springer Netherlands. https://doi.org/10.1007/978-94-007-0753-5_2818\nSmith, C. D. (1982). The Emergence of “Maps” in European Rock Art: A Prehistoric Preoccupation with Place. Imago Mundi, 34, 9–25. JSTOR.\nWashburn, D. K. (2000). Cartography in the Traditional African, American, Arctic, Australian, and Pacific Societies. American Anthropologist, 102(1), 151–152."
+  },
+  {
+    "objectID": "Modules/Module1.html#arcgis-pro",
+    "href": "Modules/Module1.html#arcgis-pro",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "ArcGIS Pro",
+    "text": "ArcGIS Pro"
+  },
+  {
+    "objectID": "Modules/Module1.html#qgis",
+    "href": "Modules/Module1.html#qgis",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "QGIS",
+    "text": "QGIS\n\n\n<p>\nYour browser does not support iframes.\n</p>\n<p>\n\nView slides in new tab"
+  },
+  {
+    "objectID": "Modules/Module1.html#open-street-maps",
+    "href": "Modules/Module1.html#open-street-maps",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "Open Street Maps",
+    "text": "Open Street Maps\nOpen Street Maps is a freely available public database of geospatial information."
+  },
+  {
+    "objectID": "Modules/Module1.html#programming-languages",
+    "href": "Modules/Module1.html#programming-languages",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "Programming Languages",
+    "text": "Programming Languages\nProgramming languages like Python and JavaScript can be used to conduct a variety of geospatial analysis and make webmaps. I created the map below using JavaScript. I’ll talk a bit more about these methods later on in the term.\nWebmap for navigating to UBC micromet field sites.\n\n\n<p>\nYour browser does not support iframes.\n</p>\n<p>"
+  },
+  {
+    "objectID": "Modules/Module1.html#section",
+    "href": "Modules/Module1.html#section",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "1",
+    "text": "1\nWhich term describes freely accessible software that can be accessed, edited, and distributed by anyone?\n\nProprietary\nOpen Source\nFremium"
+  },
+  {
+    "objectID": "Modules/Module1.html#section-1",
+    "href": "Modules/Module1.html#section-1",
+    "title": "History of GIS & Intro to ArcGIS Pro",
+    "section": "2",
+    "text": "2\nArcGIS Pro is a proprietary software package. It is created and maintained by a private company and requires users to purchase a license to access it.\n\nTrue\nFalse"
+  }
+]
