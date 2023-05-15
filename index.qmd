@@ -140,9 +140,11 @@ The course is arranged in a modular format, following the schedule shown below. 
 library(knitr)
 ```
 
+## Schedule for {{< var term >}}
+
 ```{r}
 #| label: tbl-schedule
-#| tbl-cap: "Tentative Schedule for 2023 S1"
+#| tbl-cap: "Module Due Dates"
 #| tbl-colwidths: [20,65,15]
 
 schedule <- read.csv(file = 'sheets/Schedule.csv',sep='|')
@@ -166,7 +168,7 @@ kable(grades, col.names = gsub("[.]", " ", names(grades)))
 
 ## Lab Quizzes
 
-The first six modules each have a lab assignment with a corresponding lab quiz that will be due on the date listed in the.  The quizzes will primarily pertain to the lab assignment, but will also build on concepts covered in lecture.
+The first six modules each have a lab assignment with a corresponding lab quiz that will be due on the date listed in the.  The quizzes will primarily pertain to the lab assignment, but will also build on concepts covered in lecture.  See the [Lab Info Page](/labinfo.qmd) for more details.
 
 * You will be allowed multiple attempts for quizzes in case you make a mistake or would like to update your answers, only your final submission will be marked.
 * Everyone gets one **"free pass"**: your lowest scoring lab quiz will be dropped at the end of term.
@@ -252,6 +254,7 @@ Though you may work together with your classmates on the assignments and help ea
 # Strategies for Success
 
 **Be proactive!** 
+
 * Keep track of deadlines & note the late submission policies
   * Timely communication is important!  If you have an issue, please bring it to my attention.
   * Partial credit is better than no credit.  If you can't finish a lab before the deadline - just submit what you've got done already. 

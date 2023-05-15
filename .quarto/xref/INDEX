@@ -10,5 +10,20 @@
   },
   "Modules/Module1.qmd": {
     "Module1.html": "5cd4ec35"
+  },
+  "Modules/1/LabAssignment.qmd": {
+    "LabAssignment.html": "6b7f8208"
+  },
+  "Modules/1/LectureSlides.qmd": {
+    "LectureSlides.html": "b55ac877"
+  },
+  "Modules/1/LectureContent.qmd": {
+    "LectureContent.html": "8f7cc618"
+  },
+  "Modules.qmd": {
+    "Modules.html": "0a7566ae"
+  },
+  "Modules/1/Quiz.qmd": {
+    "Quiz.html": "bcf4164a"
   }
 }

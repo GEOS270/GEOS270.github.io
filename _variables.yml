@@ -1,3 +1,8 @@
+term: 2023 S1
+
+quiz:
+  instructions: You can submit your answers to the Lab Quiz questions on Canvas.  Quiz questions are hyperlinked to relevant content incase you need help finding answers.  Written answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable.  Written answers can be brief, and bullet point format is okay **unless otherwise specified**, but answers need to adequately answer the question.  Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics.  For Lab 1, as long as you can make a map with the necessary elements, you'll get full credit!  As the term progresses, figures will be evaluated to a higher standard.
+
 instructor:
   name: Dr. June skeeter
   pronouns: They/Them/Theirs
@@ -24,6 +29,7 @@ exam:
 
 Lab:
   grace_period: 4
+  zoom: https://ubc.zoom.us/j/63605592624?pwd=dEd6TExsd29RQmc2dzJ6NGVZTDN2UT09
   TA1: 
     name: Zijie Chai
     pronouns: She/Her/Hers 

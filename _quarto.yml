@@ -8,10 +8,68 @@ website:
     left:
       - href: index.qmd
         text: Syllabus
-      - href: labinfo.qmd
-        text: Lab Info
-      - href: Modules/Module1.qmd
-        text: Module 1
+      - href: Modules.qmd
+        text: Course Modules
+        
+  sidebar:
+    - title: "Syllabus"
+      style: "docked"
+      background: light
+      contents:
+      - index.qmd
+      - labinfo.qmd
+    - title: "Course Modules"
+      style: "docked"
+      background: light
+      contents:
+      - Modules.qmd
+      - section: "Module 1"
+        href: Modules/1/LectureContent.qmd
+        contents:
+        - href: Modules/1/LabAssignment.qmd
+          text: Lab Assignment
+        - href: Modules/1/Quiz.qmd
+          text: Lab Quiz Questions
+  # sidebar:
+  #   style: "docked"
+  #   search: true
+  #   contents:    
+  #     - section: "Module 1"
+  #       contents:
+  #       - href: Modules/1/LectureContent.qmd
+  #         text: Lecture Slides
+  #       - href: Modules/1/LabAssignment.qmd
+  #         text: Lab Assignment    
+  #     - section: "Module 2"
+  #       contents:
+  #       - href: Modules/2/LectureContent.qmd
+  #         text: Lecture Slides
+  #       - href: Modules/2/LabAssignment.qmd
+  #         text: Lab Assignment    
+  #     - section: "Module 3"
+  #       contents:
+  #       - href: Modules/3/LectureContent.qmd
+  #         text: Lecture Slides
+  #       - href: Modules/3/LabAssignment.qmd
+  #         text: Lab Assignment  
+  #     - section: "Module 4"
+  #       contents:
+  #       - href: Modules/4/LectureContent.qmd
+  #         text: Lecture Slides
+  #       - href: Modules/4/LabAssignment.qmd
+  #         text: Lab Assignment  
+  #     - section: "Module 5"
+  #       contents:
+  #       - href: Modules/5/LectureContent.qmd
+  #         text: Lecture Slides
+  #       - href: Modules/5/LabAssignment.qmd
+  #         text: Lab Assignment  
+  #     - section: "Module 6"
+  #       contents:
+  #       - href: Modules/6/LectureContent.qmd
+  #         text: Lecture Slides
+  #       - href: Modules/6/LabAssignment.qmd
+  #         text: Lab Assignment
 
 format:
   html:

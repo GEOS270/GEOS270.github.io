@@ -1,0 +1,24 @@
+---
+title: "Course Modules"
+format: 
+  html:
+    css: styles.css
+echo: false
+---
+
+Each module consists of lecture content, a lab assignment, and a lab quiz.
+
+```{r include=FALSE}
+
+library(knitr)
+```
+
+```{r}
+#| label: tbl-schedule
+#| tbl-cap: "Module Due Dates"
+#| tbl-colwidths: [20,65,15]
+
+schedule <- read.csv(file = 'sheets/Schedule.csv',sep='|')
+kable(schedule, col.names = gsub("[.]", " ", names(schedule)))
+
+```
