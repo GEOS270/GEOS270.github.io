@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GEOS 270 - Module 2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">GEOS 270</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../Modules/moduleInfo.html" aria-current="page">
+ <span class="menu-text">Course Modules</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/GEOS270"><i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Module 2</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/moduleInfo.html" class="sidebar-item-text sidebar-link">Course Modules</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/1/lecture.html" class="sidebar-item-text sidebar-link">Module 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/1/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/1/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/2/lecture.html" class="sidebar-item-text sidebar-link active">Module 2</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/2/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/2/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#the-steps-of-abstraction" id="toc-the-steps-of-abstraction" class="nav-link" data-scroll-target="#the-steps-of-abstraction">The Steps of Abstraction</a></li>
+  <li><a href="#projected-coordinate-systems" id="toc-projected-coordinate-systems" class="nav-link" data-scroll-target="#projected-coordinate-systems">Projected Coordinate Systems</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
+  <ul class="collapse">
+  <li><a href="#open-geomatics-textbook" id="toc-open-geomatics-textbook" class="nav-link" data-scroll-target="#open-geomatics-textbook">Open Geomatics Textbook</a></li>
+  <li><a href="#visualizing-the-geoid" id="toc-visualizing-the-geoid" class="nav-link" data-scroll-target="#visualizing-the-geoid">Visualizing the Geoid</a></li>
+  <li><a href="#more-about-datums" id="toc-more-about-datums" class="nav-link" data-scroll-target="#more-about-datums">More About Datums</a></li>
+  <li><a href="#choosing-a-projection" id="toc-choosing-a-projection" class="nav-link" data-scroll-target="#choosing-a-projection">Choosing a Projection</a></li>
+  <li><a href="#choosing-a-projection-flowchart" id="toc-choosing-a-projection-flowchart" class="nav-link" data-scroll-target="#choosing-a-projection-flowchart">Choosing a Projection: Flowchart</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Module 2</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>A Coordinate Reference System (CRS) is <em>a coordinate-based system used to locate geographical entities</em>. A CRS can be applied locally, regionally, or globally. A Cartesian grid (think graph paper) is a simple 2D coordinate reference system for referencing locations on the surface of a flat plane. A spherical coordinate system (think latitude/longitude) is a more complex 2D coordinate system for referencing locations on the surface of a sphere.</p>
+<p><img src="images/cartSpherical.jpg" class="img-fluid" style="width:75.0%"></p>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h2>
+<p>This module is intended to give a broad overview of how we represent the 3D earth on 2D maps using coordinate reference systems. Some of the things you can expect from this module:</p>
+<ul>
+<li>Steps of Abstraction: 3D Earth &gt;&gt;&gt; 2D Map
+<ul>
+<li>Geoids</li>
+<li>Datums
+<ul>
+<li>Local vs.&nbsp;Global</li>
+</ul></li>
+<li>Geographic Coordinate Systems</li>
+<li>Projected Coordinate Systems</li>
+</ul></li>
+<li>Types of Map Projections</li>
+<li>Map Scale</li>
+</ul>
+</section>
+<section id="the-steps-of-abstraction" class="level1">
+<h1>The Steps of Abstraction</h1>
+<p>The Earth is a lumpy ball of rock careening through space. It is far too complicated to represent fully; <a href="https://earth.google.com/web/@36.52273887,-99.26765628,-16448.90405368a,22268202.74494887d,35y,-0h,0t,0r">you can’t view more than half of the 3D earth at once when viewing it on a 2D plane</a>. We need to create abstractions to simplify the shape of the earth so we can map it in 2D.</p>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="https://geos270.github.io/LectureSlides/Steps_of_Abstraction/Slides.html" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+<p><a href="https://geos270.github.io/LectureSlides/Steps_of_Abstraction/Slides.html" target="_blank">View slides in new tab</a></p>
+</section>
+<section id="projected-coordinate-systems" class="level1">
+<h1>Projected Coordinate Systems</h1>
+<p>There are many different types of Map Projections. They are classified by how the are projected onto a surface and what kind of deformations they impose.</p>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="https://geos270.github.io/LectureSlides/Map_Projections/Slides.html" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+<p><a href="https://geos270.github.io/LectureSlides/Map_Projections/Slides.html" target="_blank">View slides in new tab</a></p>
+</section>
+<section id="additional-resources" class="level1">
+<h1>Additional Resources</h1>
+<section id="open-geomatics-textbook" class="level2">
+<h2 class="anchored" data-anchor-id="open-geomatics-textbook">Open Geomatics Textbook</h2>
+<p><a href="https://www.opengeomatics.ca/mapping-data.html">Chapter 2</a> of this open source geomatics textbook gives an overview of how we create map projections, including different types of datums and an in depth explanation of what the geoid is. It is a bit beyond the scope of this course, and nothing from this book will be on the exam (unless it was covered elsewhere in lecture), but it can serve as a helpful resource for building your conceptual model.</p>
+</section>
+<section id="visualizing-the-geoid" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-the-geoid">Visualizing the Geoid</h2>
+<p>This <a href="http://oergeomatics-geodesy-viz.s3-website.ca-central-1.amazonaws.com/">tool</a> allows you to explore a 3D model of the geoid and compare it to the more simplified spheroid. * Don’t get lost in the weeds trying to figure it out, but it could help refine your conceptual model.</p>
+</section>
+<section id="more-about-datums" class="level2">
+<h2 class="anchored" data-anchor-id="more-about-datums">More About Datums</h2>
+<p>DJI (the drone company) has put together a helpful resource on datums that can be found <a href="https://enterprise-insights.dji.com/blog/what-is-datum-in-surveying">here</a></p>
+<p><img src="images/Geoid_and_Datum_dji.jpg" class="img-fluid" style="width:75.0%"></p>
+</section>
+<section id="choosing-a-projection" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-a-projection">Choosing a Projection</h2>
+<p>Here is a simple summary to help you think though which class of map projection you might want to use. Categories in <strong>bold</strong> are the most common classes we use.</p>
+<table class="table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 34%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Projection Category</th>
+<th style="text-align: center;">Properties</th>
+<th style="text-align: right;">Common Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Conformal</strong></td>
+<td style="text-align: center;">Preserves local shapes and angles</td>
+<td style="text-align: right;">Topographic maps, navigation charts, weather maps</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Equal Area</strong></td>
+<td style="text-align: center;">Preserves areas</td>
+<td style="text-align: right;">Dot density maps, thematic maps</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Equidistant</td>
+<td style="text-align: center;">Preserves distance from one or two specified points to all other points on the map</td>
+<td style="text-align: right;">Maps of airline distances, seismic maps showing distances from an earthquake epicenter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">True Direction</td>
+<td style="text-align: center;">All directions are true from a single specified point (usually the center) to all other points on the map</td>
+<td style="text-align: right;">Navigation and route planning maps</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Compromise</strong></td>
+<td style="text-align: center;">No point is completely distortion free; distortion is minimized near the center and along the equator</td>
+<td style="text-align: right;">World maps</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="choosing-a-projection-flowchart" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-a-projection-flowchart">Choosing a Projection: Flowchart</h2>
+<p><img src="images/ProjectionChoice.png" class="img-fluid" style="width:75.0%"></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

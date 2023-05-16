@@ -1,0 +1,26 @@
+---
+title: "Course Modules"
+format: 
+  html:
+    css: styles.css
+echo: false
+---
+
+Each module consists of lecture content and lab work.  Click the corresponding module tab to see the lecture slides and to view links to each lab assignment.
+
+
+```{r include=FALSE}
+
+library(knitr)
+```
+
+
+```{r}
+#| label: tbl-schedule
+#| tbl-cap: "Important Dates"
+#| tbl-colwidths: [20,65,15]
+
+DueDates <- read.csv(file = '../sheets/DueDates.csv',sep='|')
+kable(DueDates, col.names = gsub("[.]", " ", names(DueDates)))
+
+```

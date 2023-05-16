@@ -8,28 +8,45 @@ website:
     left:
       - href: index.qmd
         text: Syllabus
-      - href: Modules.qmd
+      - href: Modules/moduleInfo.qmd
         text: Course Modules
+    right:
+      - icon: github
+        href: https://github.com/GEOS270
+        aria-label: Quarto GitHub
         
   sidebar:
     - title: "Syllabus"
       style: "docked"
       background: light
+      collapse-level: 1
       contents:
       - index.qmd
-      - labinfo.qmd
+      - section: "Lab Info"
+        href: LabInfo/labInfo.qmd
+        contents:
+        - LabInfo/softwareAccess.qmd
+        - LabInfo/geogComputers.qmd
+      - acknowledgement.qmd
     - title: "Course Modules"
       style: "docked"
       background: light
       contents:
-      - Modules.qmd
+      - Modules/moduleInfo.qmd
       - section: "Module 1"
-        href: Modules/1/LectureContent.qmd
+        href: Modules/1/lecture.qmd
         contents:
-        - href: Modules/1/LabAssignment.qmd
-          text: Lab Assignment
-        - href: Modules/1/Quiz.qmd
-          text: Lab Quiz Questions
+        - href: Modules/1/instructions.qmd
+          text: Lab Instructions
+        - href: Modules/1/questions.qmd
+          text: Lab Questions
+      - section: "Module 2"
+        href: Modules/2/lecture.qmd
+        contents:
+        - href: Modules/2/instructions.qmd
+          text: Lab Instructions
+        - href: Modules/2/questions.qmd
+          text: Lab Questions
   # sidebar:
   #   style: "docked"
   #   search: true
@@ -70,13 +87,13 @@ website:
   #         text: Lecture Slides
   #       - href: Modules/6/LabAssignment.qmd
   #         text: Lab Assignment
+  
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-    tophat: https://ubc.zoom.us/j/68713181849?pwd=SThIWUkvVTVtbkpwME11c1NDYlFVZz09
 
 
 

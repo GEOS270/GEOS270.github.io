@@ -24,6 +24,46 @@
     "Modules.html": "0a7566ae"
   },
   "Modules/1/Quiz.qmd": {
-    "Quiz.html": "bcf4164a"
+    "Quiz.html": "bcf4164a",
+    "Quiz.docx": "98524f77"
+  },
+  "softwareAccess.qmd": {
+    "softwareAccess.html": "ab142ab7"
+  },
+  "LabInfo/geogComputers.qmd": {
+    "geogComputers.html": "f0ea259e"
+  },
+  "LabInfo/labInfo.qmd": {
+    "labInfo.html": "127c87eb"
+  },
+  "LabInfo/softwareAccess.qmd": {
+    "softwareAccess.html": "fe1b8d7e"
+  },
+  "Modules/Modules.qmd": {
+    "Modules.html": "06f3efe2"
+  },
+  "Modules/moduleInfo.qmd": {
+    "moduleInfo.html": "929c39a4"
+  },
+  "acknowledgement.qmd": {
+    "acknowledgement.html": "ea94db50"
+  },
+  "Modules/1/questions.qmd": {
+    "questions.html": "e0648aef"
+  },
+  "Modules/1/lecture.qmd": {
+    "lecture.html": "035f5214"
+  },
+  "Modules/1/instructions.qmd": {
+    "instructions.html": "2e7ab03f"
+  },
+  "Modules/2/lecture.qmd": {
+    "lecture.html": "13097bde"
+  },
+  "Modules/2/instructions.qmd": {
+    "instructions.html": "7b15f6f1"
+  },
+  "Modules/2/questions.qmd": {
+    "questions.html": "907a9d45"
   }
 }
