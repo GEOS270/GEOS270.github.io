@@ -15,7 +15,7 @@ instructor:
 keyInfo:
   lecture_time: Tuesday & Thursday, 12:00 - 14:00
   lecture_room: 101
-  zoom: https://ubc.zoom.us/j/68713181849?pwd=SThIWUkvVTVtbkpwME11c1NDYlFVZz09
+  zoom: https://ubc.zoom.us/j/68315782631?pwd=RFh0QmR1SzJ3cjhwYmlYSkZNbkcydz09
   recordings: https://drive.google.com/drive/folders/1bFWXslXnAQC5SIYX6z3dLyhtGzwQ3k98?usp=sharing
   tophat_code: 495132
   piazza_link: https://piazza.com/ubc.ca/summer2023/geos270
@@ -26,6 +26,7 @@ exam:
 Lab:
   grace_period: 4
   zoom: https://ubc.zoom.us/j/63605592624?pwd=dEd6TExsd29RQmc2dzJ6NGVZTDN2UT09
+  fee_due: Friday June 2nd
   TA1: 
     name: Zijie Chai
     pronouns: She/Her/Hers 

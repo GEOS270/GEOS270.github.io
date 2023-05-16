@@ -17,7 +17,7 @@ You may purchase a student version of the software to install on your own comput
 
 2. Go [here](https://gis.ubc.ca/software/) to purchase, ArcGIS Pro.  Fill out the info, make your payment, and you should be given and ArcOnline Account and a link to download ArcGIS Pro.
 
-* If you run into any issues, contact Jose Aparicio at: labhelp@geog.ubc.ca 
+* If you run into any issues, contact {{< var Lab.LabHelp.name >}} at: {{< var Lab.LabHelp.email >}}
 
 
 # Option 2: Geography Lab Computers
@@ -26,9 +26,11 @@ The Geography Department has two computer labs (rooms 115 and 237).  They may be
 
 ## Lab fee
 
-There is a lab fee to use geography computers.  You must [pay the lab fee](https://geog-epayment.sites.olt.ubc.ca/fees/geoglab-fees/) or you will loose access to your account.  
+There is a lab fee to use geography computers.  You must [pay the lab fee](https://geog-epayment.sites.olt.ubc.ca/fees/geoglab-fees/) or you will loose access to your account.  The lab fee is due by {{< var Lab.fee_due >}}
 
-* If you have not received logon credentials, contact {{<var lab.LabHelp.name>}} at: {{<var lab.LabHelp.emial>}}
+
+* If you have not received logon credentials, contact {{< var Lab.LabHelp.name >}} at: {{< var Lab.LabHelp.email >}}
+
 
 ## Remote Access
 

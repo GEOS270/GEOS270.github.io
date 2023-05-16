@@ -116,7 +116,7 @@
     "href": "LabInfo/softwareAccess.html#lab-fee",
     "title": "ArcGIS Pro Access",
     "section": "Lab fee",
-    "text": "Lab fee\nThere is a lab fee to use geography computers. You must pay the lab fee or you will loose access to your account.\n\nIf you have not received logon credentials, contact {{<var lab.LabHelp.name>}} at: {{<var lab.LabHelp.emial>}}"
+    "text": "Lab fee\nThere is a lab fee to use geography computers. You must pay the lab fee or you will loose access to your account. The lab fee is due by Friday June 2nd\n\nIf you have not received logon credentials, contact Jose Aparicio at: labhelp@geog.ubc.ca"
   },
   {
     "objectID": "LabInfo/softwareAccess.html#remote-access",
