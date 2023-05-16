@@ -63,8 +63,6 @@ kable(rubric, col.names = gsub("[.]", " ", names(rubric)))
 
 ## Part 2
 
-(@) In your own words, what is belief perseverance and how did it inhibit the development of European medicine? Give your own example of belief perseverance. This can be a historical example or one from your own personal experience. [**Hint**](instructions.qmd#belief-perseverance)
-
 (@) A ______ is a file management structure that is unique to ESRI products. [**Hint**](instructions.qmd#Geodatabases)
 
 - Folder
