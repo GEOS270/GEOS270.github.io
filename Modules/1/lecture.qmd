@@ -21,6 +21,25 @@ This module is intended to give a broad overview of the discipline and get you s
   * Introduction to spatial analysis
   * Create and share a map
 
+# What is GIS?
+
+Before we do anything else, we need to define GIS.
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/What_is_GIS/Slides.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/What_is_GIS/Slides.html" target="_blank">View slides in new tab</a>
+
   
 # History of GIS
 
