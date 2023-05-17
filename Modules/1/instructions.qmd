@@ -147,7 +147,7 @@ By default, ArcPro creates a geodatabase with every new project.  You will see o
 ### Download Data
 
 Lets download the data we need and put it in the Lab1_Project folder you just created.  Click the 
-[download](https://github.com/GEOS270/Module1/raw/main/data/CholeraOutbreak_1854.gdb.zip) link.  If a pop up appears, choose save, the file will be saved in the downloads folder.
+[download](https://github.com/GEOS270/LabData/raw/main/CholeraOutbreak_1854.gdb.zip) link.  If a pop up appears, choose save, the file will be saved in the downloads folder.
 
 
 ### Extract the Data

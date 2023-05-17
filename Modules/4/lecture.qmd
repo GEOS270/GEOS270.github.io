@@ -1,0 +1,106 @@
+---
+title: "Spatial Data Models"
+format: html
+echo: false
+---
+
+This module is all about **spatial** data!  What makes spatial data special and how do we represent it in a GIS?  Spatial Data has some unique properties which mean we need to implement specific strategies to work with it. There are two key formats we work with in GIS for spatial data: **Raster** and **Vector**.  Both models can be used to represent most spatial phenomena; but they are not equally suited for all applications.
+
+## Learning Outcomes
+
+![](images/03-vector-v-raster.jpg)
+
+
+## Learning Outcomes
+
+- What makes spatial data special?
+- Differentiate between raster and vector data models.
+- Learn how each model represents space and stores attributes.
+- Learn which types of models are best suited for different applications.
+- Overview of data resolution and how it relates to scale.
+- Work with both Raster (Satellite Imagery) and Vector (Census) data to investigate how green space effects housing cost.
+
+
+
+
+# Spatial is Special
+
+You might encounter the phrase "Spatial is special" in your time studying GIS.  Spatial data is the foundation of Geographic Information Science, it is what distinguishes GIS from the broader field of data science.  This was succinctly summarized by Waldo Tobler in **The First Law of Geography**:
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Spatial_is_Special/Slides.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Spatial_is_Special/Slides.html" target="_blank">View Slides in New Tab</a>
+
+
+# Raster Data
+
+A simple but storage intensive method for representing data that is widely utilized in GIS.  Rasters are commonly encountered as: satellite and drone imagery, elevation models, climate data, model outputs, and scanned maps.   
+
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/The_Raster_Data_Model/Slides.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/The_Raster_Data_Model/Slides.html" target="_blank">View Slides in New Tab</a>
+
+
+# Vector Data
+
+In GIS, vector data are commonly encountered as: political boundaries, census data, pathways (road, trails, etc.), point location (stop sign, fire hydrant), etc.
+
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/The_Vector_Data_Model/Slides.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/The_Vector_Data_Model/Slides.html" target="_blank">View Slides in New Tab</a>
+
+
+# Which Model is Best?
+
+Lets recap to think through some Practical Considerations and compare the spatial data models side by side.
+
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Choice_of_Data_Model/Slides.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Choice_of_Data_Model/Slides.html" target="_blank">View Slides in New Tab</a>

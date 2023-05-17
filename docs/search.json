@@ -39,7 +39,7 @@
     "href": "index.html#accommodations",
     "title": "Syllabus",
     "section": "Accommodations",
-    "text": "Accommodations\nPlease contact the Center for Accessibility if you require accommodations for a disability. Once you are registered please make me aware of any necessary accommodations by email in a timely manner.\nI will make accommodations on a case by case basis for extenuating circumstances that prevent you completing course work. It is your responsibility to communicate your needs in a timely fashion (i.e. before a due date). * If you require an accommodation please contact Dr. June skeeter by email: june.skeeter@ubc.ca * My typical approach is to give an alternative assignment rather than giving extensions on lab quizzes because we post the answers after submission deadlines: * An alternative lab might consist of writing up an essay or two pertaining to the lecture material + making any maps/figures from the lab, then submitting directly to me by email anytime before the last day of class."
+    "text": "Accommodations\nPlease contact the Center for Accessibility if you require accommodations for a disability. Once you are registered please make me aware of any necessary accommodations by email in a timely manner.\nI will make accommodations on a case by case basis for extenuating circumstances that prevent you completing course work. It is your responsibility to communicate your needs in a timely fashion (i.e. before a due date).\n\nIf you require an accommodation please contact Dr. June skeeter by email: june.skeeter@ubc.ca\nMy typical approach is to give an alternative assignment rather than giving extensions on lab quizzes because we post the answers after submission deadlines:\n\nAn alternative lab might consist of writing up an essay or two pertaining to the lecture material + making any maps/figures from the lab, then submitting directly to me by email anytime before the last day of class."
   },
   {
     "objectID": "index.html#academic-concessions",
@@ -123,7 +123,7 @@
     "href": "LabInfo/softwareAccess.html#remote-access",
     "title": "ArcGIS Pro Access",
     "section": "Remote Access",
-    "text": "Remote Access\nTo remotely access lab computers, follow these instructions. Information about the Geography Computer Labs can be found here.\n\nNote the lab schedule and refrain from remotely accessing a computer while other courses are holding lab session in that room. When accessing computers remotely - try to use computers that are located in room 239 as those are less likely to result in conflicts with in-person users.\n\nIf you are having trouble logging on remotely try: adding “geoglab\" in front of your username."
+    "text": "Remote Access\nTo remotely access lab computers, follow these instructions. Information about the Geography Computer Labs can be found here.\n\nNote the lab schedule and refrain from remotely accessing a computer while other courses are holding lab session in that room. When accessing computers remotely - try to use computers that are located in room 239 as those are less likely to result in conflicts with in-person users.\nIf you are having trouble logging on remotely try: adding “geoglab\" in front of your username."
   },
   {
     "objectID": "Modules/1/instructions.html",
@@ -219,14 +219,14 @@
   {
     "objectID": "Modules/1/lecture.html",
     "href": "Modules/1/lecture.html",
-    "title": "Module 1",
+    "title": "What is GIS and Where Did It Come From?",
     "section": "",
     "text": "This module is intended to give a broad overview of the discipline and get you started using the ArcGIS Pro software package."
   },
   {
     "objectID": "Modules/1/lecture.html#learning-outcomes",
     "href": "Modules/1/lecture.html#learning-outcomes",
-    "title": "Module 1",
+    "title": "What is GIS and Where Did It Come From?",
     "section": "Learning Outcomes",
     "text": "Learning Outcomes\n\nOverview of the development of GIS\n\nThe first maps & surveys\nCreation of map projections and spatial analysis methods\nDevelopment and proliferation of GIS technology\n\nGet your bearings with ArcGSI Pro software package\n\nIntroductory tutorials from ESRI\n\nRecreate a historical analysis using modern methods\n\nBrief overview of digitizing and georeferencing\nIntroduction to spatial analysis\nCreate and share a map"
   },
@@ -303,49 +303,49 @@
   {
     "objectID": "Modules/2/lecture.html",
     "href": "Modules/2/lecture.html",
-    "title": "Module 2",
+    "title": "Coordinate Reference Systems",
     "section": "",
     "text": "A Coordinate Reference System (CRS) is a coordinate-based system used to locate geographical entities. A CRS can be applied locally, regionally, or globally. A Cartesian grid (think graph paper) is a simple 2D coordinate reference system for referencing locations on the surface of a flat plane. A spherical coordinate system (think latitude/longitude) is a more complex 2D coordinate system for referencing locations on the surface of a sphere."
   },
   {
     "objectID": "Modules/2/lecture.html#learning-outcomes",
     "href": "Modules/2/lecture.html#learning-outcomes",
-    "title": "Module 2",
+    "title": "Coordinate Reference Systems",
     "section": "Learning Outcomes",
     "text": "Learning Outcomes\nThis module is intended to give a broad overview of how we represent the 3D earth on 2D maps using coordinate reference systems. Some of the things you can expect from this module:\n\nSteps of Abstraction: 3D Earth >>> 2D Map\n\nGeoids\nDatums\n\nLocal vs. Global\n\nGeographic Coordinate Systems\nProjected Coordinate Systems\n\nTypes of Map Projections\nMap Scale"
   },
   {
     "objectID": "Modules/2/lecture.html#open-geomatics-textbook",
     "href": "Modules/2/lecture.html#open-geomatics-textbook",
-    "title": "Module 2",
+    "title": "Coordinate Reference Systems",
     "section": "Open Geomatics Textbook",
     "text": "Open Geomatics Textbook\nChapter 2 of this open source geomatics textbook gives an overview of how we create map projections, including different types of datums and an in depth explanation of what the geoid is. It is a bit beyond the scope of this course, and nothing from this book will be on the exam (unless it was covered elsewhere in lecture), but it can serve as a helpful resource for building your conceptual model."
   },
   {
     "objectID": "Modules/2/lecture.html#visualizing-the-geoid",
     "href": "Modules/2/lecture.html#visualizing-the-geoid",
-    "title": "Module 2",
+    "title": "Coordinate Reference Systems",
     "section": "Visualizing the Geoid",
     "text": "Visualizing the Geoid\nThis tool allows you to explore a 3D model of the geoid and compare it to the more simplified spheroid. * Don’t get lost in the weeds trying to figure it out, but it could help refine your conceptual model."
   },
   {
     "objectID": "Modules/2/lecture.html#more-about-datums",
     "href": "Modules/2/lecture.html#more-about-datums",
-    "title": "Module 2",
+    "title": "Coordinate Reference Systems",
     "section": "More About Datums",
     "text": "More About Datums\nDJI (the drone company) has put together a helpful resource on datums that can be found here"
   },
   {
     "objectID": "Modules/2/lecture.html#choosing-a-projection",
     "href": "Modules/2/lecture.html#choosing-a-projection",
-    "title": "Module 2",
+    "title": "Coordinate Reference Systems",
     "section": "Choosing a Projection",
     "text": "Choosing a Projection\nHere is a simple summary to help you think though which class of map projection you might want to use. Categories in bold are the most common classes we use.\n\n\n\n\n\n\n\n\nProjection Category\nProperties\nCommon Uses\n\n\n\n\nConformal\nPreserves local shapes and angles\nTopographic maps, navigation charts, weather maps\n\n\nEqual Area\nPreserves areas\nDot density maps, thematic maps\n\n\nEquidistant\nPreserves distance from one or two specified points to all other points on the map\nMaps of airline distances, seismic maps showing distances from an earthquake epicenter\n\n\nTrue Direction\nAll directions are true from a single specified point (usually the center) to all other points on the map\nNavigation and route planning maps\n\n\nCompromise\nNo point is completely distortion free; distortion is minimized near the center and along the equator\nWorld maps"
   },
   {
     "objectID": "Modules/2/lecture.html#choosing-a-projection-flowchart",
     "href": "Modules/2/lecture.html#choosing-a-projection-flowchart",
-    "title": "Module 2",
+    "title": "Coordinate Reference Systems",
     "section": "Choosing a Projection: Flowchart",
     "text": "Choosing a Projection: Flowchart"
   },
@@ -371,10 +371,262 @@
     "text": "Part 2\n\nSubmit your figure showing Canada in the four different coordinate systems. Hint\nWrite a paragraph or two comparing and contrasting the four different coordinate systems. What are the differences/similarities between them? If you wanted to make a map of population totals by province, which coordinate system(s) would you choose? What if you wanted to make a map of population density by province, which coordinate system(s) would you choose? Hint"
   },
   {
+    "objectID": "Modules/3/instructions.html",
+    "href": "Modules/3/instructions.html",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "",
+    "text": "Please note: The Lab Questions corresponds to this lab assignment. There are questions you need to answer in the quiz that pertain to the lab, so its a good idea to skim the quiz questions before starting the lab.\nThis page contains instructions for the lab assignment, follow them to work through the lab in ArcGIS Pro. There are links to documentation where applicable along with embedded screenshots and videos in the instructions at some steps for reference. Feel free to work with peers in your lab section and don’t hesitate to ask your TA for help!"
+  },
+  {
+    "objectID": "Modules/3/instructions.html#workflow",
+    "href": "Modules/3/instructions.html#workflow",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Workflow",
+    "text": "Workflow\n\nDownload the BC boundary file and Canadian Census Data\n\n\nI am providing you will a boundary file for BC, you’ll see it linked on the next page.\nUse Simply Analytics to query and download Canadian Census data.\n\n\nProject setup and pre-processing\n\n\nCreate a project\nUse a feature dataset to make sure your data is projected correctly\n\n\nClassify Data\n\n\nUse the Updated Stats Canada urban/rural classification scheme\n\n\nVisualize Data\n\n\nCreate charts to display your results"
+  },
+  {
+    "objectID": "Modules/3/instructions.html#create-a-new-project",
+    "href": "Modules/3/instructions.html#create-a-new-project",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Create a New Project",
+    "text": "Create a New Project\nOpen up AcrGIS Pro and create a new project. You can reference the same steps outlined in Module 1 for help creating a project.\n\nName the project BC_Food_Cost\nCreate a new “Feature Dataset” called BC_Census_Data\n\n\nMake sure the feature dataset is in the “NAD 1983 BC Environment Albers” projection\nSee the video below for guidance\n\nVideo"
+  },
+  {
+    "objectID": "Modules/3/instructions.html#download-the-bc-boundary-file",
+    "href": "Modules/3/instructions.html#download-the-bc-boundary-file",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Download the BC Boundary File",
+    "text": "Download the BC Boundary File\n\nClick the link to download the BC_Boundary.zip file.\n\n\nExtract the contents of the BC_Boundary.zip file to your newly created BC_Food_Cost project folder.\n\n\n\nImport the BC_Boundary shapefile to your BC_Census_Data feature dataset.\n\n\nStart by adding the BC_Boundary.shp to the map\n\nCheck the Spatial Reference System\nCheck the Attribute Table\nRemove it from the Table of Contents\n\nRight click the BC_Census_Data feature dataset\n\nSelect: Import > Feature Class(es)\nChoose BC_Boundary.shp then click Okay\n\nThe newly import BC_Boundary Feature class should automatically be added to your table of contents\n\nInspect the coordinate system to see if it changed\nYou can then delete the original shapefile\n\n\nVideo"
+  },
+  {
+    "objectID": "Modules/3/instructions.html#importing-the-census-data",
+    "href": "Modules/3/instructions.html#importing-the-census-data",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Importing the Census Data",
+    "text": "Importing the Census Data\nWe have to do a few things to the data to make sure everything setup and ready so we can conduct our analysis.\n\nImport the SimplyAnalytics_Shapefiles using the same steps as above and name it BC_Census_Data\n\n\nMake sure to check the Spatial Reference System before and after the import. Think about:\n\nWhat coordinate system the census data came in from Simply Analytics?\nWhat coordinate system we’re using and why.\n\nYou can delete the original SimplyAnalytics_Shapefiles, but Do Not delete variable_names.txt, we still need it!\n\n\nRename the SimplyAnalytics_Shapefiles as BC_Census_Data\n\n\nRight click the SimplyAnalytics_Shapefiles and select > Rename"
+  },
+  {
+    "objectID": "Modules/3/instructions.html#rename-the-variables",
+    "href": "Modules/3/instructions.html#rename-the-variables",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Rename the Variables",
+    "text": "Rename the Variables\n\nRename the Attributes in the BC_Census_Data feature class.\n\n\nData from simply analytics comes with generic column headers that can be confusing.\nThe simply analytics data comes with a text file containing header names you can reference to give them more helpful names."
+  },
+  {
+    "objectID": "Modules/3/instructions.html#clip-the-bc_census_data-layer",
+    "href": "Modules/3/instructions.html#clip-the-bc_census_data-layer",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Clip the BC_Census_Data Layer",
+    "text": "Clip the BC_Census_Data Layer\n\nUse the Clip Tool to get the BC_Census_Data layer to show the true boundaries of the census subdivisions by using the BC boundary file to remove areas of ocean.\n\n\nThe census subdivision from Simply Analytics look pretty funky along the coast and we can use the Clip tool to cut the layer down to size.\n\nUse the BC_Census_Data is the Input Layer\nUse the BC_Boundary as the Clip Layer\nName the output BC_Subdivisions_2021_Clip"
+  },
+  {
+    "objectID": "Modules/3/instructions.html#defining-rural-urban-areas",
+    "href": "Modules/3/instructions.html#defining-rural-urban-areas",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Defining Rural & Urban Areas",
+    "text": "Defining Rural & Urban Areas\nUntil 2010, Statistics Canada used a Rural/Urban classification scheme to describe Census unit smaller than a Province/Territory:\nRural: a population density less than 400 people per square kilometer or a total population of less than 1,000 people.\nUrban: a unit with a population density at least 400 people per square kilometer and a total population of at least 1,000 people."
+  },
+  {
+    "objectID": "Modules/3/instructions.html#the-revised-classification",
+    "href": "Modules/3/instructions.html#the-revised-classification",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "The Revised Classification",
+    "text": "The Revised Classification\nStatistics Canada Now uses the Population Center and Rural Area Classification. You can skim the Documentation explaining the classification scheme to get a feel for the reasoning behind updating from the old Rural/Urban method? The new classification scheme was updated to split the old Urban class into three different kinds of Population Centers:\n\n\n\n\n\n\n\n\n\nRural\nSmall Population Centers\nMedium Population Center\nLarge Urban Population Center\n\n\n\n\nSame as old method\nNot Rural andPopulation < 30,000\nNot Rural andPopulation >= 30,000 andPopulation < 100,000\nNot Rural andPopulation >= 100,000"
+  },
+  {
+    "objectID": "Modules/3/instructions.html#applying-the-classification",
+    "href": "Modules/3/instructions.html#applying-the-classification",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Applying the Classification",
+    "text": "Applying the Classification\nYour task is to apply the Population Center and Rural Area Classification scheme (see table above). You can watch the video below for reference, which shows you how to apply the old Urban/Rural scheme.\n\nYou are going to use the Select by Attribute function to help apply the classification.\n\nSelect by Attribute allows us to select rows/objects with a certain attribute.\nIt relies on something called a Structured Query Language (SQL).\n\nWe are selecting all rows “Where” our conditions are met.\n\nYou can use the And/Or commands to combine queries.\nAnd: Selects where All statements are true\nOr: Selects where Any statements are true\n\nNote: The video is from a slightly dated version of the lab, the steps are the same but some of the file names may look a bit different, and it was recorded using an older version of ArcGIS Pro.\nYou do not need to apply the old classification scheme, I use this example as a reference. All your answers and uploads for the lab should be drawn from the New classification scheme. The general steps for classifying the data are:\n\n\nCalculate population density.\n\n\nYou can refer to the exercise we did as part of Module 2 for help.\n\n\nCreate a field and populate it using select by attribute, following the Population Center and Rural Area Classification scheme.\n\n\nYou can reference the table above for pointers on how to formulate your SQL statements."
+  },
+  {
+    "objectID": "Modules/3/instructions.html#plotting-relationships",
+    "href": "Modules/3/instructions.html#plotting-relationships",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Plotting Relationships",
+    "text": "Plotting Relationships\nNow that we’ve classified the data, lets look for some patterns. The video instructions below use the old Rural/Urban classification as an example to show you how to create two kinds of plots that are useful for learning more about our data. You will create two plots in this step, and fine tune the styling in the next step, then upload them to canvas.\n\nBar charts can be used to aggregate counts/sums by groups. You will create a bar chart showing the total population per Population Centre and Rural Area class.\nBox plots can be used to show the dispersion of data within groups. You will create a box plot showing the distribution of “Income spent on Food” per Population Centre and Rural Area class.\n\n\nTo do this, you must first calculate a new column, normalizing food expenditures by income."
+  },
+  {
+    "objectID": "Modules/3/instructions.html#benefits-of-data-classification",
+    "href": "Modules/3/instructions.html#benefits-of-data-classification",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Benefits of Data Classification",
+    "text": "Benefits of Data Classification\nCreate scatter plot with Population Density on the X-Axis and Income_on_Food on the Y axis. You don’t need to submit this chart, but look at the relationship you see here and think about how it compares to what you see in the box plot."
+  },
+  {
+    "objectID": "Modules/3/instructions.html#styling-your-visualizations",
+    "href": "Modules/3/instructions.html#styling-your-visualizations",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Styling Your Visualizations",
+    "text": "Styling Your Visualizations\nOftentimes, the default parameters that ArcPro assigns for colors, etc. are not the best choices. Also, we often need to edit text headers and labels for a cleaner presentation. Watch the video bellow for tips on how to stylize your charts before submitting them. You can use Color Brewer to make sure you use a color scheme that is accessible.\n\nYou will be submitting the stylized bar chart and box plot to canvas. So make sure they look good and you choose colors that are appropriate for the data type."
+  },
+  {
+    "objectID": "Modules/3/lecture.html",
+    "href": "Modules/3/lecture.html",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "",
+    "text": "This module is all about data! What is data and how do we represent it in a computer? First, we will focus on data more broadly, then we will take a look at what makes spatial data so special in the next module."
+  },
+  {
+    "objectID": "Modules/3/lecture.html#learning-outcomes",
+    "href": "Modules/3/lecture.html#learning-outcomes",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nWhat is Data?\n\nOverview of different types of phenomena\nDiscussion of data types & measurement scales\n\nOverview of different data classification methods\n\nDiscussion of descriptive statistics\nSupervised vs. unsupervised methods\nHow do they relate to data types\nWhy classify data\n\nData normalization methods\nPointers for effective data visualization\n\nImportance of color choice\nClean, effective displays of information\n\nUse Simply Analytics to download Canadian census data\nApply different data classification methods\nPractice creating effective visualizations"
+  },
+  {
+    "objectID": "Modules/3/questions.html",
+    "href": "Modules/3/questions.html",
+    "title": "Lab Assignment Questions",
+    "section": "",
+    "text": "You can submit your answers to this Lab Quiz questions on via the corresponding Canvas Quiz. Questions in this document are hyperlinked to relevant content incase you need help finding answers. Feel free to work with peers in the lab, but make sure all work submitted is your own. Written answers can be brief and bullet point format is okay unless otherwise specified.\n\nRubric\nWritten answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable. Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics. For Lab 1, as long as you can make a map with the necessary elements, you’ll get full credit! As the term progresses, figure submissions will be evaluated to a higher standard.\n\n\n\n\nTable 1: Lab Quiz Rubric\n\n\n\n\n\n\n\n\nCategory\nWritten Answers\nFigure Submissions\nScore\n\n\n\n\nMissing\n\n\n0%\n\n\nInsufficient\nMissing major key points or serious logical flaws\nSerious errors in analysis, missing data, or major stylistic issues\n25%\n\n\nBelow Expectations\nMissing a few key points or minor logical flaws\nMinor errors in analysis or multiple stylistic issues\n50%\n\n\nMeets Expectations\nHits key points and mostly well constructed\nError free analysis, minor stylistic issue\n75%\n\n\nExceeds Expectations\nClearly thought out, concise, and astute\nError free analysis and clean, aesthetically pleasing map\n100%\n\n\n\n\n\n\n\n\nQuiz Questions\nUnless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.\n\nWhich projection did we choose for the BC_Census_Data feature dataset and why? Why can’t we just work with the simply analytics data as is? Hint\nWe used the clip tool to ensure we don’t ____ population density in the coastal Subdivisions. Hint\n\n\nOverestimate\nUnderestimate\nCorrectly Calculate\n\n\nWhat was the reasoning behind Stats Canada updating from the old Rural/Urban to the Population Centre and Rural Area classification method? Hint\n\n\nThe old classification was treating small towns the same a large metro areas\nPopulation Center sounds better than Urban Area\nThey didn’t change the classification\n\n\nThe Select by ____ tool lets us use SQL (Structured Query Language) to define expressions for querying vector data. Hint\nWhat measurement scale would population density attribute be on? Hint Hint-2\n\n\nNominal\nOrdinal\nInterval (Discrete)\nInterval (Continuous)\nRatio (Discrete)\nRatio (Continuous)\n\n\nWhat best describes the Population Center and Rural Area Classification attribute we created? Hint\n\n\nQuantitative data\nQualitative data\nboth\nneither\n\n\nBox plots are most useful for looking at frequency distributions. [T/F] Hint\nIn which Population Centre and Rural Area class does the the largest proportion of BC’s population live? Hint\n\n\nLarge Urban Population Centre\nRural\nSmall Population Centre\nMedium Population Centre\n\n\nWhat percent of BC’s overall population lives in Rural Areas? Round your answer to the nearest percent. Hint Sum the four classes to get the total population. Hint\nWhat is the median value for the percentage of income that people in Rural areas spend on food? Round to the nearest tenth percent. Hint\nHow does classifying the data help us reveal patterns compared to what we see in the scatter plot? Does the r2 score indicate a relationship in the scatter plot? What conclusions can you draw about the proportion of income spent on food by people in different regions from looking at the box plot? Hint\nSubmit your Bar Chart. Hint\nSubmit your Box plot. Hint"
+  },
+  {
+    "objectID": "Modules/4/instructions.html",
+    "href": "Modules/4/instructions.html",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "",
+    "text": "Please note: The Lab Questions corresponds to this lab assignment. There are questions you need to answer in the quiz that pertain to the lab, so its a good idea to skim the quiz questions before starting the lab.\nThis page contains instructions for the lab assignment, follow them to work through the lab in ArcGIS Pro. There are links to documentation where applicable along with embedded screenshots and videos in the instructions at some steps for reference. Feel free to work with peers in your lab section and don’t hesitate to ask your TA for help!"
+  },
+  {
+    "objectID": "Modules/4/instructions.html#research-question",
+    "href": "Modules/4/instructions.html#research-question",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Research Question",
+    "text": "Research Question\nWhat is the relationship between neighborhood green vegetation coverage and housing cost in Vancouver?"
+  },
+  {
+    "objectID": "Modules/4/instructions.html#workflow",
+    "href": "Modules/4/instructions.html#workflow",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Workflow",
+    "text": "Workflow\nHow we will answer the research question:\n\nEstimate vegetation coverage with satellite data and overlay census data.\nPlot the relationship between vegetation coverage and housing cost and run linear regression analysis.\nVisualize the results."
+  },
+  {
+    "objectID": "Modules/4/instructions.html#google-earth-engine-sign-up",
+    "href": "Modules/4/instructions.html#google-earth-engine-sign-up",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Google Earth Engine Sign Up",
+    "text": "Google Earth Engine Sign Up\nWe are going to use Google Earth Engine (GEE) to download some satelite data. This will require a Google account so that you can access GEE and Google Drive.\n\nGo to google.com and create an account following the Sign In button if you don’t already have one.\n\n\nA google account will give you access to google drive with 15 GB free storage space! This could be a useful resource when working on your final projects!\n\n\nThen got to earthengine and sign up\n\n\nChoose sign up in the top right.\nFollow the instructions to sign up using your Google account.\n\nOnce you have gone through the sign up process, you can close GEE. We’ll go back to it later.\n\nNote If you are unable to create an account, contact your TA for a link to the data set."
+  },
+  {
+    "objectID": "Modules/4/instructions.html#set-up-your-geodatabase",
+    "href": "Modules/4/instructions.html#set-up-your-geodatabase",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Set Up Your GeoDatabase",
+    "text": "Set Up Your GeoDatabase\n\nCreate a new project in ArcPro called Van_NDVI.\n\n\nYou can reference the Module 1 for a refresher on setting up a project.\nBy default, ArcPro creates a GeoDatabase with every new project. You will see one called Van_NDVI.gdb in your project folder. Refer back to Module 1 for information about GeoDatabases and their corresponding components.\n\n\nWe’re going to work with some Canadian Census Data. You already learned how to download census data in Module 3 so I’ve gone ahead and downloaded the relevant data to save a bit of time. Download and extract the Van_Census.zip file to your newly created project Van_NDVI folder.\nCreate a new Feature Dataset named CensusData\n\n\nSet the Coordinate System to NAD 1983 UTM Zone 10N\n\nNAD 1983 is the name of the datum (North American Datum 1983), UTM Zone 10N is the name of the projection (Universal Transverse Mercator, Zone 10 N)\nYou can set this coordinate system to your favorites by right clicking and selecting add to favorites. This will make it easier to find in the future!\n\n\n\nAfter you click Run, it will appear in your Van_NDVI.gdb. Now we’re going to add some census data.\n\n\nRight click on your newly created CensusData feature dataset >> Import Feature Class(es)\nAdd the two census data layers you downloaded: Van_DA_2016.shp and VanCMS_CT_2016.shp"
+  },
+  {
+    "objectID": "Modules/4/instructions.html#monitoring-vegetation-with-satellites",
+    "href": "Modules/4/instructions.html#monitoring-vegetation-with-satellites",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Monitoring Vegetation with Satellites",
+    "text": "Monitoring Vegetation with Satellites\nWe’re going to work with LANDSAT8 data in this lab. LANDSAT8 is one of a large number of satellites that orbit the earth continuously collecting multi-spectral (visible light & other wavelengths) imagery. We can use multi-spectral imagery for a number of different applications like estimating vegetation health.\n\nCalculating NDVI\nThe lines on the chart below are referred to as a spectral reflectance curves. They show reflectance (amount of light) on the y-axis, defined as the percent of radiation reflected by different earth features, and wavelength on the x-axis. As you can see, the spectral reflectance curves for different features look very different. Specifically, you can see that healthy green vegetation has very high reflectance in the near-infrared wavelengths (0.7-1.4 µm) and lower reflectance in the visible part of the spectrum (0-0.7 µm), while water absorbs almost all incoming infrared radiation and thus has very low infrared reflectance. Soil has relatively higher reflectance in the visible wavelengths, and intermediate reflectance in the near infrared.\n\nThese differences are the basis for the normalized difference vegetation index (NDVI), one of the most commonly used spectral indices for vegetation monitoring. NDVI is calculated as:\n\\[ NDVI = \\frac{(NIR-Red)}{(NIR+Red)} \\]\nwhere NIR is reflectance in the near-infrared wavelengths, and RED is reflectance in the red wavelengths. This index can range from -1 to 1, with higher values indicating more/greener/healthier vegetation. Look at the graph above and make sure you understand why green vegetation would have a high value of NDVI.\nThe gray shaded areas indicate regions of the electromagnetic spectrum that are measured by a satellite. These regions are referred to as “spectral bands.” When you work with satellite imagery, you will have one raster for each band. The values for each raster contain the reflectance measured by the satellite in that band. (This will make more sense in a minute, when you start working with the satellite data)."
+  },
+  {
+    "objectID": "Modules/4/instructions.html#using-google-earth-engine",
+    "href": "Modules/4/instructions.html#using-google-earth-engine",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Using Google Earth Engine",
+    "text": "Using Google Earth Engine\n\nGo to the GEE code Explorer, log in if you need to, and create a new Repository called Van_NDVI_Download.\n\n\n\nNow create an New File, make sure its located within the Van_NDVI_Download repository you just created, and name it Landsat8_NDIV_Download.\n\n\n\nCopy the following Javascript code from in the grey box below and paste it into the code pane (top middle).\n\n// Coordinates for Vancouver\nvar Cent = ee.Geometry.Point([-123,49.25]);\n\n// Center Map on Vancouver\nMap.centerObject(Cent, 10);\n\n// Import the Landsat 8 TOA image collection.\n// Filter out images with cloud covdf > 10%\nvar Collection = ee.ImageCollection('LANDSAT/LC08/C01/T1_TOA').filter(ee.Filter.lt('CLOUD_COVER_LAND', 10));\n\n// Get the number of images.\nvar count = Collection.size();\nprint('Count: ', count);\n\n// Define NDVI Function\nvar addNDVI_Landsat = function(image) {\n  var ndvi = image.normalizedDifference(['B5', 'B4']).rename('NDVI');\n  return image.addBands(ndvi);\n};\n\n// Apply Function to all Images\nvar withNDVI_Landsat = Collection.map(addNDVI_Landsat);\n\n// Make a \"greenest\" pixel composite.\nvar greenest = withNDVI_Landsat.qualityMosaic('NDVI');\nvar ndvi = greenest.select('NDVI')\n\n// Define Color Scheme for Visualization\nvar ndviParams = {min: -.5, max: 1, palette: ['blue', 'white', 'green']};\n\n// Display the result.\nMap.addLayer(ndvi, ndviParams, 'Greenest pixel composite');\n\n// // Export to Google drive\n// Export.image.toDrive({\n//   image: ndvi,\n//   description: 'Van_Greenest',\n//   scale: 30,\n//   region: Boundary\n// });\n3 Click Run and see take note of what happens. Reference the video below if you have trouble.\n\nGoogle quickly processes your request and adds the image to your screen. You can change the transparency or turn the image on/off with the check box.\nThis image is a “Greenest Pixel” - the code queries all LANDSAT8 data, calculates NDVI for every location in the map view, and then selects the maximum NDVI value at each location, which represents the peak greenness (across all seasons/years) and adds it to the image!\nZoom and pan a bit to explore!\n\nVideo\n\nDownloading the Data\nFollow these steps to download the NDVI data. You can reference the video below for help. Note the export dialog has changed slightly since the video was recorded (see screenshot below video). In order to download data for a specific area, we first need to create and upload a boundary file.\n\nIn the ArcGIS Pro Geoprocessing pane, find the Dissolve tool and set VanCMA_CT_2016 as the input\n\n\nNote: by default, the output will be saved to your Van_NDVI.gdb as a feature class.\n\nHowver, feature classes can not be read by Google Earth Engine.\nInstead: save the output as a Shapefile (.shp) one level up in your Van_NDVI project folder and name it Boundary. Shapefiles are just a different way of storing vector data.\n\n\n\nRemove this layer from your table of contents. We don’t need it in this map project.\n\nVideo\n\nUpload the Boundary file you just created to google earth engine.\n\n\nGo to the Assets tab (top left)\nClick New > Shape files\nNavigate to your Van_NDVI folder and upload the Boundary file you created.\n\nTry to upload all the files named Boundary. GEE will tell you which (eg. .sbx) file types it won’t accept. Exclude them and upload the rest\n\nClick refresh to see your upload\n\nIt may take a few minutes to show up, the video has been edited for brevity\n\n\n\nImport the Boundary file into the code.\n\n\nClick on the boundary file you uploaded, and select import.\nIt will import in the top of the code window.\n\nBy default it names it “table”, change the name to Boundary.\n\n\n\nRun the download.\n\n\nScroll to the bottom of the code.\nIn Javascript the double backslash “//” will “comment out” code or text so that it is ignored by the processor.\n\nHighlight the commented out section of code and hit “ctrl + /” to get rid of the double back slashes.\nAlternatively, you can just manual delete the double back slashes.\n\nClick Run\nSwitch to the Task pane in the top right. Run the Van_Greenest task to export this layer to your Google Drive.\n\nGoogle Drive is a free (15GB) file storage service that comes with a Google account.\n\n\n\nGo to your Google Drive and find the Van_Greenest.tif, it should be located in the root folder.\n\n\nIt could take 5/10 minutes for GEE to process your request. Right click on it to download it an put it in your Van_NDVI folder.\n\nVideo\n\n\n\nProject the Raster Layer\nBy default, data from GEE is not projected! It comes in the WGS 1984 Geographic Coordinate System (Lat/Lon referencing the WGS 1984 Datum). We need to get it into NAD 1983 UTM Zone 10N so it matches the rest of our data! Feature Datasets only work for Vector data. The NDVI data is in the Raster data format. So we have to reproject it manually. Raster data requires a slightly different tool to do the re-projection than the vector data we worked with in Modules 1-3. The steps and video below goes shows you how to do that.\n\nIn the Geoprocessing pane, search for the Project Raster tool.\nSet the projection to UTM Zone 10N (find in your favorites for quick access).\nAfter running, the Van_Greenest_ProjectRaster should show up on your map.\nNow would be a good time to save your project!\n\nVideo"
+  },
+  {
+    "objectID": "Modules/4/instructions.html#vector-layers-plotting-relationships",
+    "href": "Modules/4/instructions.html#vector-layers-plotting-relationships",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Vector Layers & Plotting Relationships",
+    "text": "Vector Layers & Plotting Relationships\nThese Census data are in Vector format. A key advantage of Vector Data is that we can have multiple attributes associated with each entity (point/line/polygon). Here, we are interested in three variables: Population (total residents), Housing (monthly rent), and Income (annual total).\n\nSymbolize your census data by population.\n\n\nSet the Field to Population\nChange the symbology for Van_DA_2016 to Graduated Colors\nExplore how the different classification schemes influence the way the classified layer looks on the map\n\n\nMake a Histogram of Population.\n\n\nSet the number to population\nMake sure the mean, median, and standard deviations are all shown on the Histogram.\n\n\nCreate a chart income vs. housing.\n\n\nRight click Van_DA_2016 and click Create Chart > Scatter Plot.\nIn the chart properties tab set:\n\nX-axis: Income\nY-axis: Housing\n\nMake sure “Show linear trend” is checked to display a regression line on your chart.\n\n\nNote the zero values on the X & Y Axes. Stats Canada “suppresses” data when they don’t get enough responses to a census question. No house in Vancouver is worth $0. We need to exclude the zeros so they don’t skew our results.\n\n\nIn the Map tab, click Select by Attribute, select for “Housing” greater than 0 And “Income” greater than 0.\n\nSelect by Attribute allows us to select rows/objects with a certain attribute.\nIt relies on something called a Structured Query Language (SQL).\nWe are selecting all rows “Where” our conditions are met.\n\nYou can use the And/Or commands to combine querries.\nAnd: Selects whre All statements are true\nOr: Selects whre Any statements are true\n\n\n\n\n\n\nA Note on Linear Regression\nA regression line is also know as a “line of best fit”. Linear regression assumes a linear relationship between some an independent variable (e.g. Income) and a dependent variable (eg. Housing). This is the simplest form of regression is know as Simple Linear Regression.\n\nIn this model, the dependent variable Y is influenced by the independent variable X proportional to the slope m. If m = 1 means a 1:1 relationship between X & Y, m = 2 would mean Y increases by 2 units for every 1 unit increase in X, m = 0.5 would mean Y increases by 1/2 unit for every 1 unit increase in X. The intercept b accounts for an offset (bias) in the model.\n\n\\[ Y=mX + b \\]\n\nAny deviations from this linear relationship are “errors”. That is, all the other variability that cannot be explained by the model. Housing cost is impacted by many factors (eg. scarcity) that aren’t as easy to capture with census data alone.\nIn the example below for Van_DA_2016 (before excluding zeros), M = 0.0123 and b = 660.1, which means at $0 income, rent is $660.1. And for every $100 increase in income, rent goes up $1.23.\n\n\nThe R2 score, is known as the coefficient of determination. It is a measure of how well a model fits the data. It ranges from 0 to 1, with 0 representing “no fit” and 1 representing a “perfect fit”.\n\nThis table shows how we assess the strength of a relationships indicated by the R2 statistics. In the example above, there is no strong relationship.\n\n\n\n\nR2\nRelationship\n\n\n\n\n<0.3\nVery Weak\n\n\n0.3 - 0.5\nWeak\n\n\n0.5 - 0.7\nModerate\n\n\n>0.7\nStrong\n\n\n\n\n\nComparing CTs to DAs\nRepeat the steps above for the VanCMA_CT_2016 layer. Don’t forget to exclude the zeros on your scatter plot. Note there are fewer zeros overall. Think about why that might be. Hint look at the population of CTs compared to DAs"
+  },
+  {
+    "objectID": "Modules/4/instructions.html#classifying-raster-data",
+    "href": "Modules/4/instructions.html#classifying-raster-data",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Classifying Raster Data",
+    "text": "Classifying Raster Data\nThese NDVI data are in Raster format. An important caveat of raster data layers is they can only have one value per cell. However, they are useful because they allow us to represent continuous phenomena (i.e. vegetation health) as a simple image.\n\nCreate a Histogram\nTo get a feel for the distribution of NDVI values in the dataset, we’re going to plot them in a histogram to aid our visual inspection of the NDVI data.\n\nCreate a chart showing the count of cells by NDVI values.\n\n\nA histogram represents a distribution by grouping the data into bins (ranges), and plotting the count of values (eg. raster cells) for by bin.\n\nChange the bin number to see how changing the size of the bins, impacts how you perceive the data. Try 10, then try 50.\n\n\n\n\n\n\nUse The Natural Breaks Classification\n\nSearch for the Reclassify tool in the geoprocessing pane. Use the projected NDVI layer as the input.\n\n\nClick classify to set the classification scheme. Set the method to Natural Breaks and the number of classes to 3.\n\nWe talked about the Natural Breaks Classification in Module 3.\nIt is designed to automatically find an “optimal” fit to a dataset.\n\nWe can use it to group the NDVI values into three classes:\n\n1: Water/Urban (lowest values)\n2: Medium Density Residential (middle values)\n3: Green Vegetation (highest values)"
+  },
+  {
+    "objectID": "Modules/4/instructions.html#change-the-base-map",
+    "href": "Modules/4/instructions.html#change-the-base-map",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Change the Base Map",
+    "text": "Change the Base Map\nTo help inspect the NDVI classification, we can change the base map and look at a satellite image layer.\n\nOn the Map tab click “Basemap” and choose Imagery\nToggle the NDVI Layer and classified image on and off to see how the NDVI values correspond to green vegetation on the visible imagery base map layer.\n\nVideo\n\nClean Up Your Workspace Selection\nFrom here on out, we are only going to be working with the VanCMA_CT_2016 so you can remove the Van_DA_2016 layer."
+  },
+  {
+    "objectID": "Modules/4/instructions.html#method-1-zonal-statistics-as-table",
+    "href": "Modules/4/instructions.html#method-1-zonal-statistics-as-table",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Method 1: Zonal Statistics as Table",
+    "text": "Method 1: Zonal Statistics as Table\nWe are going to overlay the vector data on the raster data to measure the mean NDVI value for each census tract using the Zonal Statistics as Table tool. Then we will Join the resulting output table to add the NDVI values by CT to the layer. A join is a way to add tables to a layer based on a specific column. You can reference the video below for guidance.\n\nFind the Zonal Statistics as Table tool in the Geoprocessing pane, choose VanCMA_CT_2016 as the feature zone data, and Van_Greenest_ProjectRaster as the Input value raster.\n\n\nSet CTUID as the Zone Field\nSelect All statistics types\n\n\nRight click on VanCMA_CT_2016 and choose Joins and Relates > Add Join.\n\n\nSet CTUID as the Input Join Field\nChoose the Zonal Statistics table as your input. (the name should look something like ZonalST_VanCMA_1)\nMake sure CTUID is selected as the Join Table Field as well\n\n\nInspect the Join\n\n\nOpen the attribute table and note the new columns at the end"
+  },
+  {
+    "objectID": "Modules/4/instructions.html#method-2-raster-to-polygon-conversion",
+    "href": "Modules/4/instructions.html#method-2-raster-to-polygon-conversion",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Method 2: Raster to Polygon Conversion",
+    "text": "Method 2: Raster to Polygon Conversion\nWe are going to convert the classified raster layer to a vector layer. Then we can overlay the resulting vector layer with the VanCMA_CT_2016 layer using an intersect which will let us calculate the total green vegetation area per CT in the next step. You can reference the video below for guidance.\n\nFind the Raster to Polygon tool in the geoprocessing pane.\n\n\nSet the Classified NDVI image as the Input raster\nChoose Value as the Field\n\n\nFind the Intersect tool in the geoprocessing pane. It will combine the feature classes where they overlap and exclude all other areas. We’ll talk a lot more about this tool.\n\n\nSet Van_DA_2016 and the output from the raster to polygon conversion as the inputs. Then click run.\nChange the symbology and open the attribute table to confirm the results look like what we’d expect.\n\n\n\n\nCalculate the Green Vegetation Area and Dissolve by CT\nNow we are going to calculate the total green vegetation area by CT, and toss out a bunch of the unnecessary data. You can reference the video below for guidance.\n\nAdd a new field to the VanCMA_CT_2016_Intersect layer called “Green_Veg_Area” so we:\n\n\nName the field Green_Veg_Area\nMake sure the data type is Double.\n\n\nChoose Select by Attribute and set your query to: Where gridcode is equal to 3.\nRight click on Green Veg Area and choose Calculate Field. This allows us to define a function and apply it to the table.\n\n\nSet the expression to: Green_Veg_Area = Shape_Area\n\nNote you only need to complete the right side of the equation\nThis will simply copy the shape area for the green vegetation areas, we will work with a more complex expression on the next page.\n\n\n\nWe want to assign all other rows a 0. We can quickly invert our selection with the Switch button.\n\n\nCalculate the field again, but with Green_Veg_Area = 0\n\nWe have selected gridcode 1 & 2 (Not vegetation) so they all get zeros.\n\n\n\n\n\n\nData Normalization\nOne last thing step! We need to account for a confounding factor. The CTs are different sizes. To better compare the CTs (which are vastly different sizes), lets Normalize our results by the total area of each CT! Normalizing, sometimes also referred to as standardizing, is the process of dividing one variable by another variable to account for their relationship. It can help us identify patterns that might be masked by a confounding variable.\n\nAdd a new field called “PCT_Green_Space”.\n\n\nMake sure you set the data type to Double\n\n\nCalculate the field using the following equation:\n\n\nPCT_Green_Space = SUM_Green_Veg_Area/Shape_Area\n\nNote you only need to complete the right side of the equation\n\n\n\nRight click on PCT_Green_Space and select “Statistics”\n\n\nThis will bring up some descriptive statistics for this field."
+  },
+  {
+    "objectID": "Modules/4/instructions.html#ordinary-least-squares-regression",
+    "href": "Modules/4/instructions.html#ordinary-least-squares-regression",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Ordinary Least Squares Regression",
+    "text": "Ordinary Least Squares Regression\nLike the name suggests, simple linear regression is … simple. It can only account for the influence of one independent variable at a time. Reality is rarely this straightforward and typically there are numerous factors influencing a dependent variable. A more general version of linear regression is known as Ordinary Least Squares regression. This model allows us to account for multiple dependent variables. For instance, a three factor OLS model (three dependent variables) would look something like this:\n\\[ Y=aX_1 + bX_2 + cX_3 + d \\]\n\nX1, X2, and X3 are all dependent variables and a, b, and c are their respective coefficients (slopes) while d is the intercept.\nImagine a simple example that might be used in the real word: trying and estimate the total damage in dollars (Y) from a storm:\n\nX1 = maximum wind speed\nX2 = total rainfall\nX3 = population of area effected.\n\nThis model won’t give a perfect estimate, but by accounting for two aspects of the storm it will do a much better job describing the storm than just wind speed or rainfall alone. Further, by accounting for population it will give us some idea of number of people impacted. A storm in an uninhabited area wont cause much damage regardless of its strength, but in a large metro area it will cause significant damage.\nThink about how this model might be applied to improve our analysis?"
+  },
+  {
+    "objectID": "Modules/4/instructions.html#masking-values",
+    "href": "Modules/4/instructions.html#masking-values",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Masking Values",
+    "text": "Masking Values\nArc gives you a couple options for “excluding” data (e.g. Selecting Where Housing > 0 for a chart) but the built in options are a bit lacking. Its better to be explicit about it. Watch the video below so you can properly represent the missing data values on your map and make sure they are excluded from your charts."
+  },
+  {
+    "objectID": "Modules/4/instructions.html#adding-a-chart-to-the-layout",
+    "href": "Modules/4/instructions.html#adding-a-chart-to-the-layout",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Adding a Chart to the Layout",
+    "text": "Adding a Chart to the Layout\nArc allows you to add charts to your layout in addition to maps. For this map, add you map on the left and two charts on the right side, one showing Mean NDVI vs. Housing and the other showing PCT_Greenspace vs. Housing. The video below can show you how to do that."
+  },
+  {
+    "objectID": "Modules/4/instructions.html#add-other-map-elements",
+    "href": "Modules/4/instructions.html#add-other-map-elements",
+    "title": "Data Types, Classification, & Visualization",
+    "section": "Add Other Map Elements",
+    "text": "Add Other Map Elements\nAdd all the appropriate map elements: Title, Legend, Scale Text, North Arrow (optional, Vancouver is familiar), and Source Statement. The video below gives you some pointers for formatting a legend. I’ll leave it to you to decide on the final stylistic choices for you map (color, map element placements, font sizes etc.) You can reference previous Modules for a refresher on how to do the other steps and refer to Module 3 for some stylistic guidelines.\n\nNote for the Name/Source Statement\n\nThe census data came from Statistics Canada and the MODIS data used to calculate the NDVI values came from NASA. Even though the data were accessed using simply analytics and google earth engine, its best practice to give the original source when you can."
+  },
+  {
+    "objectID": "Modules/4/lecture.html",
+    "href": "Modules/4/lecture.html",
+    "title": "Spatial Data Models",
+    "section": "",
+    "text": "This module is all about spatial data! What makes spatial data special and how do we represent it in a GIS? Spatial Data has some unique properties which mean we need to implement specific strategies to work with it. There are two key formats we work with in GIS for spatial data: Raster and Vector. Both models can be used to represent most spatial phenomena; but they are not equally suited for all applications."
+  },
+  {
+    "objectID": "Modules/4/lecture.html#learning-outcomes",
+    "href": "Modules/4/lecture.html#learning-outcomes",
+    "title": "Spatial Data Models",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes"
+  },
+  {
+    "objectID": "Modules/4/lecture.html#learning-outcomes-1",
+    "href": "Modules/4/lecture.html#learning-outcomes-1",
+    "title": "Spatial Data Models",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nWhat makes spatial data special?\nDifferentiate between raster and vector data models.\nLearn how each model represents space and stores attributes.\nLearn which types of models are best suited for different applications.\nOverview of data resolution and how it relates to scale.\nWork with both Raster (Satellite Imagery) and Vector (Census) data to investigate how green space effects housing cost."
+  },
+  {
+    "objectID": "Modules/4/questions.html",
+    "href": "Modules/4/questions.html",
+    "title": "Lab Assignment Questions",
+    "section": "",
+    "text": "You can submit your answers to this Lab Quiz questions on via the corresponding Canvas Quiz. Questions in this document are hyperlinked to relevant content incase you need help finding answers. Feel free to work with peers in the lab, but make sure all work submitted is your own. Written answers can be brief and bullet point format is okay unless otherwise specified.\n\nRubric\nWritten answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable. Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics. For Lab 1, as long as you can make a map with the necessary elements, you’ll get full credit! As the term progresses, figure submissions will be evaluated to a higher standard.\n\n\n\n\nTable 1: Lab Quiz Rubric\n\n\n\n\n\n\n\n\nCategory\nWritten Answers\nFigure Submissions\nScore\n\n\n\n\nMissing\n\n\n0%\n\n\nInsufficient\nMissing major key points or serious logical flaws\nSerious errors in analysis, missing data, or major stylistic issues\n25%\n\n\nBelow Expectations\nMissing a few key points or minor logical flaws\nMinor errors in analysis or multiple stylistic issues\n50%\n\n\nMeets Expectations\nHits key points and mostly well constructed\nError free analysis, minor stylistic issue\n75%\n\n\nExceeds Expectations\nClearly thought out, concise, and astute\nError free analysis and clean, aesthetically pleasing map\n100%\n\n\n\n\n\n\n\n\nQuiz Questions\nUnless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.\n\nLooking at the VanDA_2016 layer, for every $100 increase in income at the DA level, how much does rental price increase? Hint\nLooking at the VanDA_2016 layer, what is the R2 score for this model? Hint\nWhat is the median population of a Census Tract (VanCMA_CT_2016) in Metro Vancouver? Hint\nWhich Census Unit displays a more direct relationship between Income and Housing? What evidence supports this conclusion? Hint\nWhat value does the Natural Breaks method determine should denotes the lower bound of the “Green Vegetation” class? Hint: Look at the Start/End values when applying the natural breaks classification. Hint\nLooking at the satellite image, how well do you think the natural breaks classification method did at distinguishing areas of green vegetation from residential areas and urban/water areas? Hint\nWhat is the highest MEAN NDVI value for any CT in the Metro Vancouver CMA? Hint Double clicking on MEAN NDVI in the attribute table allows you to sort in ascending/descending order. (Round your answer to the nearest hundredths place) Hint\nWhat is the mean PCT_Green_Space value per Census Tract? (Round your answer to the nearest hundredths place) Hint\nWhy did we calculate the PCT_Green_Space field? Hint\nDescribe the relationship between the Mean_NDVI value per CT and and the PCT_Green_Space per CT. Are they telling us the same thing? How Strongly are they related? Hint\nAre either Mean_NDVI or PCT_Green_Space strongly linked to housing cost? What evidence supports this conclusion? How might we refine our analysis using Ordinary Least Squares Regression? Suggest a two other factors you think we should include in our analysis besides Mean_NDVI or PCT_Green_Space? Are there any other more general improvements you think we could make to this analysis beyond just adding more variables to our model? Hint\nExport your Layout as a .pdf and upload it to Canvas. Hint"
+  },
+  {
     "objectID": "Modules/moduleInfo.html",
     "href": "Modules/moduleInfo.html",
     "title": "Course Modules",
     "section": "",
-    "text": "Each module consists of lecture content and lab work. Click the corresponding module tab to see the lecture slides and to view links to each lab assignment.\n\n\n\n\nTable 1: Important Dates\n\n\n\n\n\n\n\nModule\nTopic\nDue Date\n\n\n\n\nModule 1\nHistory of GIS & Intro to ArcGIS Pro\nMay 22\n\n\nModule 2\nCoordinate Reference Systems\nMay 26\n\n\nModule 3\nData Types, Data Classification, & Data Visualization\nJune 31\n\n\nModule 4\nSpatial Data Models\nJune 7\n\n\nModule 5\nGIS Workflows, Spatial Analysis Methods\nJune 14\n\n\nModule 6\nFinal Project Proposal, Spatial Sampling, Uncertainty, & Ethics\nJune 19\n\n\nModule 7\nFinal Project, Extra Credit Programming Exercise, & Exam Review\nJune 27\n\n\nFinal Exam\nAsynchronous on Canvas\nJune 28"
+    "text": "Each module consists of lecture content and lab work. Click the corresponding module tab to see the lecture slides and to view links to each lab assignment.\n\n\n\n\nTable 1: Important Dates\n\n\n\n\n\n\n\nModule\nTopic\nDue Date\n\n\n\n\nModule 1\nHistory of GIS & Intro to ArcGIS Pro\nMay 22\n\n\nModule 2\nCoordinate Reference Systems\nMay 26\n\n\nModule 3\nData Types, Data Classification, & Data Visualization\nJune 2\n\n\nModule 4\nSpatial Data Models\nJune 7\n\n\nModule 5\nGIS Workflows, Spatial Analysis Methods\nJune 14\n\n\nModule 6\nFinal Project Proposal, Spatial Sampling, Uncertainty, & Ethics\nJune 19\n\n\nModule 7\nFinal Project, Extra Credit Programming Exercise, & Exam Review\nJune 27\n\n\nFinal Exam\nAsynchronous on Canvas\nJune 28"
   }
 ]

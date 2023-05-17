@@ -1,0 +1,73 @@
+---
+title: "Lab Assignment Questions"
+format: html
+echo: false
+---
+
+
+{{< var Lab.assignments.quizInfo >}}
+
+# Rubric
+
+{{< var Lab.assignments.rubricInfo >}}
+
+```{r include=FALSE}
+
+library(knitr)
+```
+
+```{r}
+#| label: tbl-schedule
+#| tbl-cap: "Lab Quiz Rubric"
+#| tbl-colwidths: [10,35,35,10]
+
+rubric <- read.csv(file = '../../sheets/Rubric.csv',sep='|')
+kable(rubric, col.names = gsub("[.]", " ", names(rubric)))
+
+```
+
+# Quiz Questions
+
+
+Unless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.
+
+
+(@) Looking at the **VanDA_2016** layer, for every $100 increase in income at the DA level, how much does rental price increase? [Hint](instructions.qmd#a-note-on-linear-regression)
+
+
+(@) Looking at the **VanDA_2016** layer, what is the R2 score for this model? [Hint](instructions.qmd#a-note-on-linear-regression)
+
+
+(@) What is the median population of a Census Tract (VanCMA_CT_2016) in Metro Vancouver? [Hint](instructions.qmd#comparing-cts-to-das)
+
+
+(@) Which Census Unit displays a more direct relationship between Income and Housing?  What evidence supports this conclusion? [Hint](instructions.qmd#comparing-cts-to-das)
+ 
+
+(@) What value does the Natural Breaks method determine should denotes the lower bound of the "Green Vegetation" class? **Hint**:  Look at the Start/End values when applying the natural breaks classification. [Hint](instructions.qmd#use-the-natural-breaks-classification)
+
+
+(@) Looking at the satellite image, how well do you think the natural breaks classification method did at distinguishing areas of green vegetation from residential areas and urban/water areas? [Hint](instructions.qmd#change-the-base-map)
+
+
+(@) What is the highest MEAN NDVI value for any CT in the Metro Vancouver CMA? *Hint* Double clicking on MEAN NDVI  in the attribute table allows you to sort in ascending/descending order.  (Round your answer to the nearest  hundredths place) [Hint](instructions.qmd#method-1-zonal-statistics-as-table)
+
+
+
+(@) What is the mean PCT_Green_Space value per Census Tract?  (Round your answer to the nearest  hundredths place) [Hint](instructions.qmd#data-normalization)
+
+
+(@) Why did we calculate the PCT_Green_Space field? [Hint](instructions.qmd#data-normalization)
+
+
+
+(@) Describe the relationship between the **Mean_NDVI** value per CT and and the **PCT_Green_Space** per CT.  Are they telling us the same thing?  How Strongly are they related? [Hint](instructions.qmd#inspect-and-compare-the-outputs)
+
+
+(@) Are either **Mean_NDVI** or **PCT_Green_Space** strongly linked to housing cost? What evidence supports this conclusion? How might we refine our analysis using Ordinary Least Squares Regression? Suggest a two other factors you think we should include in our analysis besides **Mean_NDVI** or **PCT_Green_Space**? Are there any other more general improvements you think we could make to this analysis beyond just adding more variables to our model? [Hint](instructions.qmd#inspect-and-compare-the-outputs)
+
+
+(@) Export your Layout as a .pdf and upload it to Canvas. [Hint](instructions.qmd#making-your-map)
+
+
+

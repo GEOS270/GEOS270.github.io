@@ -1,5 +1,5 @@
 ---
-title: "Module 1"
+title: "What is GIS and Where Did It Come From?"
 format: html
 echo: false
 ---

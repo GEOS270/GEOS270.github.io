@@ -65,5 +65,23 @@
   },
   "Modules/2/questions.qmd": {
     "questions.html": "907a9d45"
+  },
+  "Modules/3/instructions.qmd": {
+    "instructions.html": "296591f1"
+  },
+  "Modules/3/lecture.qmd": {
+    "lecture.html": "9ee8379e"
+  },
+  "Modules/3/questions.qmd": {
+    "questions.html": "401005c5"
+  },
+  "Modules/4/instructions.qmd": {
+    "instructions.html": "235292c4"
+  },
+  "Modules/4/lecture.qmd": {
+    "lecture.html": "d3e9cad6"
+  },
+  "Modules/4/questions.qmd": {
+    "questions.html": "734fadd2"
   }
 }

@@ -38,6 +38,6 @@ To remotely access lab computers, follow [these instructions](RemoteDesktop.pdf)
 
 * **Note** the lab schedule and refrain from remotely accessing a computer while other courses are holding lab session in that room.  When accessing computers remotely - try to use computers that are located in room 239 as those are less likely to result in conflicts with in-person users.
 
-    * **If you are having trouble logging on remotely** try: adding "geoglab\" in front of your username.
+* **If you are having trouble logging on remotely** try: adding "geoglab\" in front of your username.
 
 ![](images/remoteLoginScreen.png)

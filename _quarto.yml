@@ -47,6 +47,20 @@ website:
           text: Lab Instructions
         - href: Modules/2/questions.qmd
           text: Lab Questions
+      - section: "Module 3"
+        href: Modules/3/lecture.qmd
+        contents:
+        - href: Modules/3/instructions.qmd
+          text: Lab Instructions
+        - href: Modules/3/questions.qmd
+          text: Lab Questions
+      - section: "Module 4"
+        href: Modules/4/lecture.qmd
+        contents:
+        - href: Modules/4/instructions.qmd
+          text: Lab Instructions
+        - href: Modules/4/questions.qmd
+          text: Lab Questions
   # sidebar:
   #   style: "docked"
   #   search: true

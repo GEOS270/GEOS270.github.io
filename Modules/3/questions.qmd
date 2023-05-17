@@ -1,0 +1,85 @@
+---
+title: "Lab Assignment Questions"
+format: html
+echo: false
+---
+
+
+{{< var Lab.assignments.quizInfo >}}
+
+# Rubric
+
+{{< var Lab.assignments.rubricInfo >}}
+
+```{r include=FALSE}
+
+library(knitr)
+```
+
+```{r}
+#| label: tbl-schedule
+#| tbl-cap: "Lab Quiz Rubric"
+#| tbl-colwidths: [10,35,35,10]
+
+rubric <- read.csv(file = '../../sheets/Rubric.csv',sep='|')
+kable(rubric, col.names = gsub("[.]", " ", names(rubric)))
+
+```
+
+# Quiz Questions
+
+
+Unless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.
+
+(@) Which projection did we choose for the **BC_Census_Data** feature dataset and why?  Why can't we just work with the simply analytics data as is? [Hint](instructions.qmd#importing-the-census-data)
+
+(@) We used the clip tool to ensure we don't  ____ population density in the coastal Subdivisions. [Hint](instructions.qmd#clip-the-bc_census_data-layer)
+
+
+* Overestimate
+* Underestimate
+* Correctly Calculate
+
+(@) What was the reasoning behind Stats Canada updating from the old Rural/Urban to the Population Centre and Rural Area classification method? [Hint](instructions.qmd#the-revised-classification)
+
+* The old classification was treating small towns the same a large metro areas
+* Population Center sounds better than Urban Area
+* They didn't change the classification
+
+(@) The Select by ____ tool lets us use SQL (Structured Query Language) to define expressions for querying vector data. [Hint](instructions.qmd#applying-the-classification)
+
+(@) What measurement scale would population density attribute be on? [Hint](instructions.qmd#applying-the-classification) [Hint-2](https://geos270.github.io/LectureSlides/Phenomena_and_Data_Types/Slides.html#/summary-types-of-data)
+
+- Nominal
+- Ordinal
+- Interval (Discrete)
+- Interval (Continuous)
+- Ratio (Discrete)
+- Ratio (Continuous)
+
+(@) What best describes the Population Center and Rural Area Classification attribute we created? [Hint](instructions.qmd#applying-the-classification)
+
+- Quantitative data
+- Qualitative data
+- both
+- neither
+
+(@) Box plots are most useful for looking at frequency distributions. [T/F] [Hint](instructions.qmd#plotting-relationships)
+
+(@) In which Population Centre and Rural Area class does the the largest proportion of BC's population live? [Hint](instructions.qmd#plotting-relationships)
+
+- Large Urban Population Centre
+- Rural
+- Small Population Centre
+- Medium Population Centre
+
+(@) What  percent  of BC's overall population lives in Rural Areas?  Round your answer to the nearest percent.  *Hint* Sum the four classes to get the total population. [Hint](instructions.qmd#plotting-relationships)
+
+(@) What is the median value for the percentage of income that people in Rural areas spend on food?  Round to the nearest tenth percent. [Hint](instructions.qmd#plotting-relationships)
+
+(@) How does classifying the data help us reveal patterns compared to what we see in the scatter plot?  Does the r2 score indicate a relationship in the scatter plot?  What conclusions can you draw about the proportion of income spent on food by people in different regions from looking at the box plot? [Hint](instructions.qmd#benefits-of-data-classification)
+
+(@) Submit your Bar Chart. [Hint](instructions.qmd#styling-your-visualizations)
+
+(@) Submit your Box plot. [Hint](instructions.qmd#styling-your-visualizations)
+

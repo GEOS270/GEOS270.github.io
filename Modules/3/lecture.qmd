@@ -1,0 +1,91 @@
+---
+title: "Data Types, Classification, & Visualization"
+format: html
+echo: false
+---
+
+This module is all about data!  What is data and how do we represent it in a computer?  First, we will focus on data more broadly, then we will take a look at what makes spatial data so special in the next module.
+
+## Learning Outcomes
+
+
+- What is Data?
+	* Overview of different types of phenomena
+	* Discussion of data types & measurement scales
+- Overview of different data classification methods
+	- Discussion of descriptive statistics
+	- Supervised vs. unsupervised methods
+	- How do they relate to data types
+	- Why classify data
+- Data normalization methods
+- Pointers for effective data visualization
+	- Importance of color choice
+	- Clean, effective displays of information
+* Use Simply Analytics to download Canadian census data
+* Apply different data classification methods
+* Practice creating effective visualizations
+
+
+
+# What is Data?
+
+Before we think about how we represent data in a GIS specifically, we need to take a step back and think about what data is?
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Phenomena_and_Data_Types/Slides.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Phenomena_and_Data_Types/Slides.html" target="_blank">View Slides in New Tab</a>
+
+
+# Data Classification
+
+In order to visualize and share our data effectively, we usually have to simplify it first.  For this, we rely on a number of different data classification methods.
+
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Data_Classification/Slides.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Data_Classification/Slides.html" target="_blank">View Slides in New Tab</a>
+
+
+# Data Visualization
+
+It is important to display your results in an clean, transparent, and accessible way.
+
+
+
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Data_Visualization/Slides.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Data_Visualization/Slides.html" target="_blank">View Slides in New Tab</a>
