@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GEOS 270 - Lab Assignment Questions</title>
+<title>GEOS 270 - Spatial Data Models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Lab Assignment Questions</h1>
+      <h1 class="quarto-secondary-nav-title">Spatial Data Models</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -162,11 +162,11 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../Modules/3/lecture.html" class="sidebar-item-text sidebar-link">Module 3</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../Modules/3/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Modules/3/questions.html" class="sidebar-item-text sidebar-link active">Lab Questions</a>
+  <a href="../../Modules/3/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
   </div>
 </li>
       </ul>
@@ -201,12 +201,12 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Modules/5/lecture.html" class="sidebar-item-text sidebar-link">Module 5</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <a href="../../Modules/5/lecture.html" class="sidebar-item-text sidebar-link active">Module 5</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../Modules/5/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
@@ -228,8 +228,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#rubric" id="toc-rubric" class="nav-link active" data-scroll-target="#rubric">Rubric</a></li>
-  <li><a href="#quiz-questions" id="toc-quiz-questions" class="nav-link" data-scroll-target="#quiz-questions">Quiz Questions</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#spatial-analysis-workflows" id="toc-spatial-analysis-workflows" class="nav-link" data-scroll-target="#spatial-analysis-workflows">Spatial Analysis Workflows</a></li>
+  <li><a href="#vector-analysis-methods" id="toc-vector-analysis-methods" class="nav-link" data-scroll-target="#vector-analysis-methods">Vector Analysis Methods</a></li>
+  <li><a href="#raster-analysis-methods" id="toc-raster-analysis-methods" class="nav-link" data-scroll-target="#raster-analysis-methods">Raster Analysis Methods</a></li>
   </ul>
 </nav>
     </div>
@@ -238,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Lab Assignment Questions</h1>
+<h1 class="title d-none d-lg-block">Spatial Data Models</h1>
 </div>
 
 
@@ -253,124 +255,72 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>You can submit your answers to this Lab Quiz questions on via the corresponding Canvas Quiz. Questions in this document are hyperlinked to relevant content incase you need help finding answers. Feel free to work with peers in the lab, but make sure all work submitted is your own. Written answers can be brief and bullet point format is okay <strong>unless otherwise specified</strong>.</p>
-<section id="rubric" class="level1">
-<h1>Rubric</h1>
-<p>Written answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable. Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics. For Lab 1, as long as you can make a map with the necessary elements, you’ll get full credit! As the term progresses, figure submissions will be evaluated to a higher standard.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-schedule" class="anchored">
-<table class="table table-sm table-striped">
-<caption>Table&nbsp;1: Lab Quiz Rubric</caption>
-<colgroup>
-<col style="width: 10%">
-<col style="width: 35%">
-<col style="width: 35%">
-<col style="width: 10%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Category</th>
-<th style="text-align: left;">Written Answers</th>
-<th style="text-align: left;">Figure Submissions</th>
-<th style="text-align: left;">Score</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Missing</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">0%</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Insufficient</td>
-<td style="text-align: left;">Missing major key points or serious logical flaws</td>
-<td style="text-align: left;">Serious errors in analysis, missing data, or major stylistic issues</td>
-<td style="text-align: left;">25%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Below Expectations</td>
-<td style="text-align: left;">Missing a few key points or minor logical flaws</td>
-<td style="text-align: left;">Minor errors in analysis or multiple stylistic issues</td>
-<td style="text-align: left;">50%</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Meets Expectations</td>
-<td style="text-align: left;">Hits key points and mostly well constructed</td>
-<td style="text-align: left;">Error free analysis, minor stylistic issue</td>
-<td style="text-align: left;">75%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Exceeds Expectations</td>
-<td style="text-align: left;">Clearly thought out, concise, and astute</td>
-<td style="text-align: left;">Error free analysis and clean, aesthetically pleasing map</td>
-<td style="text-align: left;">100%</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
+<p>This module is all about <strong>spatial</strong> data! What makes spatial data special and how do we represent it in a GIS? Spatial Data has some unique properties which mean we need to implement specific strategies to work with it. There are two key formats we work with in GIS for spatial data: <strong>Raster</strong> and <strong>Vector</strong>. Both models can be used to represent most spatial phenomena; but they are not equally suited for all applications.</p>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h2>
+<ul>
+<li>Learn how to apply different analysis methods to both Raster and Vector data</li>
+<li>Use spatial overlay methods to answer a research question</li>
+<li>Introduction to Model Builder</li>
+<li>GIS Applications in Hazards planning</li>
+</ul>
 </section>
-<section id="quiz-questions" class="level1">
-<h1>Quiz Questions</h1>
-<p>Unless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.</p>
-<ol class="example" type="1">
-<li><p>Which projection did we choose for the <strong>BC_Census_Data</strong> feature dataset and why? Why can’t we just work with the simply analytics data as is? <a href="../../Modules/3/instructions.html#importing-the-census-data">Hint</a></p></li>
-<li><p>We used the clip tool to ensure we don’t ____ population density in the coastal Subdivisions. <a href="../../Modules/3/instructions.html#clip-the-bc_census_data-layer">Hint</a></p></li>
-</ol>
-<ul>
-<li>Overestimate</li>
-<li>Underestimate</li>
-<li>Correctly Calculate</li>
-</ul>
-<ol start="3" class="example" type="1">
-<li>What was the reasoning behind Stats Canada updating from the old Rural/Urban to the Population Centre and Rural Area classification method? <a href="../../Modules/3/instructions.html#the-revised-classification">Hint</a></li>
-</ol>
-<ul>
-<li>The old classification was treating small towns the same a large metro areas</li>
-<li>Population Center sounds better than Urban Area</li>
-<li>They didn’t change the classification</li>
-</ul>
-<ol start="4" class="example" type="1">
-<li><p>The Select by ____ tool lets us use SQL (Structured Query Language) to define expressions for querying vector data. <a href="../../Modules/3/instructions.html#applying-the-classification">Hint</a></p></li>
-<li><p>What measurement scale would population density attribute be on? <a href="../../Modules/3/instructions.html#applying-the-classification">Hint</a> <a href="https://geos270.github.io/LectureSlides/Phenomena_and_Data_Types/Slides.html#/summary-types-of-data">Hint-2</a></p></li>
-</ol>
-<ul>
-<li>Nominal</li>
-<li>Ordinal</li>
-<li>Interval (Discrete)</li>
-<li>Interval (Continuous)</li>
-<li>Ratio (Discrete)</li>
-<li>Ratio (Continuous)</li>
-</ul>
-<ol start="6" class="example" type="1">
-<li>What best describes the Population Center and Rural Area Classification attribute we created? <a href="../../Modules/3/instructions.html#applying-the-classification">Hint</a></li>
-</ol>
-<ul>
-<li>Quantitative data</li>
-<li>Qualitative data</li>
-<li>both</li>
-<li>neither</li>
-</ul>
-<ol start="7" class="example" type="1">
-<li><p>Box plots are most useful for looking at frequency distributions. [T/F] <a href="../../Modules/3/instructions.html#plotting-relationships">Hint</a></p></li>
-<li><p>In which Population Centre and Rural Area class does the the largest proportion of BC’s population live? <a href="../../Modules/3/instructions.html#plotting-relationships">Hint</a></p></li>
-</ol>
-<ul>
-<li>Large Urban Population Centre</li>
-<li>Rural</li>
-<li>Small Population Centre</li>
-<li>Medium Population Centre</li>
-</ul>
-<ol start="9" class="example" type="1">
-<li><p>What percent of BC’s overall population lives in Rural Areas? Round your answer to the nearest percent. <em>Hint</em> Sum the four classes to get the total population. <a href="../../Modules/3/instructions.html#plotting-relationships">Hint</a></p></li>
-<li><p>What is the median value for the percentage of income that people in Rural areas spend on food? Round to the nearest tenth percent. <a href="../../Modules/3/instructions.html#plotting-relationships">Hint</a></p></li>
-<li><p>How does classifying the data help us reveal patterns compared to what we see in the scatter plot? Does the r2 score indicate a relationship in the scatter plot? What conclusions can you draw about the proportion of income spent on food by people in different regions from looking at the box plot? <a href="../../Modules/3/instructions.html#benefits-of-data-classification">Hint</a></p></li>
-<li><p>Submit your Bar Chart. <a href="../../Modules/3/instructions.html#styling-your-visualizations">Hint</a></p></li>
-<li><p>Submit your Box plot. <a href="../../Modules/3/instructions.html#styling-your-visualizations">Hint</a></p></li>
-</ol>
+<section id="spatial-analysis-workflows" class="level1">
+<h1>Spatial Analysis Workflows</h1>
+<p>Now that we’ve covered the different types of geospatial data, lets start thinking about how it all fits together.</p>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="https://geos270.github.io/LectureSlides/Spatial_Data_Workflows/Slides.html#/gis-workflows" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+<p><a href="https://geos270.github.io/LectureSlides/Spatial_Data_Workflows/Slides.html#/gis-workflows" target="_blank">View Slides in New Tab</a></p>
+</section>
+<section id="vector-analysis-methods" class="level1">
+<h1>Vector Analysis Methods</h1>
+<p>Vector data structures are quite complex, so there are a number of different ways to see how features relate to each other.</p>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="https://geos270.github.io/LectureSlides/Vector_Analysis_Methods/Slides.html#/vector-analysis-methods" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+<p><a href="https://geos270.github.io/LectureSlides/Vector_Analysis_Methods/Slides.html#/vector-analysis-methods" target="_blank">View Slides in New Tab</a></p>
+</section>
+<section id="raster-analysis-methods" class="level1">
+<h1>Raster Analysis Methods</h1>
+<p>Raster data is less complex, but there are many different types of analysis we can conduct with it!</p>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+<p><a href="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" target="_blank">View Slides in New Tab</a></p>
 
 
 </section>

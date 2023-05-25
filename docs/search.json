@@ -623,6 +623,153 @@
     "text": "You can submit your answers to this Lab Quiz questions on via the corresponding Canvas Quiz. Questions in this document are hyperlinked to relevant content incase you need help finding answers. Feel free to work with peers in the lab, but make sure all work submitted is your own. Written answers can be brief and bullet point format is okay unless otherwise specified.\n\nRubric\nWritten answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable. Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics. For Lab 1, as long as you can make a map with the necessary elements, you’ll get full credit! As the term progresses, figure submissions will be evaluated to a higher standard.\n\n\n\n\nTable 1: Lab Quiz Rubric\n\n\n\n\n\n\n\n\nCategory\nWritten Answers\nFigure Submissions\nScore\n\n\n\n\nMissing\n\n\n0%\n\n\nInsufficient\nMissing major key points or serious logical flaws\nSerious errors in analysis, missing data, or major stylistic issues\n25%\n\n\nBelow Expectations\nMissing a few key points or minor logical flaws\nMinor errors in analysis or multiple stylistic issues\n50%\n\n\nMeets Expectations\nHits key points and mostly well constructed\nError free analysis, minor stylistic issue\n75%\n\n\nExceeds Expectations\nClearly thought out, concise, and astute\nError free analysis and clean, aesthetically pleasing map\n100%\n\n\n\n\n\n\n\n\nQuiz Questions\nUnless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.\n\nLooking at the VanDA_2016 layer, for every $100 increase in income at the DA level, how much does rental price increase? Hint\nLooking at the VanDA_2016 layer, what is the R2 score for this model? Hint\nWhat is the median population of a Census Tract (VanCMA_CT_2016) in Metro Vancouver? Hint\nWhich Census Unit displays a more direct relationship between Income and Housing? What evidence supports this conclusion? Hint\nWhat value does the Natural Breaks method determine should denotes the lower bound of the “Green Vegetation” class? Hint: Look at the Start/End values when applying the natural breaks classification. Hint\nLooking at the satellite image, how well do you think the natural breaks classification method did at distinguishing areas of green vegetation from residential areas and urban/water areas? Hint\nWhat is the highest MEAN NDVI value for any CT in the Metro Vancouver CMA? Hint Double clicking on MEAN NDVI in the attribute table allows you to sort in ascending/descending order. (Round your answer to the nearest hundredths place) Hint\nWhat is the mean PCT_Green_Space value per Census Tract? (Round your answer to the nearest hundredths place) Hint\nWhy did we calculate the PCT_Green_Space field? Hint\nDescribe the relationship between the Mean_NDVI value per CT and and the PCT_Green_Space per CT. Are they telling us the same thing? How Strongly are they related? Hint\nAre either Mean_NDVI or PCT_Green_Space strongly linked to housing cost? What evidence supports this conclusion? How might we refine our analysis using Ordinary Least Squares Regression? Suggest a two other factors you think we should include in our analysis besides Mean_NDVI or PCT_Green_Space? Are there any other more general improvements you think we could make to this analysis beyond just adding more variables to our model? Hint\nExport your Layout as a .pdf and upload it to Canvas. Hint"
   },
   {
+    "objectID": "Modules/5/instructions.html",
+    "href": "Modules/5/instructions.html",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "",
+    "text": "Please note: The Lab Questions corresponds to this lab assignment. There are questions you need to answer in the quiz that pertain to the lab, so its a good idea to skim the quiz questions before starting the lab.\nThis page contains instructions for the lab assignment, follow them to work through the lab in ArcGIS Pro. There are links to documentation where applicable along with embedded screenshots and videos in the instructions at some steps for reference. Feel free to work with peers in your lab section and don’t hesitate to ask your TA for help!"
+  },
+  {
+    "objectID": "Modules/5/instructions.html#the-cascadia-subduction-zone",
+    "href": "Modules/5/instructions.html#the-cascadia-subduction-zone",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "The Cascadia Subduction Zone",
+    "text": "The Cascadia Subduction Zone\nJust off of the West Coast of Vancouver Island, is the Cascadia Subduction Zone (CSZ). Until recently, the common scientific theory was that the CSZ was incapable of producing megathrust earthquakes and their associated Tsunami’s because “no sizable earthquake has occurred on it since European settlement began” (Ludwin et al. 2005)."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#traditional-knowledge-and-records-of-past-tsunamis",
+    "href": "Modules/5/instructions.html#traditional-knowledge-and-records-of-past-tsunamis",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Traditional Knowledge and Records of Past Tsunamis",
+    "text": "Traditional Knowledge and Records of Past Tsunamis\nDespite the scientific communities’ assumptions that the CSZ was not a threat, knowledge of the destructive potential of the CSZ was preserved in the oral histories of coastal indigenous peoples from British Columbia to Northern California. There are numerous histories describing a massive earthquake and tsunami that occurred sometime around 1700. These histories were transcribed between 1860 and 1964. Read the highlighted sections of Ludwin et al. (2005), which can be found here\n\nIt wasn’t until the 1990’s that scientific research began to shown that the CSZ was capable of producing megathrust earthquakes and tsunamis. Tree ring studies and historical accounts of a Tsunami in Japan pinpoint the timing of the last major CSZ earthquake at 21:00 Pacific time on January 26, 1700.\nIn fact, there have been at least seven megathrust earthquakes exceeding 8.0 magnitude in the last 3500 years. The recurrence interval for massive earthquakes along this fault line are estimated to be between 243 and 500 years.\nIn 2010, geologists predicted a 37% chance of a magnitude 8.2+ event within 50 years, and a 10 to 15% chance that the entire Cascadia subduction zone will rupture with a magnitude 9+ event within the same time frame.\n\nThis example highlights both the arrogance of the scientific community and the lack of value it has historically attributed to traditional knowledge."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#unique-geography",
+    "href": "Modules/5/instructions.html#unique-geography",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Unique Geography",
+    "text": "Unique Geography\nOn March 28th, 1964 a megathrust earthquake (9.2 magnitude on the Richter scale) occurred in southern Alaska. Known as the “Good Friday” earthquake, it was responsible for 131 deaths: 9 from the earthquake itself, and 122 from the subsequent Tsunami, reaching as far away as Crescent City, California. In British Columbia, the Tsunami’s impacts were most devastating in Port Alberni, where 55 homes were washed away and 375 more were damaged. Port Alberni is especially vulnerable to Tsunamis because of its specific geography. Located at the head of 40km long fjord, Tsunami waves are amplified as they are funneled up the fjord. Read the highlighted portions of the introduction section in Fine et al (2008) which can be found here . You can also watch the simulation shown below for a visualization of what is going on.\n\nSimulated Wave Heights"
+  },
+  {
+    "objectID": "Modules/5/instructions.html#workflow",
+    "href": "Modules/5/instructions.html#workflow",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Workflow",
+    "text": "Workflow\n\nIdentify at risk areas based on elevation and distance from coast.\nOverlay vector layers to highlight features at risk.\nVisualize and analyze the results."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#port-alberni-data",
+    "href": "Modules/5/instructions.html#port-alberni-data",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Port Alberni Data",
+    "text": "Port Alberni Data\nDownload the PA_Data.zip folder and extract it to your PA_Risk_Assessment folder. This folder contains:\n\nProperties.shp (properties in the city by zoning type) which you should import into the PA_Risk_Assessment_Inputs feature dataset.\n\nTwo text files:\nZoningCodes is metadata for Properties.shp. We don’t need to worry about it for now.\n\nShelters.csv is a text file with the Lat/Lon coordinates of the tsunami shelters. See the video below for instructions on how to import point data from text files so you can import the Shelters layer into the PA_Risk_Assessment_Inputs feature dataset.\n\nNote In the videos, the project is refereed to as Module5, but I’ve changed it to PA_Risk_Assessment. Everything else is still the same."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#downloading-census-data",
+    "href": "Modules/5/instructions.html#downloading-census-data",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Downloading Census Data",
+    "text": "Downloading Census Data\nWe want to to download Dissemination Area level population data for the Port Alberni using Simply Analytics. The video below can help guide you through the download process. We are going to download two population variables:\n\nTotal Population\nTotal Households\n\n\n\n\nImport the Census Data\n\nOnce you have downloaded the data, extract it to your PA_Risk_Assessment folder.\nImport the Simply Analytics shapefile into the PA_Risk_Assessment_Inputs feature dataset. Name it Population_Data\nMake sure to set the field names following the same procedure as in Module3, reference the variables_names.txt.\n\n\nNote: It appears there is a bug in ArcPro, that sometimes causes issues renaming variables while importing Feature Classes. Open the attribute table of Population_Data once you’ve imported it and check that the Population and Household names transferred. If you see VALUE0 and VALUE1 instead, you can manually set names by right clicking on the column you want to rename >> click Field >> Edit the Aliases in the dialog that opens, then save the edits. You can ask your TA for help if you get stuck here."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#downloading-roads-data-from-databc",
+    "href": "Modules/5/instructions.html#downloading-roads-data-from-databc",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Downloading Roads Data from DataBC",
+    "text": "Downloading Roads Data from DataBC\nTo conduct the analysis, we also need a roads layer. This data set is available for download from DataBC. DataBC is a useful website for downloading a number of dataset from across the province. Follow the video instructions to download the roads layers. Make sure you download the layer Digital Road Atlas (DRA) - Demographic Partially-Attributed Roads\n\nYou will be emailed a link to download the data. Extract the file to your PA_RiskAssessment project folder then import the data into your PA_RiskAssessment_Inputs feature dataset. Name it PA_Roads."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#identify-the-inundation-zone",
+    "href": "Modules/5/instructions.html#identify-the-inundation-zone",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Identify the Inundation Zone",
+    "text": "Identify the Inundation Zone\nOur criteria for land areas at risk for flooding are: * Land at or below 10 m elevation and within 1km of the coastline.\nI have created a model to do this part for you. In order to identify the land areas in Port Alberni at risk for inundation, the model is set up to do four tasks:\n\nReclassify the PA_DEM to identify all the areas under 10m elevation. See this link for info on the Reclassify tool.\nConvert the reclassified DEM to a polygon. See this link for info on the Raster to Polygon Tool.\nBuffer the waterbodies by 1km. See this link for info on the buffer tool.\nClip the coastline buffer with the inundation zone. See this link for an explanation of the Clip tool.\n\nWatch the video below to see how I set the model up with an explanation of what it is doing."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#using-the-model-yourself",
+    "href": "Modules/5/instructions.html#using-the-model-yourself",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Using the Model Yourself",
+    "text": "Using the Model Yourself\n1*. Right click the InundationZone model and click “Edit”. The model will open in a new window, next to your map. The elevation threshold in the relassify is set to 5m, but we want to set it to 10 for our analysis.\n2. Change the break values in the Reclassify to from 5 to 10 and run the model.  Right click on Reclassify in the InundationZone and select Open * Change the break value to 10"
+  },
+  {
+    "objectID": "Modules/5/instructions.html#clip-the-roads-layer",
+    "href": "Modules/5/instructions.html#clip-the-roads-layer",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Clip the Roads Layer",
+    "text": "Clip the Roads Layer\nTo answer question our first research question, all we need to do is clip the roads by the inundation zone. Follow the video below to create a new model and clip the roads layer.\nA. Use the PA_Roads as the Input Feature\nB. Use the InundationZone as the Clip Feature\nC. Name the output PA_Roads_Flood.\nD. Once you have the output, Open the attribute, of PA_Roads_Flood, click right Click Shape_Length >> Statistics. Take note of the total length of roads vulnerable to flooding (be mindful of the units). This is the answer to a quiz question!"
+  },
+  {
+    "objectID": "Modules/5/instructions.html#select-properties-by-location",
+    "href": "Modules/5/instructions.html#select-properties-by-location",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Select Properties by Location",
+    "text": "Select Properties by Location\nTo answer the second research question we can use select by location. See the video below for an explanation of the select by location and instructions on how to apply it in your model.\nA. Use the Properties as the Input Feature\nB. Use the InundationZone as the Selecting Feature\nC. Selections are temporary, you have to use the copy features tool to make the selection permanent. Name the output of the copy Properties_at_Risk. Hint If you check label bars, and sort by the y-axis, it can make your chart easier to interpret."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#select-properties-by-zonename-and-intersect-population-data",
+    "href": "Modules/5/instructions.html#select-properties-by-zonename-and-intersect-population-data",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Select Properties by ZoneName and Intersect Population Data",
+    "text": "Select Properties by ZoneName and Intersect Population Data\nTo answer the third research question, the process is a bit more complicated. If we simply clip the DAs by the Inundation Zone, we’ll end up with a significant overestimate. Its best to overestimate when doing hazards analysis if you can’t avoid it, but we need our results to be realistic. We will use three steps to estimate the maximum number of people who may be displaced.\nA. Select just residential and multi-family residential properties.\n\nSelect by Attribute where:\n\n“ZoneCode is equal to Multi-Family Residential OR ZoneCode is equal to Multi-Family Residential”\n\nCopy the features to save the selection as Residential_at_Risk. Hint The number of rows in Residential_at_Risk should match your calculations of the number of residential properties you got from the bar chart you created in the last step.\n\nB. Intersect Population_Data with the Selection.\n\nInput order with the intersect does not matter, because its the combined overlap of both layers.\n\nC. Dissolve the Intersection.\n\nSet Dissolve Field to spatial_id\nChoose the Statistics Fields, this will give us statistics for the aggregation.\n\nPopulation - First\nHouseholds - First\nZoneName - Count\n\nSet the output name to Population_at_Risk\n\nD. Add and Calculate a Field to approximate the number of people in the inundation zone. The way we are going to do this is calculate the average # of people per household in each DA, times the number of properties at risk (assumed one household = one property).\n\nAdd a field Pop_at_Risk\nCalculate the field\n\n!COUNT_ZoneName!*!FIRST_Population!/!FIRST_Households!\nThe above equation takes then number of properties (!COUNT_ZoneName!)\nMultiples it by the average household size (!FIRST_Population!/!FIRST_Households!)\n\nThis is just a rough estimate, obviously its flawed, and you’d want a more accurate approach if you were doing this in real life, but this is just for illustrative purposes, so its OK."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#select-shelters-by-location",
+    "href": "Modules/5/instructions.html#select-shelters-by-location",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Select Shelters by Location",
+    "text": "Select Shelters by Location\nTo answer the fourth research question, we can use select by location again. A shelter is only viable if its more than 150 meters away from the inundation zone. Follow the video below to get setup.\nA. Select Shelters by location\n\nSet Input Feature to Shelter\nSet Relationship to “Within a distance”\nSet Selecting Feature to InundatonZone\nSet Search Distance to 150 meters\nCheck Invert Spatial Relationship\n\nB. Copy the Feature\n\nName the output Shelters_Accepted"
+  },
+  {
+    "objectID": "Modules/5/instructions.html#export-your-model",
+    "href": "Modules/5/instructions.html#export-your-model",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Export Your Model",
+    "text": "Export Your Model\nIn your model window, hit Auto Layout one more time. Then click export and save your model as PA_RiskAssesment_Model.pdf. Note Make sure you save your output as a .pdf, not a .svg file! You will upload this to canvas."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#supporting-figures",
+    "href": "Modules/5/instructions.html#supporting-figures",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Supporting Figures",
+    "text": "Supporting Figures\nCreate a bar chart showing the total count of properties at risk by ZoneName. Style it so that it is color-coded by zone type and has the counts labelled on each column. * Save it as Properties_at_Risk_Chart.png and export it so you can upload it to canvas."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#map-the-assessment",
+    "href": "Modules/5/instructions.html#map-the-assessment",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Map the Assessment",
+    "text": "Map the Assessment\nCreate a map showing : * The inundation zone * Roads at risk of flooding * Use symbology to emphasize the arterial roads * Properties at risk * Distinguish between residential and non-residential * Approved shelter locations. * Show the shelter locations with graduated symbols.\nThe video below gives you some tips. Note Make sure to take into consideration the Data Visualization tips presented in Module 3 when creating your maps. Name your map PA_RiskAssessment_Final_Map.pdf and upload it to canvas."
+  },
+  {
+    "objectID": "Modules/5/instructions.html#report-on-your-results",
+    "href": "Modules/5/instructions.html#report-on-your-results",
+    "title": "Port Alberin Tsunami Risk Assessment",
+    "section": "Report on Your Results",
+    "text": "Report on Your Results\nIn an old version of this lab - you had to write up a report - I’ve decided to be nice and not make y’all do that :D But think about what you found - we’ll circle back to in in the next lab assignment. Did we adequately answer the research questions?\n\nWhich roads are at risk of flooding or damage?\nWhich properties in the city are at risk?\nHow many people in Port Alberni are potentially living in areas at risk?\nAre the Tsunami Shelters sufficient?"
+  },
+  {
+    "objectID": "Modules/5/lecture.html",
+    "href": "Modules/5/lecture.html",
+    "title": "Spatial Data Models",
+    "section": "",
+    "text": "This module is all about spatial data! What makes spatial data special and how do we represent it in a GIS? Spatial Data has some unique properties which mean we need to implement specific strategies to work with it. There are two key formats we work with in GIS for spatial data: Raster and Vector. Both models can be used to represent most spatial phenomena; but they are not equally suited for all applications."
+  },
+  {
+    "objectID": "Modules/5/lecture.html#learning-outcomes",
+    "href": "Modules/5/lecture.html#learning-outcomes",
+    "title": "Spatial Data Models",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nLearn how to apply different analysis methods to both Raster and Vector data\nUse spatial overlay methods to answer a research question\nIntroduction to Model Builder\nGIS Applications in Hazards planning"
+  },
+  {
+    "objectID": "Modules/5/questions.html",
+    "href": "Modules/5/questions.html",
+    "title": "Lab Assignment Questions",
+    "section": "",
+    "text": "You can submit your answers to this Lab Quiz questions on via the corresponding Canvas Quiz. Questions in this document are hyperlinked to relevant content incase you need help finding answers. Feel free to work with peers in the lab, but make sure all work submitted is your own. Written answers can be brief and bullet point format is okay unless otherwise specified.\n\nRubric\nWritten answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable. Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics. For Lab 1, as long as you can make a map with the necessary elements, you’ll get full credit! As the term progresses, figure submissions will be evaluated to a higher standard.\n\n\n\n\nTable 1: Lab Quiz Rubric\n\n\n\n\n\n\n\n\nCategory\nWritten Answers\nFigure Submissions\nScore\n\n\n\n\nMissing\n\n\n0%\n\n\nInsufficient\nMissing major key points or serious logical flaws\nSerious errors in analysis, missing data, or major stylistic issues\n25%\n\n\nBelow Expectations\nMissing a few key points or minor logical flaws\nMinor errors in analysis or multiple stylistic issues\n50%\n\n\nMeets Expectations\nHits key points and mostly well constructed\nError free analysis, minor stylistic issue\n75%\n\n\nExceeds Expectations\nClearly thought out, concise, and astute\nError free analysis and clean, aesthetically pleasing map\n100%\n\n\n\n\n\n\n\n\nQuiz Questions\nUnless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.\n\nWhat does the example presented in Ludwin et al. 2005 say about the value that the sciences have historically attributed to traditional knowledge when it comes to understanding our world? Hint\nThe maximum wave height recorded at Tofino was only ____ meters. Despite this, wave heights exceeded 8 meters in Port Alberni. Hint\nLook back at Ludwin et al. 2005, specifically at the story of Pachena Bay (bottom pg 142 to top of pg 143). You can find a full transcription here. Find Pachena Bay on google maps. Where is it relative to Port Alberni? What can you infer from this story, the account in Fine et al (2008), and the simulation of wave heights about how a megathrust earthquake occurring just off of the coast of Vancouver Island would impact Port Alberni? Hint\nWhy do we use a feature dataset to hold all our input layers? Hint\n\n\nNo reason\nSo everything is neatly grouped in one folder\nTo ensure all our vector data is in the same projection, the feature dataset will automatically re-project our vector data when importing\nTo ensure all our vector and raster data is in the same projection, the feature dataset will automatically re-project our vector and raster data when importing\n\n\nWhy are we using model builder for this analysis? Select all that apply Hint\n\n\nYour analysis is easily repeatable when using model builder\nYou can easily update your analysis\nYou can visualize your workflow\nYou can share your workflow with others\n\n\nHow many km of roads are at risk? Rounded to the nearest tenth km is fine. Hint Open the attribute, of PA_Roads_Flood, click right Click Shape_Length >> Statistics to find the sum. Note make sure to use the answer for the model run with the 10m threshold. Hint\nHow many km of roads are at risk after updating the model to account for the new wave height (15m) estimates? Rounded to the nearest tenth km is fine. Note this answer will be higher than your answer to the question above because we increased the threshold. Hint\nHow many properties (of any kind) are at risk of flooding? Note make sure to use the answer for the model run with the 15m threshold. Hint\nHow many people are potentially at risk of displacement? Round up to the nearest whole number Hint\nWhy were you instructed to round the answer to the question above? Hint\n\n\nPopulation counts are continuous data\nPopulation counts are discrete data\nPopulation counts are qualitative data\nPopulation counts are interval data\n\n\nUpload your PA_RiskAssessment_Model.pdf Hint\nUpload your Properties_at_Risk_Chart.pdf Hint\nUpload your PA_RiskAssessment_Final_Map.pdf Hint"
+  },
+  {
     "objectID": "Modules/moduleInfo.html",
     "href": "Modules/moduleInfo.html",
     "title": "Course Modules",

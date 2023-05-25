@@ -61,6 +61,13 @@ website:
           text: Lab Instructions
         - href: Modules/4/questions.qmd
           text: Lab Questions
+      - section: "Module 5"
+        href: Modules/5/lecture.qmd
+        contents:
+        - href: Modules/5/instructions.qmd
+          text: Lab Instructions
+        - href: Modules/5/questions.qmd
+          text: Lab Questions
   # sidebar:
   #   style: "docked"
   #   search: true
@@ -108,6 +115,3 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
-
-

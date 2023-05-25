@@ -1,0 +1,78 @@
+---
+title: "Spatial Data Models"
+format: html
+echo: false
+---
+
+This module is all about **spatial** data!  What makes spatial data special and how do we represent it in a GIS?  Spatial Data has some unique properties which mean we need to implement specific strategies to work with it. There are two key formats we work with in GIS for spatial data: **Raster** and **Vector**.  Both models can be used to represent most spatial phenomena; but they are not equally suited for all applications.
+
+
+## Learning Outcomes
+
+* Learn how to apply different analysis methods to both Raster and Vector data
+* Use spatial overlay methods to answer a research question
+* Introduction to Model Builder
+* GIS Applications in Hazards planning 
+
+
+
+# Spatial Analysis Workflows
+
+Now that we've covered the different types of geospatial data, lets start thinking about how it all fits together.
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Spatial_Data_Workflows/Slides.html#/gis-workflows" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Spatial_Data_Workflows/Slides.html#/gis-workflows" target="_blank">View Slides in New Tab</a>
+
+
+# Vector Analysis Methods
+
+Vector data structures are quite complex, so there are a number of different ways to see how features relate to each other.
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Vector_Analysis_Methods/Slides.html#/vector-analysis-methods" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Vector_Analysis_Methods/Slides.html#/vector-analysis-methods" target="_blank">View Slides in New Tab</a>
+
+
+# Raster Analysis Methods
+
+Raster data is less complex, but there are many different types of analysis we can conduct with it!
+
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" target="_blank">View Slides in New Tab</a>
+

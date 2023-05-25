@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GEOS 270 - Port Alberin Tsunami Risk Assessment</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">GEOS 270</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../Modules/moduleInfo.html" aria-current="page">
+ <span class="menu-text">Course Modules</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/GEOS270"><i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Port Alberin Tsunami Risk Assessment</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/moduleInfo.html" class="sidebar-item-text sidebar-link">Course Modules</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/1/lecture.html" class="sidebar-item-text sidebar-link">Module 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/1/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/1/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/2/lecture.html" class="sidebar-item-text sidebar-link">Module 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/2/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/2/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/3/lecture.html" class="sidebar-item-text sidebar-link">Module 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/3/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/3/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/4/lecture.html" class="sidebar-item-text sidebar-link">Module 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/4/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/4/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/5/lecture.html" class="sidebar-item-text sidebar-link">Module 5</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/5/instructions.html" class="sidebar-item-text sidebar-link active">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/5/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#framing-the-problem" id="toc-framing-the-problem" class="nav-link active" data-scroll-target="#framing-the-problem">Framing the Problem</a>
+  <ul class="collapse">
+  <li><a href="#the-cascadia-subduction-zone" id="toc-the-cascadia-subduction-zone" class="nav-link" data-scroll-target="#the-cascadia-subduction-zone">The Cascadia Subduction Zone</a></li>
+  <li><a href="#traditional-knowledge-and-records-of-past-tsunamis" id="toc-traditional-knowledge-and-records-of-past-tsunamis" class="nav-link" data-scroll-target="#traditional-knowledge-and-records-of-past-tsunamis">Traditional Knowledge and Records of Past Tsunamis</a></li>
+  <li><a href="#unique-geography" id="toc-unique-geography" class="nav-link" data-scroll-target="#unique-geography">Unique Geography</a>
+  <ul class="collapse">
+  <li><a href="#simulated-wave-heights" id="toc-simulated-wave-heights" class="nav-link" data-scroll-target="#simulated-wave-heights">Simulated Wave Heights</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question</a>
+  <ul class="collapse">
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
+  </ul></li>
+  <li><a href="#download-the-project" id="toc-download-the-project" class="nav-link" data-scroll-target="#download-the-project">Download the Project</a>
+  <ul class="collapse">
+  <li><a href="#port-alberni-data" id="toc-port-alberni-data" class="nav-link" data-scroll-target="#port-alberni-data">Port Alberni Data</a></li>
+  <li><a href="#downloading-census-data" id="toc-downloading-census-data" class="nav-link" data-scroll-target="#downloading-census-data">Downloading Census Data</a>
+  <ul class="collapse">
+  <li><a href="#import-the-census-data" id="toc-import-the-census-data" class="nav-link" data-scroll-target="#import-the-census-data">Import the Census Data</a></li>
+  </ul></li>
+  <li><a href="#downloading-roads-data-from-databc" id="toc-downloading-roads-data-from-databc" class="nav-link" data-scroll-target="#downloading-roads-data-from-databc">Downloading Roads Data from DataBC</a></li>
+  </ul></li>
+  <li><a href="#automating-with-model-builder" id="toc-automating-with-model-builder" class="nav-link" data-scroll-target="#automating-with-model-builder">Automating with Model Builder</a>
+  <ul class="collapse">
+  <li><a href="#identify-the-inundation-zone" id="toc-identify-the-inundation-zone" class="nav-link" data-scroll-target="#identify-the-inundation-zone">Identify the Inundation Zone</a></li>
+  <li><a href="#using-the-model-yourself" id="toc-using-the-model-yourself" class="nav-link" data-scroll-target="#using-the-model-yourself">Using the Model Yourself</a></li>
+  </ul></li>
+  <li><a href="#create-your-own-model" id="toc-create-your-own-model" class="nav-link" data-scroll-target="#create-your-own-model">Create Your Own Model</a>
+  <ul class="collapse">
+  <li><a href="#clip-the-roads-layer" id="toc-clip-the-roads-layer" class="nav-link" data-scroll-target="#clip-the-roads-layer">Clip the Roads Layer</a></li>
+  <li><a href="#select-properties-by-location" id="toc-select-properties-by-location" class="nav-link" data-scroll-target="#select-properties-by-location">Select Properties by Location</a></li>
+  <li><a href="#select-properties-by-zonename-and-intersect-population-data" id="toc-select-properties-by-zonename-and-intersect-population-data" class="nav-link" data-scroll-target="#select-properties-by-zonename-and-intersect-population-data">Select Properties by ZoneName and Intersect Population Data</a></li>
+  <li><a href="#select-shelters-by-location" id="toc-select-shelters-by-location" class="nav-link" data-scroll-target="#select-shelters-by-location">Select Shelters by Location</a></li>
+  </ul></li>
+  <li><a href="#new-wave-estimates" id="toc-new-wave-estimates" class="nav-link" data-scroll-target="#new-wave-estimates">New Wave Estimates</a></li>
+  <li><a href="#final-deliverables" id="toc-final-deliverables" class="nav-link" data-scroll-target="#final-deliverables">Final Deliverables</a>
+  <ul class="collapse">
+  <li><a href="#export-your-model" id="toc-export-your-model" class="nav-link" data-scroll-target="#export-your-model">Export Your Model</a></li>
+  <li><a href="#supporting-figures" id="toc-supporting-figures" class="nav-link" data-scroll-target="#supporting-figures">Supporting Figures</a></li>
+  <li><a href="#map-the-assessment" id="toc-map-the-assessment" class="nav-link" data-scroll-target="#map-the-assessment">Map the Assessment</a></li>
+  <li><a href="#report-on-your-results" id="toc-report-on-your-results" class="nav-link" data-scroll-target="#report-on-your-results">Report on Your Results</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Port Alberin Tsunami Risk Assessment</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><b>Please note:</b> The <a href="../../Modules/5/questions.html">Lab Questions</a> corresponds to this lab assignment. There are questions you need to answer in the quiz that pertain to the lab, so its a good idea to skim the quiz questions before starting the lab.</p>
+<p>This page contains instructions for the lab assignment, follow them to work through the lab in ArcGIS Pro. There are links to documentation where applicable along with embedded screenshots and videos in the instructions at some steps for reference. Feel free to work with peers in your lab section and don’t hesitate to ask your TA for help!</p>
+<ul>
+<li><p><b>Warning:</b> The ArcGIS Pro software package is updated frequently. The exact name/position of tools may diverge slightly from what you see in the screenshots or videos. Don’t worry recreating what you see in the videos exactly - just use them as a guide to help you work through things.</p></li>
+</ul>
+<section id="framing-the-problem" class="level1">
+<h1>Framing the Problem</h1>
+<p>In this lab, you will work through a full GIS workflow and get an introduction into automated processing using a tool called Model Builder. We will be conducting a tsunami risk assessment for Port Alberni BC to determine if how the city’s infrastructure and residents might be impacted.</p>
+<section id="the-cascadia-subduction-zone" class="level2">
+<h2 class="anchored" data-anchor-id="the-cascadia-subduction-zone">The Cascadia Subduction Zone</h2>
+<p>Just off of the West Coast of Vancouver Island, is the <a href="https://en.wikipedia.org/wiki/Cascadia_subduction_zone">Cascadia Subduction Zone (CSZ)</a>. Until recently, the common scientific theory was that the CSZ was incapable of producing megathrust earthquakes and their associated Tsunami’s because “no sizable earthquake has occurred on it since European settlement began” (Ludwin et al.&nbsp;2005).</p>
+<p><img src="images/CSZ.png" class="img-fluid"></p>
+</section>
+<section id="traditional-knowledge-and-records-of-past-tsunamis" class="level2">
+<h2 class="anchored" data-anchor-id="traditional-knowledge-and-records-of-past-tsunamis">Traditional Knowledge and Records of Past Tsunamis</h2>
+<p>Despite the scientific communities’ assumptions that the CSZ was not a threat, knowledge of the destructive potential of the CSZ was preserved in the oral histories of coastal indigenous peoples from British Columbia to Northern California. There are numerous histories describing a massive earthquake and tsunami that occurred sometime around 1700. These histories were transcribed between 1860 and 1964. Read the highlighted sections of Ludwin et al.&nbsp;(2005), which can be found <a href="Readings/LudwinEtAl.pdf">here</a></p>
+<ul>
+<li><p>It wasn’t until the 1990’s that scientific research began to shown that the CSZ was capable of producing megathrust earthquakes and tsunamis. Tree ring studies and historical accounts of a Tsunami in Japan pinpoint the timing of the last major CSZ earthquake at 21:00 Pacific time on January 26, 1700.</p></li>
+<li><p>In fact, there have been at least seven megathrust earthquakes exceeding 8.0 magnitude in the last 3500 years. The recurrence interval for massive earthquakes along this fault line are estimated to be between 243 and 500 years.</p></li>
+<li><p>In 2010, geologists predicted a 37% chance of a magnitude 8.2+ event within 50 years, and a 10 to 15% chance that the entire Cascadia subduction zone will rupture with a magnitude 9+ event within the same time frame.</p></li>
+</ul>
+<p>This example highlights both the arrogance of the scientific community and the lack of value it has historically attributed to traditional knowledge.</p>
+</section>
+<section id="unique-geography" class="level2">
+<h2 class="anchored" data-anchor-id="unique-geography">Unique Geography</h2>
+<p>On March 28th, 1964 a megathrust earthquake (9.2 magnitude on the Richter scale) occurred in southern Alaska. Known as the “Good Friday” earthquake, it was responsible for 131 deaths: 9 from the earthquake itself, and 122 from the subsequent Tsunami, reaching as far away as Crescent City, California. In British Columbia, the Tsunami’s impacts were most devastating in Port Alberni, where 55 homes were washed away and 375 more were damaged. Port Alberni is especially vulnerable to Tsunamis because of its specific geography. Located at the head of 40km long fjord, Tsunami waves are amplified as they are funneled up the fjord. Read the highlighted portions of the introduction section in Fine et al (2008) which can be found <a href="Readings/FineEtAl.pdf">here</a> . You can also watch the simulation shown below for a visualization of what is going on.</p>
+<section id="simulated-wave-heights" class="level3">
+<h3 class="anchored" data-anchor-id="simulated-wave-heights">Simulated Wave Heights</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrH3Zw61z40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+</section>
+</section>
+<section id="research-question" class="level1">
+<h1>Research Question</h1>
+<p>In light of this research, the city of Port Alberni submitted an application for funding to update their Tsunami warning and response infrastructure. The city was recently granted funding and has hired you as a GIS consultant to assess the potential impacts of an 8.5 magnitude earthquake occurring directly off the west coast of Vancouver Island that would produce an estimated wave height of 10 meters.</p>
+<p>How would a catastrophic tsunami potentially impact Port Alberni? The city wants to know:</p>
+<ol type="1">
+<li><p>Which roads are at risk of flooding or damage?</p></li>
+<li><p>Which properties in the city are at risk?</p></li>
+<li><p>How many people in Port Alberni are potentially living in areas at risk?</p></li>
+<li><p>Are the Tsunami Shelters sufficient?</p></li>
+</ol>
+<section id="workflow" class="level2">
+<h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
+<ol type="1">
+<li><p>Identify at risk areas based on elevation and distance from coast.</p></li>
+<li><p>Overlay vector layers to highlight features at risk.</p></li>
+<li><p>Visualize and analyze the results.</p></li>
+</ol>
+</section>
+</section>
+<section id="download-the-project" class="level1">
+<h1>Download the Project</h1>
+<p>I’ve gotten the ball rolling for you and setup a project, which you can download <a href="https://github.com/GEOS270/LabData/raw/main/PA_Risk_Assessment.zip">here</a>. This project folder contains:</p>
+<ul>
+<li><p><strong>PA_Risk_Assessment.gdb</strong></p>
+<ul>
+<li><strong>PA_Risk_Assessment_Inputs</strong>: A feature dataset where you will put all the vector inputs for the project. It already contains one layer.
+<ul>
+<li><strong>Waterbodies</strong>: A polygon representing the coastline.</li>
+</ul></li>
+<li><strong>PA_DEM_ProjectRaster</strong>: A Digital Elevation Model (DEM) is a type of raster data used to represent elevation. This one covers the the Port Alberni area. Raster data <em>cannot</em> be stored in feature datasets, they are only for vector data.</li>
+</ul></li>
+<li><p><strong>PA_Risk_Assessment.tbx</strong>: Toolboxes can contain custom models and scripts.</p>
+<ul>
+<li><p><strong>InundationZone</strong>: A model that you can use identify areas at risk for Tsunami inundation. You will use this model to identify possible areas in the city that will flood.</p></li>
+<li><p>You will also create a new model to incorporate data from the City of Port Alberni, the Province of British Columbia, and Statistics Canada. This model will overlay datasets to identify which areas are at risk of flooding.</p></li>
+</ul></li>
+</ul>
+<section id="port-alberni-data" class="level2">
+<h2 class="anchored" data-anchor-id="port-alberni-data">Port Alberni Data</h2>
+<p>Download the <a href="https://github.com/GEOS270/LabData/raw/main/PA_Data.zip">PA_Data.zip</a> folder and extract it to your PA_Risk_Assessment folder. This folder contains:</p>
+<ul>
+<li><strong>Properties.shp</strong> (properties in the city by zoning type) which you should import into the PA_Risk_Assessment_Inputs feature dataset.<br>
+</li>
+<li>Two text files:</li>
+<li><strong>ZoningCodes</strong> is metadata for Properties.shp. We don’t need to worry about it for now.<br>
+</li>
+<li><strong>Shelters.csv</strong> is a text file with the Lat/Lon coordinates of the tsunami shelters. <strong>See the video below</strong> for instructions on how to import point data from text files so you can import the Shelters layer into the PA_Risk_Assessment_Inputs feature dataset.</li>
+</ul>
+<p><strong>Note</strong> In the videos, the project is refereed to as Module5, but I’ve changed it to PA_Risk_Assessment. Everything else is still the same.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KTZ5ix_O8Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="downloading-census-data" class="level2">
+<h2 class="anchored" data-anchor-id="downloading-census-data">Downloading Census Data</h2>
+<p>We want to to download Dissemination Area level population data for the Port Alberni using <a href="https://resources.library.ubc.ca/page.php?id=1044">Simply Analytics</a>. The video below can help guide you through the download process. We are going to download two population variables:</p>
+<ul>
+<li><strong>Total Population</strong></li>
+<li><strong>Total Households</strong></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pe6xiF22kRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<section id="import-the-census-data" class="level3">
+<h3 class="anchored" data-anchor-id="import-the-census-data">Import the Census Data</h3>
+<ol type="1">
+<li><p>Once you have downloaded the data, extract it to your PA_Risk_Assessment folder.</p></li>
+<li><p>Import the Simply Analytics shapefile into the PA_Risk_Assessment_Inputs feature dataset. Name it <strong>Population_Data</strong></p></li>
+<li><p>Make sure to set the field names following the same procedure as in Module3, reference the <strong>variables_names.txt</strong>.</p></li>
+</ol>
+<ul>
+<li><strong>Note</strong>: It appears there is a bug in ArcPro, that sometimes causes issues renaming variables while importing Feature Classes. Open the attribute table of Population_Data once you’ve imported it and check that the Population and Household names transferred. If you see VALUE0 and VALUE1 instead, you can manually set names by right clicking on the column you want to rename &gt;&gt; click Field &gt;&gt; Edit the Aliases in the dialog that opens, then save the edits. You can ask your TA for help if you get stuck here.</li>
+</ul>
+</section>
+</section>
+<section id="downloading-roads-data-from-databc" class="level2">
+<h2 class="anchored" data-anchor-id="downloading-roads-data-from-databc">Downloading Roads Data from DataBC</h2>
+<p>To conduct the analysis, we also need a roads layer. This data set is available for download from <a href="https://www.data.gov.bc.ca/">DataBC</a>. DataBC is a useful website for downloading a number of dataset from across the province. Follow the video instructions to download the roads layers. Make sure you download the layer <strong>Digital Road Atlas (DRA) - Demographic Partially-Attributed Roads</strong></p>
+<ul>
+<li>You will be emailed a link to download the data. Extract the file to your PA_RiskAssessment project folder then import the data into your PA_RiskAssessment_Inputs feature dataset. Name it <strong>PA_Roads</strong>.</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hL7ga4EnMB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+</section>
+<section id="automating-with-model-builder" class="level1">
+<h1>Automating with Model Builder</h1>
+<p>We are going to use a tool called Model Builder to organize and save all of our analysis steps in one place. When we use model builder, if any of our inputs or parameters change, a model can be easily adjusted and rerun at any time. It also allows us to visualize our analysis process. This is useful both for editing our own work and sharing it with others.</p>
+<ul>
+<li>For a more detailed explanation of Model Builder, check out <a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/geoprocessing/modelbuilder/modelbuilder-quick-tour.htm">this link</a>.</li>
+</ul>
+<section id="identify-the-inundation-zone" class="level2">
+<h2 class="anchored" data-anchor-id="identify-the-inundation-zone">Identify the Inundation Zone</h2>
+<p>Our criteria for land areas at risk for flooding are: * Land at or below 10 m elevation <strong>and</strong> within 1km of the coastline.</p>
+<p>I have created a model to do this part for you. In order to identify the land areas in Port Alberni at risk for inundation, the model is set up to do four tasks:</p>
+<ol type="1">
+<li><p>Reclassify the PA_DEM to identify all the areas under 10m elevation. See this link for info on the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/reclassify.htm">Reclassify tool</a>.</p></li>
+<li><p>Convert the reclassified DEM to a polygon. See this link for info on the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/conversion/raster-to-polygon.htm">Raster to Polygon Tool</a>.</p></li>
+<li><p>Buffer the waterbodies by 1km. See this link for info on the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/buffer.htm">buffer tool</a>.</p></li>
+<li><p>Clip the coastline buffer with the inundation zone. See this link for an explanation of the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/clip.htm">Clip tool</a>.</p></li>
+</ol>
+<p>Watch the video below to see how I set the model up with an explanation of what it is doing.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/evyXxnqUKbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="using-the-model-yourself" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-model-yourself">Using the Model Yourself</h2>
+<p>1*. Right click the InundationZone model and click “Edit”. The model will open in a new window, next to your map. The elevation threshold in the relassify is set to 5m, but we want to set it to 10 for our analysis.</p>
+<p>2<em>. Change the break values in the Reclassify to from 5 to 10 and run the model. </em> Right click on <strong>Reclassify</strong> in the InundationZone and select <strong>Open</strong> * Change the break value to 10</p>
+</section>
+</section>
+<section id="create-your-own-model" class="level1">
+<h1>Create Your Own Model</h1>
+<p>We have four questions we want to address:</p>
+<ol type="1">
+<li><p>Which roads are at risk of flooding or damage?</p></li>
+<li><p>Which properties in the city are at risk?</p></li>
+<li><p>How many people within Port Alberni and the surrounding area are potentially living in areas at risk?</p></li>
+<li><p>Are the Tsunami Shelters sufficient?</p></li>
+</ol>
+<section id="clip-the-roads-layer" class="level2">
+<h2 class="anchored" data-anchor-id="clip-the-roads-layer">Clip the Roads Layer</h2>
+<p>To answer question our first research question, all we need to do is clip the roads by the inundation zone. Follow the video below to create a new model and clip the roads layer.</p>
+<p>A. Use the PA_Roads as the <strong>Input Feature</strong></p>
+<p>B. Use the InundationZone as the <strong>Clip Feature</strong></p>
+<p>C. Name the output PA_Roads_Flood.</p>
+<p>D. Once you have the output, Open the attribute, of PA_Roads_Flood, click right Click Shape_Length &gt;&gt; Statistics. <strong>Take note</strong> of the total length of roads vulnerable to flooding (be mindful of the units). This is the answer to a quiz question!</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F_AslIjacNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="select-properties-by-location" class="level2">
+<h2 class="anchored" data-anchor-id="select-properties-by-location">Select Properties by Location</h2>
+<p>To answer the second research question we can use select by location. See the video below for an explanation of the select by location and instructions on how to apply it in your model.</p>
+<p>A. Use the Properties as the <strong>Input Feature</strong></p>
+<p>B. Use the InundationZone as the <strong>Selecting Feature</strong></p>
+<p>C. Selections are temporary, you have to use the copy features tool to make the selection permanent. Name the output of the copy <strong>Properties_at_Risk</strong>. <em>Hint</em> If you check label bars, and sort by the y-axis, it can make your chart easier to interpret.</p>
+<p><img src="images/bar_format.png" class="img-fluid"></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vqHmErK5J-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="select-properties-by-zonename-and-intersect-population-data" class="level2">
+<h2 class="anchored" data-anchor-id="select-properties-by-zonename-and-intersect-population-data">Select Properties by ZoneName and Intersect Population Data</h2>
+<p>To answer the third research question, the process is a bit more complicated. If we simply clip the DAs by the Inundation Zone, we’ll end up with a significant overestimate. Its best to overestimate when doing hazards analysis if you can’t avoid it, but we need our results to be realistic. We will use three steps to estimate the <em>maximum</em> number of people who may be displaced.</p>
+<p>A. Select just residential and multi-family residential properties.</p>
+<ul>
+<li>Select by Attribute where:
+<ul>
+<li>“ZoneCode <em>is equal to</em> Multi-Family Residential <strong>OR</strong> ZoneCode <em>is equal to</em> Multi-Family Residential”</li>
+</ul></li>
+<li>Copy the features to save the selection as <strong>Residential_at_Risk</strong>. <em>Hint</em> The number of rows in Residential_at_Risk should match your calculations of the number of residential properties you got from the bar chart you created in the last step.</li>
+</ul>
+<p>B. Intersect Population_Data with the Selection.</p>
+<ul>
+<li>Input order with the intersect does not matter, because its the combined overlap of both layers.</li>
+</ul>
+<p>C. Dissolve the Intersection.</p>
+<ul>
+<li>Set <strong>Dissolve Field</strong> to <strong>spatial_id</strong></li>
+<li>Choose the <strong>Statistics Fields</strong>, this will give us statistics for the aggregation.
+<ul>
+<li><strong>Population</strong> - <strong>First</strong></li>
+<li><strong>Households</strong> - <strong>First</strong></li>
+<li><strong>ZoneName</strong> - <strong>Count</strong></li>
+</ul></li>
+<li>Set the output name to <strong>Population_at_Risk</strong></li>
+</ul>
+<p>D. Add and Calculate a Field to approximate the number of people in the inundation zone. The way we are going to do this is calculate the average # of people per household in each DA, times the number of properties at risk (assumed one household = one property).</p>
+<ul>
+<li>Add a field <strong>Pop_at_Risk</strong></li>
+<li>Calculate the field
+<ul>
+<li>!COUNT_ZoneName!*!FIRST_Population!/!FIRST_Households!</li>
+<li>The above equation takes then number of properties (!COUNT_ZoneName!)</li>
+<li>Multiples it by the average household size (!FIRST_Population!/!FIRST_Households!)
+<ul>
+<li><strong>This is just a rough estimate</strong>, <em>obviously its flawed</em>, and you’d want a more accurate approach if you were doing this in real life, but this is just for illustrative purposes, so its OK.</li>
+</ul></li>
+</ul></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rQz8SWEXxrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="select-shelters-by-location" class="level2">
+<h2 class="anchored" data-anchor-id="select-shelters-by-location">Select Shelters by Location</h2>
+<p>To answer the fourth research question, we can use select by location again. A shelter is only viable if its more than 150 meters away from the inundation zone. Follow the video below to get setup.</p>
+<p>A. Select Shelters by location</p>
+<ul>
+<li>Set <strong>Input Feature</strong> to <strong>Shelter</strong></li>
+<li>Set <strong>Relationship</strong> to “Within a distance”</li>
+<li>Set <strong>Selecting Feature</strong> to <strong>InundatonZone</strong></li>
+<li>Set <strong>Search Distance</strong> to <strong>150 meters</strong></li>
+<li>Check <strong>Invert Spatial Relationship</strong></li>
+</ul>
+<p>B. Copy the Feature</p>
+<ul>
+<li>Name the output <strong>Shelters_Accepted</strong></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4feRTYwJj7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+</section>
+<section id="new-wave-estimates" class="level1">
+<h1>New Wave Estimates</h1>
+<p>Just as you’re getting ready to make your maps, and write your report, a colleague tells you about a new modeling study that was just published suggests that peak wave height could be up to 15 meters and the wave could reach 1250m inland rather than 1000m. Update your raster reclassification values and the waterbodies buffer distance to reflect this new information and rerun your model to update your analysis! You can use the video below as a guide.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NgDIcFu52xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="final-deliverables" class="level1">
+<h1>Final Deliverables</h1>
+<section id="export-your-model" class="level2">
+<h2 class="anchored" data-anchor-id="export-your-model">Export Your Model</h2>
+<p>In your model window, hit Auto Layout one more time. Then click export and save your model as <strong>PA_RiskAssesment_Model.pdf</strong>. <em>Note</em> Make sure you save your output as a .pdf, not a .svg file! You will upload this to canvas.</p>
+<p><img src="images/export_model.png" class="img-fluid" style="width:50.0%"></p>
+</section>
+<section id="supporting-figures" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-figures">Supporting Figures</h2>
+<p>Create a bar chart showing the total count of properties at risk by ZoneName. Style it so that it is color-coded by zone type and has the counts labelled on each column. * Save it as <strong>Properties_at_Risk_Chart.png</strong> and export it so you can upload it to canvas.</p>
+</section>
+<section id="map-the-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="map-the-assessment">Map the Assessment</h2>
+<p>Create a map showing : * The inundation zone * Roads at risk of flooding * Use symbology to emphasize the arterial roads * Properties at risk * Distinguish between residential and non-residential * Approved shelter locations. * Show the shelter locations with graduated symbols.</p>
+<p>The video below gives you some tips. <strong>Note</strong> Make sure to take into consideration the <a href="https://geos270.github.io/Module3/">Data Visualization</a> tips presented in Module 3 when creating your maps. Name your map <strong>PA_RiskAssessment_Final_Map.pdf</strong> and upload it to canvas.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0TnQAzxwWaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="report-on-your-results" class="level2">
+<h2 class="anchored" data-anchor-id="report-on-your-results">Report on Your Results</h2>
+<p>In an old version of this lab - you had to write up a report - I’ve decided to be nice and not make y’all do that :D But think about what you found - we’ll circle back to in in the next lab assignment. Did we adequately answer the research questions?</p>
+<ol type="1">
+<li><p>Which roads are at risk of flooding or damage?</p></li>
+<li><p>Which properties in the city are at risk?</p></li>
+<li><p>How many people in Port Alberni are potentially living in areas at risk?</p></li>
+<li><p>Are the Tsunami Shelters sufficient?</p></li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

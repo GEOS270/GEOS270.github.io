@@ -162,11 +162,11 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../Modules/3/lecture.html" class="sidebar-item-text sidebar-link">Module 3</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../Modules/3/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Modules/3/questions.html" class="sidebar-item-text sidebar-link active">Lab Questions</a>
+  <a href="../../Modules/3/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
   </div>
 </li>
       </ul>
@@ -202,11 +202,11 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../Modules/5/lecture.html" class="sidebar-item-text sidebar-link">Module 5</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../Modules/5/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
@@ -214,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Modules/5/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  <a href="../../Modules/5/questions.html" class="sidebar-item-text sidebar-link active">Lab Questions</a>
   </div>
 </li>
       </ul>
@@ -317,59 +317,43 @@ ul.task-list li input[type="checkbox"] {
 <h1>Quiz Questions</h1>
 <p>Unless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.</p>
 <ol class="example" type="1">
-<li><p>Which projection did we choose for the <strong>BC_Census_Data</strong> feature dataset and why? Why can’t we just work with the simply analytics data as is? <a href="../../Modules/3/instructions.html#importing-the-census-data">Hint</a></p></li>
-<li><p>We used the clip tool to ensure we don’t ____ population density in the coastal Subdivisions. <a href="../../Modules/3/instructions.html#clip-the-bc_census_data-layer">Hint</a></p></li>
+<li><p>What does the example presented in Ludwin et al.&nbsp;2005 say about the value that the sciences have historically attributed to traditional knowledge when it comes to understanding our world? <a href="../../Modules/5/instructions.html#traditional-knowledge-and-records-of-past-tsunamis">Hint</a></p></li>
+<li><p>The maximum wave height recorded at Tofino was only ____ meters. Despite this, wave heights exceeded 8 meters in Port Alberni. <a href="../../Modules/5/instructions.html#unique-geography">Hint</a></p></li>
+<li><p>Look back at Ludwin et al.&nbsp;2005, specifically at the story of Pachena Bay (bottom pg 142 to top of pg 143). You can find a <a href="https://pnsn.org/outreach/native-american-stories/other-stories/the-tsunami-at-anaqtl-a-or-pachena-bay">full transcription here</a>. Find Pachena Bay on google maps. Where is it relative to Port Alberni? What can you infer from this story, the account in Fine et al (2008), and the simulation of wave heights about how a megathrust earthquake occurring just off of the coast of Vancouver Island would impact Port Alberni? <a href="../../Modules/5/instructions.html#simulated-wave-heights">Hint</a></p></li>
+<li><p>Why do we use a feature dataset to hold all our input layers? <a href="../../Modules/5/instructions.html#port-alberni-data">Hint</a></p></li>
 </ol>
 <ul>
-<li>Overestimate</li>
-<li>Underestimate</li>
-<li>Correctly Calculate</li>
+<li>No reason</li>
+<li>So everything is neatly grouped in one folder</li>
+<li>To ensure all our vector data is in the same projection, the feature dataset will automatically re-project our vector data when importing</li>
+<li>To ensure all our vector and raster data is in the same projection, the feature dataset will automatically re-project our vector and raster data when importing</li>
 </ul>
-<ol start="3" class="example" type="1">
-<li>What was the reasoning behind Stats Canada updating from the old Rural/Urban to the Population Centre and Rural Area classification method? <a href="../../Modules/3/instructions.html#the-revised-classification">Hint</a></li>
+<ol start="5" class="example" type="1">
+<li>Why are we using model builder for this analysis? Select all that apply <a href="../../Modules/5/instructions.html#automating-with-model-builder">Hint</a></li>
 </ol>
 <ul>
-<li>The old classification was treating small towns the same a large metro areas</li>
-<li>Population Center sounds better than Urban Area</li>
-<li>They didn’t change the classification</li>
-</ul>
-<ol start="4" class="example" type="1">
-<li><p>The Select by ____ tool lets us use SQL (Structured Query Language) to define expressions for querying vector data. <a href="../../Modules/3/instructions.html#applying-the-classification">Hint</a></p></li>
-<li><p>What measurement scale would population density attribute be on? <a href="../../Modules/3/instructions.html#applying-the-classification">Hint</a> <a href="https://geos270.github.io/LectureSlides/Phenomena_and_Data_Types/Slides.html#/summary-types-of-data">Hint-2</a></p></li>
-</ol>
-<ul>
-<li>Nominal</li>
-<li>Ordinal</li>
-<li>Interval (Discrete)</li>
-<li>Interval (Continuous)</li>
-<li>Ratio (Discrete)</li>
-<li>Ratio (Continuous)</li>
+<li>Your analysis is easily repeatable when using model builder</li>
+<li>You can easily update your analysis</li>
+<li>You can visualize your workflow</li>
+<li>You can share your workflow with others</li>
 </ul>
 <ol start="6" class="example" type="1">
-<li>What best describes the Population Center and Rural Area Classification attribute we created? <a href="../../Modules/3/instructions.html#applying-the-classification">Hint</a></li>
+<li><p>How many <strong>km</strong> of roads are at risk? Rounded to the nearest tenth km is fine. <em>Hint</em> Open the attribute, of PA_Roads_Flood, click right Click Shape_Length &gt;&gt; Statistics to find the sum. <strong>Note</strong> make sure to use the answer for the model run with the 10m threshold. <a href="../../Modules/5/instructions.html#clip-the-roads-layer">Hint</a></p></li>
+<li><p>How many <strong>km</strong> of roads are at risk after updating the model to account for the new wave height (15m) estimates? Rounded to the nearest tenth km is fine. <strong>Note</strong> this answer will be higher than your answer to the question above because we increased the threshold. <a href="../../Modules/5/instructions.html#new-wave-estimates">Hint</a></p></li>
+<li><p>How many properties (of any kind) are at risk of flooding? <strong>Note</strong> make sure to use the answer for the model run with the 15m threshold. <a href="../../Modules/5/instructions.html#new-wave-estimates">Hint</a></p></li>
+<li><p>How many people are potentially at risk of displacement? <strong>Round up to the nearest whole number</strong> <a href="../../Modules/5/instructions.html#new-wave-estimates">Hint</a></p></li>
+<li><p>Why were you instructed to round the answer to the question above? <a href="../../Modules/5/instructions.html#new-wave-estimates">Hint</a></p></li>
 </ol>
 <ul>
-<li>Quantitative data</li>
-<li>Qualitative data</li>
-<li>both</li>
-<li>neither</li>
+<li>Population counts are continuous data</li>
+<li>Population counts are discrete data</li>
+<li>Population counts are qualitative data</li>
+<li>Population counts are interval data</li>
 </ul>
-<ol start="7" class="example" type="1">
-<li><p>Box plots are most useful for looking at frequency distributions. [T/F] <a href="../../Modules/3/instructions.html#plotting-relationships">Hint</a></p></li>
-<li><p>In which Population Centre and Rural Area class does the the largest proportion of BC’s population live? <a href="../../Modules/3/instructions.html#plotting-relationships">Hint</a></p></li>
-</ol>
-<ul>
-<li>Large Urban Population Centre</li>
-<li>Rural</li>
-<li>Small Population Centre</li>
-<li>Medium Population Centre</li>
-</ul>
-<ol start="9" class="example" type="1">
-<li><p>What percent of BC’s overall population lives in Rural Areas? Round your answer to the nearest percent. <em>Hint</em> Sum the four classes to get the total population. <a href="../../Modules/3/instructions.html#plotting-relationships">Hint</a></p></li>
-<li><p>What is the median value for the percentage of income that people in Rural areas spend on food? Round to the nearest tenth percent. <a href="../../Modules/3/instructions.html#plotting-relationships">Hint</a></p></li>
-<li><p>How does classifying the data help us reveal patterns compared to what we see in the scatter plot? Does the r2 score indicate a relationship in the scatter plot? What conclusions can you draw about the proportion of income spent on food by people in different regions from looking at the box plot? <a href="../../Modules/3/instructions.html#benefits-of-data-classification">Hint</a></p></li>
-<li><p>Submit your Bar Chart. <a href="../../Modules/3/instructions.html#styling-your-visualizations">Hint</a></p></li>
-<li><p>Submit your Box plot. <a href="../../Modules/3/instructions.html#styling-your-visualizations">Hint</a></p></li>
+<ol start="11" class="example" type="1">
+<li><p>Upload your <strong>PA_RiskAssessment_Model.pdf</strong> <a href="../../Modules/5/instructions.html#export-your-model">Hint</a></p></li>
+<li><p>Upload your <strong>Properties_at_Risk_Chart.pdf</strong> <a href="../../Modules/5/instructions.html#supporting-figures">Hint</a></p></li>
+<li><p>Upload your <strong>PA_RiskAssessment_Final_Map.pdf</strong> <a href="../../Modules/5/instructions.html#map-the-assessment">Hint</a></p></li>
 </ol>
 
 

@@ -83,5 +83,14 @@
   },
   "Modules/4/questions.qmd": {
     "questions.html": "734fadd2"
+  },
+  "Modules/5/instructions.qmd": {
+    "instructions.html": "56e7e844"
+  },
+  "Modules/5/lecture.qmd": {
+    "lecture.html": "204f7d7d"
+  },
+  "Modules/5/questions.qmd": {
+    "questions.html": "d805584d"
   }
 }
