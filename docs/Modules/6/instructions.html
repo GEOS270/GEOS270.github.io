@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GEOS 270 - Port Alberin Tsunami Risk Assessment v 2.0</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">GEOS 270</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../Modules/moduleInfo.html" aria-current="page">
+ <span class="menu-text">Course Modules</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/GEOS270"><i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Port Alberin Tsunami Risk Assessment v 2.0</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/moduleInfo.html" class="sidebar-item-text sidebar-link">Course Modules</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/1/lecture.html" class="sidebar-item-text sidebar-link">Module 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/1/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/1/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/2/lecture.html" class="sidebar-item-text sidebar-link">Module 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/2/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/2/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/3/lecture.html" class="sidebar-item-text sidebar-link">Module 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/3/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/3/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/4/lecture.html" class="sidebar-item-text sidebar-link">Module 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/4/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/4/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/5/lecture.html" class="sidebar-item-text sidebar-link">Module 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/5/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/5/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/6/lecture.html" class="sidebar-item-text sidebar-link">Module 6</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/6/instructions.html" class="sidebar-item-text sidebar-link active">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/6/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Modules/7/lecture.html" class="sidebar-item-text sidebar-link">Module 7</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Modules/7/ExtraCredit.html" class="sidebar-item-text sidebar-link">Extra Credit</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">Final Project</span>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#redoing-the-risk-assessment" id="toc-redoing-the-risk-assessment" class="nav-link active" data-scroll-target="#redoing-the-risk-assessment">Redoing the Risk Assessment</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
+  <li><a href="#euclidean-distance" id="toc-euclidean-distance" class="nav-link" data-scroll-target="#euclidean-distance">Euclidean Distance</a></li>
+  <li><a href="#reclassify" id="toc-reclassify" class="nav-link" data-scroll-target="#reclassify">Reclassify</a></li>
+  <li><a href="#weighted-overlay" id="toc-weighted-overlay" class="nav-link" data-scroll-target="#weighted-overlay">Weighted Overlay</a></li>
+  <li><a href="#final-analysis" id="toc-final-analysis" class="nav-link" data-scroll-target="#final-analysis">Final Analysis</a>
+  <ul class="collapse">
+  <li><a href="#risk-level-of-shelter-locations" id="toc-risk-level-of-shelter-locations" class="nav-link" data-scroll-target="#risk-level-of-shelter-locations">Risk level of shelter locations</a></li>
+  <li><a href="#your-model" id="toc-your-model" class="nav-link" data-scroll-target="#your-model">Your model</a></li>
+  <li><a href="#final-map" id="toc-final-map" class="nav-link" data-scroll-target="#final-map">Final Map</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Port Alberin Tsunami Risk Assessment v 2.0</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><b>Please note:</b> The <a href="../../Modules/6/questions.html">Lab Questions</a> corresponds to this lab assignment. There are questions you need to answer in the quiz that pertain to the lab, so its a good idea to skim the quiz questions before starting the lab.</p>
+<p>This page contains instructions for the lab assignment, follow them to work through the lab in ArcGIS Pro. There are links to documentation where applicable along with embedded screenshots and videos in the instructions at some steps for reference. Feel free to work with peers in your lab section and don’t hesitate to ask your TA for help!</p>
+<ul>
+<li><p><b>Warning:</b> The ArcGIS Pro software package is updated frequently. The exact name/position of tools may diverge slightly from what you see in the screenshots or videos. Don’t worry recreating what you see in the videos exactly - just use them as a guide to help you work through things.</p></li>
+</ul>
+<section id="redoing-the-risk-assessment" class="level1">
+<h1>Redoing the Risk Assessment</h1>
+<p>Your task for this module is to re-do some aspects of the Port Alberni Tsunami Risk Assessment using the weighted overlay tool. Specifically, we want to create a more accurate inundation zone that will allow for a more nuanced look at which areas might flood in the event of a Tsunami.</p>
+<ol type="1">
+<li><p>Use the Euclidean Distance tool to approximate distance from the waterbodies layer</p></li>
+<li><p>Reclassify the distance and elevation rasters so they are binned in discrete intervals</p></li>
+<li><p>Use the Weighted Overlay tool to create a more accurate Inundation Zone</p></li>
+<li><p>Map areas in Port Alberni that could flood in the event of a Tsunami</p></li>
+</ol>
+</section>
+<section id="getting-started" class="level1">
+<h1>Getting Started</h1>
+<p>Create a new project called PA_RiskAssessment_Update. You should complete these general steps. Refer to the short video at the bottom of the page for reference.</p>
+<ol type="1">
+<li>Import the PA_DEM_ProjectRaster from your Module 5 project (PA_RiskAssessment).</li>
+</ol>
+<ul>
+<li><strong>Note</strong> the video below referrers to the original PA_RiskAssessment as Module 4, because I changed the ordering of modules after the video was recorded.
+<ul>
+<li>Aside from the naming conventions, everything else in the video is correct.</li>
+</ul></li>
+</ul>
+<ol start="2" type="1">
+<li><p>Create a new Feature Dataset called Inputs and import the waterbodies layer.</p></li>
+<li><p>Set your basemap to the Hybrid Satellite layer.</p></li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QXFk0n1lQP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="euclidean-distance" class="level1">
+<h1>Euclidean Distance</h1>
+<p>Create a model and calculate distance from the water. You should complete these general steps. Refer to the short video at the bottom of the page for reference.</p>
+<ol type="1">
+<li><p>Create a new model.</p></li>
+<li><p>Use the Euclidean Distance tool to create a raster layer of distance from the waterbodies layer.</p></li>
+<li><p>Make sure to set the extent equal to the PA_DEM_ProjectRaster.</p></li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KLlTEq_UezY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="reclassify" class="level1">
+<h1>Reclassify</h1>
+<p>Reclassify distance and elevation. You should complete these general steps. <strong>Make sure</strong> the “Scales” dropdown is set to 1-10. Refer to the short video at the bottom of the page for reference.</p>
+<ol type="1">
+<li>Reclassify the <strong>Euclidean Distance</strong> layer following the table below.</li>
+</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Start</th>
+<th>End</th>
+<th>New</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>250</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>250</td>
+<td>500</td>
+<td>250</td>
+</tr>
+<tr class="odd">
+<td>500</td>
+<td>1000</td>
+<td>500</td>
+</tr>
+<tr class="even">
+<td>1000</td>
+<td>1500</td>
+<td>1000</td>
+</tr>
+<tr class="odd">
+<td>1500</td>
+<td>2000</td>
+<td>1500</td>
+</tr>
+<tr class="even">
+<td>2000</td>
+<td>50000</td>
+<td>NODATA</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Reclassify the <strong>PA_DEM_ProjectRaster</strong> following the table below.</li>
+</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Start</th>
+<th>End</th>
+<th>New</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>6</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>12</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>14</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>16</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>18</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>20</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>10000</td>
+<td>NODATA</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li>Inspect the outputs to make sure they are correct.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rGfeEaTi7Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="weighted-overlay" class="level1">
+<h1>Weighted Overlay</h1>
+<p>Use the weighted overlay tool to create an Inundation Risk layer. You should complete these general steps. Refer to the short video at the bottom of the page for reference.</p>
+<ol type="1">
+<li><p>Add the weighted overlay tool to the model and set the reclassified layers as the inputs.</p></li>
+<li><p>Set the weights for the <strong>Elevation Layer</strong> layer following the image below. Elevation should have a weight of 75%.</p></li>
+</ol>
+<ul>
+<li>The scale should increase sequentially (i.e., 1, 2, 3 … 10) for the field values.
+<ul>
+<li>We are doing this because the spacing used in the reclassify step was 2m for each class.</li>
+</ul></li>
+</ul>
+<p><img src="images/WL1.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Set the weights for the <strong>Distance</strong> following the image below. Distance should have a weight of 25%.</li>
+</ol>
+<ul>
+<li>The scale <strong>is not</strong> increasing sequentially for the field values.
+<ul>
+<li>We are doing this because the spacing used in the reclassify step was not consistent for each class.</li>
+</ul></li>
+</ul>
+<p><img src="images/WL2.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Inspect the output to make sure it makes sense.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4DbRt0I3Qjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="final-analysis" class="level1">
+<h1>Final Analysis</h1>
+<section id="risk-level-of-shelter-locations" class="level2">
+<h2 class="anchored" data-anchor-id="risk-level-of-shelter-locations">Risk level of shelter locations</h2>
+<p>Import the shelters layer from the original PA_RiskAssessment (Module 5). Using either visual inspection, or the “Zonal Statistics as Table” tool, determine the risk classification for each of the 3 tsunami shelters in Port Alberni.</p>
+<ul>
+<li>Hint - The easiest way is to import it to your Inputs Feature Dataset using the “import feature class” tool.</li>
+<li>If using the zonal statistics tool, make sure to use the shelters as the feature zone data and to set “Name” as the zone field.</li>
+<li>Take note of the risk class (or lack thereof) for each shelter. This is a quiz answer.</li>
+</ul>
+</section>
+<section id="your-model" class="level2">
+<h2 class="anchored" data-anchor-id="your-model">Your model</h2>
+<p>Export your model as a .pdf and submit it on canvas.</p>
+</section>
+<section id="final-map" class="level2">
+<h2 class="anchored" data-anchor-id="final-map">Final Map</h2>
+<p>Create map showing the Tsunami Inundation risk classification for Port Alberni and the location of the tsunami evacuation shelters and submit it on canvas as well. The final map should include:</p>
+<ol type="1">
+<li>The inundation zone you created using the weighted overlay method.</li>
+</ol>
+<ul>
+<li>Make sure to use an appropriate color scheme.</li>
+</ul>
+<ol start="2" type="1">
+<li><p>The three tsunami shelters</p></li>
+<li><p>The satellite base map</p></li>
+<li><p>All relevant map elements.</p></li>
+</ol>
+<ul>
+<li>You can list google earth engine as the DEM data source and the City of Port Alberni as the “Waterbodies” data source.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

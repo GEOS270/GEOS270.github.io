@@ -1,0 +1,149 @@
+---
+title: "Port Alberin Tsunami Risk Assessment v 2.0"
+format:  html
+echo: false
+---
+
+{{< var Lab.assignments.quizLink >}}
+
+{{< var Lab.assignments.instructions >}}
+
+* {{< var Lab.assignments.videoNote >}}
+
+
+# Redoing the Risk Assessment
+
+Your task for this module is to re-do some aspects of the Port Alberni Tsunami Risk Assessment using the weighted overlay tool.  Specifically, we want to create a more accurate inundation zone that will allow for a more nuanced look at which areas might flood in the event of a Tsunami.
+
+
+1. Use the Euclidean Distance tool to approximate distance from the waterbodies layer
+
+2. Reclassify the distance and elevation rasters so they are binned in discrete intervals
+
+3. Use the Weighted Overlay tool to create a more accurate Inundation Zone
+
+4. Map areas in Port Alberni that could flood in the event of a Tsunami
+
+
+# Getting Started
+
+Create a new project called PA_RiskAssessment_Update.  You should complete these general steps.  Refer to the short video at the bottom of the page for reference.
+
+1. Import the PA_DEM_ProjectRaster from your Module 5 project (PA_RiskAssessment).
+
+* **Note** the video below referrers to the original PA_RiskAssessment as Module 4, because I changed the ordering of modules after the video was recorded.
+    * Aside from the naming conventions, everything else in the video is correct.
+
+2. Create a new Feature Dataset called Inputs and import the waterbodies layer.
+
+3. Set your basemap to the Hybrid Satellite layer.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QXFk0n1lQP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+# Euclidean Distance
+
+Create a model and calculate distance from the water.  You should complete these general steps.  Refer to the short video at the bottom of the page for reference.
+
+1. Create a new model.
+
+2. Use the Euclidean Distance tool to create a raster layer of distance from the waterbodies layer.
+
+3. Make sure to set the extent equal to the PA_DEM_ProjectRaster.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KLlTEq_UezY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+# Reclassify
+
+Reclassify distance and elevation.  You should complete these general steps.  **Make sure** the "Scales" dropdown is set to 1-10.  Refer to the short video at the bottom of the page for reference.
+
+1. Reclassify the **Euclidean Distance** layer following the table below.
+
+| Start | End  | New    |
+| ----- | ---- | ------ |
+| 0     | 250  | 0 		| 
+| 250   | 500  | 250	| 
+| 500   | 1000 | 500	| 
+| 1000  | 1500 | 1000	| 
+| 1500  | 2000 | 1500	| 
+| 2000  | 50000| NODATA	| 
+
+2. Reclassify the **PA_DEM_ProjectRaster** following the table below.
+
+| Start | End  | New    |
+| ----- | ---- | ------ |
+| 0     | 2    | 0 		| 
+| 2     | 4    | 2  	| 
+| 4     | 6    | 4  	| 
+| 6     | 8    | 6   	| 
+| 8     | 10   | 8  	| 
+| 10    | 12   | 10  	|
+| 12    | 14   | 12  	|  
+| 14    | 16   | 14  	|  
+| 16    | 18   | 16  	|  
+| 18    | 20   | 18  	|  
+| 20    | 10000| NODATA	| 
+
+3. Inspect the outputs to make sure they are correct.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rGfeEaTi7Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+# Weighted Overlay
+
+Use the weighted overlay tool to create an Inundation Risk layer.  You should complete these general steps.  Refer to the short video at the bottom of the page for reference.
+
+1. Add the weighted overlay tool to the model and set the reclassified layers as the inputs.
+
+2. Set the weights for the **Elevation Layer** layer following the image below.  Elevation should have a weight of 75%.
+* The scale should increase sequentially (i.e., 1, 2, 3 ... 10) for the field values.
+    * We are doing this because the spacing used in the reclassify step was 2m for each class.
+
+![](images/WL1.png)
+
+
+3. Set the weights for the **Distance** following the image below.  Distance should have a weight of 25%.
+* The scale **is not** increasing sequentially for the field values.
+    * We are doing this because the spacing used in the reclassify step was not consistent for each class.
+
+![](images/WL2.png)
+
+
+4. Inspect the output to make sure it makes sense.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4DbRt0I3Qjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+# Final Analysis
+
+## Risk level of shelter locations
+
+Import the shelters layer from the original PA_RiskAssessment (Module 5).  Using either visual inspection, or the "Zonal Statistics as Table" tool, determine the risk classification for each of the 3 tsunami shelters in Port Alberni.
+
+* Hint - The easiest way is to import it to your Inputs Feature Dataset using the "import feature class" tool.
+* If using the zonal statistics tool, make sure to use the shelters as the feature zone data and to set "Name" as the zone field.
+* Take note of the risk class (or lack thereof) for each shelter.  This is a quiz answer.
+
+## Your model
+
+Export your model as a .pdf and submit it on canvas.  
+
+## Final Map
+
+Create map showing the Tsunami Inundation risk classification for Port Alberni and the location of the tsunami evacuation shelters and submit it on canvas as well.  The final map should include:
+
+1. The inundation zone you created using the weighted overlay method.
+
+* Make sure to use an appropriate color scheme.
+
+2. The three tsunami shelters
+
+3. The satellite base map
+
+4. All relevant map elements.
+
+* You can list google earth engine as the DEM data source and the City of Port Alberni as the "Waterbodies" data source.
+
+

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GEOS 270 - Final Projects</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">GEOS 270</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./Modules/moduleInfo.html" aria-current="page">
+ <span class="menu-text">Course Modules</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/GEOS270"><i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Final Projects</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/moduleInfo.html" class="sidebar-item-text sidebar-link">Course Modules</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Modules/1/lecture.html" class="sidebar-item-text sidebar-link">Module 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/1/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/1/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Modules/2/lecture.html" class="sidebar-item-text sidebar-link">Module 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/2/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/2/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Modules/3/lecture.html" class="sidebar-item-text sidebar-link">Module 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/3/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/3/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Modules/4/lecture.html" class="sidebar-item-text sidebar-link">Module 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/4/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/4/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Modules/5/lecture.html" class="sidebar-item-text sidebar-link">Module 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/5/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/5/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Modules/6/lecture.html" class="sidebar-item-text sidebar-link">Module 6</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/6/instructions.html" class="sidebar-item-text sidebar-link">Lab Instructions</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/6/questions.html" class="sidebar-item-text sidebar-link">Lab Questions</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./Modules/7/lecture.html" class="sidebar-item-text sidebar-link">Module 7</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Modules/7/ExtraCredit.html" class="sidebar-item-text sidebar-link">Extra Credit</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">Final Project</span>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a>
+  <ul class="collapse">
+  <li><a href="#project-proposal" id="toc-project-proposal" class="nav-link" data-scroll-target="#project-proposal">Project Proposal</a>
+  <ul class="collapse">
+  <li><a href="#assessment-feedback" id="toc-assessment-feedback" class="nav-link" data-scroll-target="#assessment-feedback">Assessment / Feedback</a></li>
+  </ul></li>
+  <li><a href="#written-report" id="toc-written-report" class="nav-link" data-scroll-target="#written-report">Written Report</a></li>
+  <li><a href="#groups" id="toc-groups" class="nav-link" data-scroll-target="#groups">Groups</a></li>
+  </ul></li>
+  <li><a href="#project-workflow" id="toc-project-workflow" class="nav-link" data-scroll-target="#project-workflow">Project Workflow</a>
+  <ul class="collapse">
+  <li><a href="#project-proposal-explore-ideas-and-acquire-data" id="toc-project-proposal-explore-ideas-and-acquire-data" class="nav-link" data-scroll-target="#project-proposal-explore-ideas-and-acquire-data">Project Proposal: Explore Ideas and Acquire Data</a></li>
+  <li><a href="#gis-analysis" id="toc-gis-analysis" class="nav-link" data-scroll-target="#gis-analysis">GIS Analysis</a></li>
+  <li><a href="#flow-charts" id="toc-flow-charts" class="nav-link" data-scroll-target="#flow-charts">Flow Charts</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
+  </ul></li>
+  <li><a href="#project-ideas" id="toc-project-ideas" class="nav-link" data-scroll-target="#project-ideas">Project Ideas</a>
+  <ul class="collapse">
+  <li><a href="#access-to-green-space-and-bicycle-infrastructure-in-vancouver" id="toc-access-to-green-space-and-bicycle-infrastructure-in-vancouver" class="nav-link" data-scroll-target="#access-to-green-space-and-bicycle-infrastructure-in-vancouver">Access to green space and bicycle infrastructure in Vancouver</a></li>
+  <li><a href="#locations-for-a-ski-resort" id="toc-locations-for-a-ski-resort" class="nav-link" data-scroll-target="#locations-for-a-ski-resort">Locations for a Ski Resort</a></li>
+  <li><a href="#landslides-in-burn-zones" id="toc-landslides-in-burn-zones" class="nav-link" data-scroll-target="#landslides-in-burn-zones">Landslides in Burn Zones</a></li>
+  <li><a href="#air-quality-in-bc" id="toc-air-quality-in-bc" class="nav-link" data-scroll-target="#air-quality-in-bc">Air Quality in BC</a></li>
+  <li><a href="#mapping-police-violence" id="toc-mapping-police-violence" class="nav-link" data-scroll-target="#mapping-police-violence">Mapping Police Violence</a></li>
+  </ul></li>
+  <li><a href="#helpful-data-sources" id="toc-helpful-data-sources" class="nav-link" data-scroll-target="#helpful-data-sources">Helpful Data Sources</a>
+  <ul class="collapse">
+  <li><a href="#simply-analytics" id="toc-simply-analytics" class="nav-link" data-scroll-target="#simply-analytics">Simply Analytics</a></li>
+  <li><a href="#google-earth-engine" id="toc-google-earth-engine" class="nav-link" data-scroll-target="#google-earth-engine">Google Earth Engine</a>
+  <ul class="collapse">
+  <li><a href="#landsat8-ndvi-for-a-single-year" id="toc-landsat8-ndvi-for-a-single-year" class="nav-link" data-scroll-target="#landsat8-ndvi-for-a-single-year">LANDSAT8 NDVI for a Single Year</a></li>
+  <li><a href="#nrcan-dem" id="toc-nrcan-dem" class="nav-link" data-scroll-target="#nrcan-dem">NRCan DEM</a></li>
+  </ul></li>
+  <li><a href="#data-bc" id="toc-data-bc" class="nav-link" data-scroll-target="#data-bc">Data BC</a></li>
+  <li><a href="#municipal-data-sources" id="toc-municipal-data-sources" class="nav-link" data-scroll-target="#municipal-data-sources">Municipal Data Sources</a></li>
+  <li><a href="#bc-air-quality-data" id="toc-bc-air-quality-data" class="nav-link" data-scroll-target="#bc-air-quality-data">BC Air Quality Data</a></li>
+  <li><a href="#bc-precipitation-and-temperature-data" id="toc-bc-precipitation-and-temperature-data" class="nav-link" data-scroll-target="#bc-precipitation-and-temperature-data">BC Precipitation and Temperature Data</a></li>
+  </ul></li>
+  <li><a href="#tips-for-group-work" id="toc-tips-for-group-work" class="nav-link" data-scroll-target="#tips-for-group-work">Tips for Group Work</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Final Projects</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this project you will be able to:</p>
+<ul>
+<li>Formulate a Geographic Analysis Scenario</li>
+<li>Identify geospatial datasets appropriate for the geographic analysis</li>
+<li>Create a directory / geodatabase of datasets for the project (ensuring spatial and tabular data integrity)</li>
+<li>Conduct GIS analyses that will demonstrate your knowledge of GIS analysis concepts and software tools</li>
+<li>Visualize your results (maps) and workflow (model/flow chart) and discuss them in a brief report</li>
+<li>Follow a project proposal to until the project is successfully completed</li>
+<li>Build teamwork skills</li>
+</ul>
+</section>
+<section id="rubric" class="level1">
+<h1>Rubric</h1>
+<p>Projects will be marked relative to on another following this rubric. The grace period <strong>does not</strong> apply to projects like it does the module assignments.</p>
+<ul>
+<li>Also be keep in mind, a late project will be marked more harshly relative to on time submissions to account for the extra time spent working on it.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-schedule" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;1: Lab Quiz Rubric</caption>
+<colgroup>
+<col style="width: 15%">
+<col style="width: 80%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Details</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Analysis</td>
+<td style="text-align: left;">Considers the project holistically (GIS Analysis + Interpretation)<br>Was the data projected correctly, were appropriate steps taken, are there missing steps, logical flaws, obvious errors?<br>How thorough &amp; rigorous was the analysis<br>Needs to be more than just a re-hash of a lab assignment<br></td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Visualization</td>
+<td style="text-align: left;">Are the maps, charts, and diagrams effective and aesthetically pleasing<br>Do they follow stylistic principals outlined in lecture</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Report Content</td>
+<td style="text-align: left;">Does the report effectively convey the problem, explain the analysis, discuss the results, and present conclusions/future research<br>Do they have each section as outlined on the project page</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Novelty &amp; Relevance</td>
+<td style="text-align: left;">How unique/relevant is the topic/analysis<br>Did groups come up with their own idea substantially build on one of the ideas presented</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Data &amp; Bibliography</td>
+<td style="text-align: left;">Are the data sources appropriate for the analysis<br>Did they detail data sources and cite any sources used</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Proposal</td>
+<td style="text-align: left;">Proposal is marked for completeness &amp; effort (each section filled &amp; project idea conveyed).</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Total Score</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">250</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="deliverables" class="level1">
+<h1>Deliverables</h1>
+<p>The Project is due <strong>June 27</strong> and is worth 250 pts (25% of your final grade). There Final Project Proposal is due <strong>June 19</strong> and counts as <strong>15</strong> of the total <strong>250</strong> points. Deliverables for this project will consist of the following:</p>
+<section id="project-proposal" class="level2">
+<h2 class="anchored" data-anchor-id="project-proposal">Project Proposal</h2>
+<p>Your proposal is a <strong>Tentative</strong> plan, you can change it after need/want. The proposal is intended to help you approach the project with a well rounded idea and provide clarity on the expectations for the project. Please use the proposal form here in <a href="proposals/Final-Project-Proposal-Form.pdf">.pdf</a> or <a href="proposals/Final-Project-Proposal-Form.docx">.docx</a>. The form includes space for:</p>
+<ul>
+<li>A brief description of the topic</li>
+<li>The data sets that you will use
+<ul>
+<li>Confirmation that you are able to download them before submitting</li>
+</ul></li>
+<li>Preliminary analysis plans</li>
+</ul>
+<p>Some things to think about when formulating your project proposal:</p>
+<ul>
+<li>Is the project ambitious enough? Or is it overly ambitious? Would it be difficult to complete in the time remaining in the semester?
+<ul>
+<li>Your project <strong>should not</strong> be a repeat of one of the labs. If you want to revisit a lab and use it as inspiration, that is fine. But you should incorporate additional analysis and look at a different areas.</li>
+</ul></li>
+<li>Make sure you have a clear understanding of how you are going to go from your data to your final deliverables.</li>
+<li>Ensure that your data is available and easy to obtain in a usable format.</li>
+</ul>
+<section id="assessment-feedback" class="level3">
+<h3 class="anchored" data-anchor-id="assessment-feedback">Assessment / Feedback</h3>
+<p>The proposal is worth <strong>15</strong> pts, minor comments/suggestions will be provided where applicable. For detailed feedback, your group should consider making time to meet with me either in person or over zoom during office hours (or by appointment).</p>
+<ul>
+<li>Proposals turned in on time, will be promptly marked and returned within 24 hours.</li>
+<li>Proposals will be assessed as follows:
+<ul>
+<li><strong>15pts</strong> - Great idea/outline, minimal changes needed</li>
+<li><strong>10pts</strong> - Decent idea/outline, some changes needed, consider meeting with June to discuss</li>
+<li><strong>5pts</strong> - Insufficient idea/outline, major changes needed, meet with June to discuss</li>
+<li><strong>0pts</strong> - Missing</li>
+</ul></li>
+<li>If you submit a proposal at least <strong>2 days early</strong> (by midnight Wednesday March 29th) I will add <strong>two bonus</strong> points to your score and mark your proposal early!</li>
+</ul>
+</section>
+</section>
+<section id="written-report" class="level2">
+<h2 class="anchored" data-anchor-id="written-report">Written Report</h2>
+<p>Each group must produce a written report detailing their project. The report should contain the flowchart, maps, charts, and/or tables embedded in the document with in text references to the visualizations where applicable. The report should have the following sections:</p>
+<p><strong>Introduction</strong> – What is the problem? Why should we care? Briefly introduce the scope of the issue you are addressing and conclude your introduction with your research statement.</p>
+<ul>
+<li><strong>Research Statement</strong> – What is/are the specific question(s) you are looking to address?</li>
+</ul>
+<p><strong>Data Sources</strong> – What data are you using &amp; where did they come from? What type of data are you working with (raster, vector, tabular)? What’s the scale &amp; resolution, is these limiting factors? Are there any issues or special considerations with this data set? A table might be a useful way to help summarize this section concisely.</p>
+<p><strong>Methods</strong> – What did you do? Why did you do it? Explain the analysis steps you took and justify the choices you made in your analysis. You can rely heavily on your flow charts for explaining the methods. You don’t need to detail every little step, be brief but throughout.</p>
+<ul>
+<li>Don’t Say things like: “We doubled clicked the buffer tool and set Layer A as the input. We set the buffer distance to 1000 meters and clicked dissolve all. We set the output name as Layer B and hit run. Then we merged Layer B with Layer C naming it Layer D”</li>
+<li>Instead Say: “We buffered Layer A by 1000 m because (justification). Then we merged it with Layer C”</li>
+<li><strong>Flowchart</strong> is best included here!</li>
+</ul>
+<p><strong>Results</strong> – What does your analysis say? Describe the general patterns and trends that your analysis yielded. * Maps/charts go here!</p>
+<p><strong>Conclusions</strong> – What are the overarching conclusions? Did you find what you expected? Did you answer the research statement? What are some potential future analysis that could result from this?</p>
+<p><strong>Bibliography</strong> – Cite any data sources used. Also cite any relevant literature. It is not expected that you conduct a literature review, just make sure to cite any you do use. Reference them in a consistent format</p>
+<p>There is no word/page count. You can keep the report brief, just be thorough. Make sure you explain and discuss the key points.</p>
+</section>
+<section id="groups" class="level2">
+<h2 class="anchored" data-anchor-id="groups">Groups</h2>
+<p>This is intended to be a group project. I suggest you work in a groups of 3. Groups larger than 4 are <strong>not allowed</strong>. If you are looking to join a group, try making a post to the <strong>Lab Discussion Board</strong> on canvas, list any topics you might be interested in working on. If you are still having trouble finding a group try reaching out to your TA for assistance.</p>
+<p>I encourage you to work in groups, however I also recognize group work can be very difficult for some; you may work alone <strong>but</strong> you must request approval <strong>first</strong>. Choosing to work alone <strong>will not</strong> lower the expectations for your project. Your project will be evaluated using the same standards as group projects.</p>
+</section>
+</section>
+<section id="project-workflow" class="level1">
+<h1>Project Workflow</h1>
+<section id="project-proposal-explore-ideas-and-acquire-data" class="level2">
+<h2 class="anchored" data-anchor-id="project-proposal-explore-ideas-and-acquire-data">Project Proposal: Explore Ideas and Acquire Data</h2>
+<p>The proposal is intended to get you thinking about the project sooner rather than later, so you aren’t stuck scrambling at the last minute. See the <a href="docs/Project_Proposal.md">Project Proposal</a> page for details. The proposal is due <strong>Friday March 31st</strong></p>
+<p>Download and format your data during this step. Review the datasets and determine which layers and associated attributes you will need for your study. Pay special attention to the format of the data, and to the projection information before starting your analysis. It is important to ensure you can access the desired data before starting your project!</p>
+</section>
+<section id="gis-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="gis-analysis">GIS Analysis</h2>
+<p>The project should incorporate skills you’ve learned from the labs you completed during the course. Think about the different operations and tools that you have learned in lab and we have discussed in lecture. Try applying these to your topic. A list of potential analysis operations includes:</p>
+<ul>
+<li>Calculation of areas</li>
+<li>Joining tables</li>
+<li>Select by attribute/location: various queries</li>
+<li>Field calculation</li>
+<li>Buffers, dissolves, merges</li>
+<li>Overlay tools: clip, erase, union, intersect</li>
+<li>Raster overlay &amp; reclassification</li>
+<li>Working with DEMs (elevation, slope, aspect)</li>
+</ul>
+<p>It might be beneficial to do your project in Model Builder. You are not required to do so, but it could be helpful for storing your workflow, which will make it easier to remember/describe your methods. Feel free to explore methods we didn’t cover in class as well.</p>
+</section>
+<section id="flow-charts" class="level2">
+<h2 class="anchored" data-anchor-id="flow-charts">Flow Charts</h2>
+<p>As you go through your GIS Analysis steps, document what you are doing and the specific operations you are performing (or use model builder!). You will produce a flow chart of your analysis and include it in the report. If you use model builder for your analysis, this can serve as the basis for your flowchart, but you should translate it into an easier to follow an more aesthetically pleasing format for the final submission.</p>
+<p>There are a number of ways to create flowcharts. You can draw them by hand, you can use power point, or you can try <a href="https://app.diagrams.net/">Diagrams.net</a>. This site allows you to make aesthetically pleasing flowcharts quickly and easily, the video bellow gives you a quick overview of how to use the too.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jq5NxMpOSKI?start=135" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
+<p>You will need to make a series of maps/charts (number and type(s) depends on the specific analysis) to visualize your methods and final results. These visualizations must follow the conventions of data classification and data display as learned in the course, and include all relevant map elements (legend, title, scale, north arrow, sources, insets/reference maps where necessary etc.) and take into consideration cartographic design principals (lecture in class on design).</p>
+<ul>
+<li>Submit full resolution copies of each visualization (flowchart, maps, charts). These will be evaluated for aesthetic quality and effectiveness at conveying your findings. The full resolution copies are required just in case the embedded figures in your project report are not clear enough to read.</li>
+</ul>
+</section>
+</section>
+<section id="project-ideas" class="level1">
+<h1>Project Ideas</h1>
+<p>The ideas listed below are meant as a starting point, you should flush them out and come up with a suitable approach to analyze the problem. You are also free develop your own project idea. I suggest you focused on BC/Vancouver just because we are more familiar with local data sources. You are free to explore other geographical regions as well, but be advised that we may not be able to provide as much assistance with searching for data.</p>
+<section id="access-to-green-space-and-bicycle-infrastructure-in-vancouver" class="level2">
+<h2 class="anchored" data-anchor-id="access-to-green-space-and-bicycle-infrastructure-in-vancouver">Access to green space and bicycle infrastructure in Vancouver</h2>
+<p><strong>Scenario</strong>: Access to green space and bicycle infrastructure is important for quality of life in urban areas, promoting physical and mental health. Yet, green space and bike infrastructure are often inequitably distributed around cities. Explore the distribution of green space and bicycle infrastructure in Vancouver in relation to wealth, housing density, transit, etc. Check out the City of Vancouver Data Portal for data on parks, bicycle lanes, bike racks, trees, etc. that might be useful. It could also be helpful to incorporate some census data.</p>
+<p>Possible Analysis to consider * Geocoding (will be introduced in the coming weeks) * Select by location/attribute * Buffering to gauge accessibility * Intersections to count # bike racks, area of parks, length of bike lanes within census units</p>
+</section>
+<section id="locations-for-a-ski-resort" class="level2">
+<h2 class="anchored" data-anchor-id="locations-for-a-ski-resort">Locations for a Ski Resort</h2>
+<p>Define a boundary region and download a DEM &amp; other necessary data. You can use google earth engine to download a DEM and get some other files from DataBc that might be important to consider (eg. Old Growth Forests)</p>
+<p>Possible Analysis to consider<br>
+* Slope, Aspect, &amp; Reclassify * Weighted Overlay or Raster Calculator * Proximity Analysis</p>
+</section>
+<section id="landslides-in-burn-zones" class="level2">
+<h2 class="anchored" data-anchor-id="landslides-in-burn-zones">Landslides in Burn Zones</h2>
+<p>Forest fires are also some of the worst natural disasters impacting the province. Climate change and human activity are changing fire dynamics and leading to costlier fire seasons. After severe fires, intense precipitation events can trigger landslides. The burn severity data is available for 2015-2019 for BC. Select a Fire Center (I suggest not doing Coastal Fire Centre). Use DEM data (google earth) to calculate slope and combine with burn severity and precipitation (HectaresBC) to create landslide risk classification. Your selected Fire Center can serve as your boundary file for the DEM download. <em>This could also be adapted to look at logging instead of fires!</em></p>
+<p>Possible Analysis to consider<br>
+* Slope &amp; Reclassify * Weighted Overlay or Raster Calculator * Proximity Analysis * Flow Analysis</p>
+</section>
+<section id="air-quality-in-bc" class="level2">
+<h2 class="anchored" data-anchor-id="air-quality-in-bc">Air Quality in BC</h2>
+<p>Poor air quality is a significant health risk for vulnerable populations. Over recent years there have been serious smoke events impacting air quality province wide. Additionally, traffic and industrial activities exacerbate air quality issues in urban areas. Use this <a href="https://github.com/June-Skeeter/BCAirQuality">air quality data</a> to look at how air quality changes across the region annually/seasonlally or investigate some specific event(s) eg. a bad fire season. Consider incorporating census data to see if there arae significant at risk populations (eg. youth and seniors) in places with air quality? Note - Look at the data coverage before you decide which scale to analyze census data at.</p>
+<p>Possible Analysis to consider<br>
+* Import tabular (x,y) data * Calculating Fields * Inverse Distance Weighting * Zonal statistics * Tabular joins</p>
+</section>
+<section id="mapping-police-violence" class="level2">
+<h2 class="anchored" data-anchor-id="mapping-police-violence">Mapping Police Violence</h2>
+<p>Use a dataset on <a href="https://police-involved-deaths-ca.github.io/Data/">police violence</a> to map incidents of police violence in a specific region of your choice. You can choose a province (eg. Saskatchewan), or a specific city (eg. Toronto). Use census data to complement the analysis. If you choose this project, you can reach out directly to me for more information on the data and guidance how to approach the analysis.</p>
+<p>Possible Analysis to consider * Point in Polygon Analysis * Kernel Density * Linear Regression * Data Normalization &amp; Classification</p>
+</section>
+</section>
+<section id="helpful-data-sources" class="level1">
+<h1>Helpful Data Sources</h1>
+<p>Here are are a few place you can look for data. There are plenty other out there, if you search google.</p>
+<section id="simply-analytics" class="level2">
+<h2 class="anchored" data-anchor-id="simply-analytics">Simply Analytics</h2>
+<p>With <a href="https://resources.library.ubc.ca/page.php?id=1044">Simply Analytics</a>, you can download Cenus Data for Canada <strong>and/or</strong> the United States. You can also download businesses locations.</p>
+</section>
+<section id="google-earth-engine" class="level2">
+<h2 class="anchored" data-anchor-id="google-earth-engine">Google Earth Engine</h2>
+<p><a href="https://developers.google.com/earth-engine/datasets/">Google Earth Engine</a> has lots of datasets, we’ve only covered two; using Landsat8 to calculate NDVI and and working with DEMs (see code below). If you’d like to work with something we haven’t worked with I’m happy to help facilitate downloading it, just send me an email. <em>Do not wait until the last minute</em> to contact me asking for help with a download.</p>
+<ul>
+<li>This code can be used to download a DEM via the google earth <a href="https://code.earthengine.google.com/">code editor</a>, similar to what we did in to download NDVI, just make sure to upload an appropriate boundary file first.</li>
+</ul>
+<section id="landsat8-ndvi-for-a-single-year" class="level3">
+<h3 class="anchored" data-anchor-id="landsat8-ndvi-for-a-single-year">LANDSAT8 NDVI for a Single Year</h3>
+<p>Download a Landsat 8 NDVI greenest pixel composite for a single year, for any land area on earth. See the below video for further instructions.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Center Map on geometry object</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">centerObject</span>(geometry<span class="op">,</span> <span class="dv">8</span>)<span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">// Import the Landsat 8 TOA image collection.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">// Filter out images with cloud covdf &gt; 10%</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> Collection <span class="op">=</span> ee<span class="op">.</span><span class="fu">ImageCollection</span>(<span class="st">'LANDSAT/LC08/C01/T1_TOA'</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2021</span><span class="op">,</span> <span class="dv">2021</span><span class="op">,</span> <span class="st">'year'</span>))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">lt</span>(<span class="st">'CLOUD_COVER_LAND'</span><span class="op">,</span> <span class="dv">10</span>))<span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">// Get the number of images.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> count <span class="op">=</span> Collection<span class="op">.</span><span class="fu">size</span>()<span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Count: '</span><span class="op">,</span> count)<span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">// Define NDVI Function</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> addNDVI_Landsat <span class="op">=</span> <span class="kw">function</span>(image) {</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> ndvi <span class="op">=</span> image<span class="op">.</span><span class="fu">normalizedDifference</span>([<span class="st">'B5'</span><span class="op">,</span> <span class="st">'B4'</span>])<span class="op">.</span><span class="fu">rename</span>(<span class="st">'NDVI'</span>)<span class="op">;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> image<span class="op">.</span><span class="fu">addBands</span>(ndvi)<span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">// Apply Function to all Images</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> withNDVI_Landsat <span class="op">=</span> Collection<span class="op">.</span><span class="fu">map</span>(addNDVI_Landsat)<span class="op">;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">// Make a "greenest" pixel composite.</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> greenest <span class="op">=</span> withNDVI_Landsat<span class="op">.</span><span class="fu">qualityMosaic</span>(<span class="st">'NDVI'</span>)<span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndvi <span class="op">=</span> greenest<span class="op">.</span><span class="fu">select</span>(<span class="st">'NDVI'</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">// Define Color Scheme for Visualization</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndviParams <span class="op">=</span> {<span class="dt">min</span><span class="op">:</span> <span class="op">-.</span><span class="dv">5</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">palette</span><span class="op">:</span> [<span class="st">'blue'</span><span class="op">,</span> <span class="st">'white'</span><span class="op">,</span> <span class="st">'green'</span>]}<span class="op">;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">// Display the result.</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(ndvi<span class="op">,</span> ndviParams<span class="op">,</span> <span class="st">'Greenest pixel composite'</span>)<span class="op">;</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">// Export to Google drive</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Export<span class="op">.</span><span class="at">image</span><span class="op">.</span><span class="fu">toDrive</span>({</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  <span class="dt">image</span><span class="op">:</span> ndvi<span class="op">,</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="dt">description</span><span class="op">:</span> <span class="st">'Greenest Pixel Composite'</span><span class="op">,</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="dt">scale</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="dt">region</span><span class="op">:</span> geometry</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MyMJMW8-n8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+</iframe>
+</section>
+<section id="nrcan-dem" class="level3">
+<h3 class="anchored" data-anchor-id="nrcan-dem">NRCan DEM</h3>
+<p>Download the NRCan DEM for the metro Vancouver area using the same “Boundary” file as in Module 4</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> dataset <span class="op">=</span> ee<span class="op">.</span><span class="fu">ImageCollection</span>(<span class="st">'NRCan/CDEM'</span>)<span class="op">.</span><span class="fu">mean</span>()<span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> elevation <span class="op">=</span> dataset<span class="op">.</span><span class="fu">select</span>(<span class="st">'elevation'</span>)<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> elevationVis <span class="op">=</span> {</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">min</span><span class="op">:</span> <span class="op">-</span><span class="fl">50.0</span><span class="op">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">max</span><span class="op">:</span> <span class="fl">1500.0</span><span class="op">,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">palette</span><span class="op">:</span> [<span class="st">'0905ff'</span><span class="op">,</span> <span class="st">'ffefc4'</span><span class="op">,</span> <span class="st">'ffffff'</span>]<span class="op">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">centerObject</span>(Boundary)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(Boundary)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(elevation<span class="op">,</span> elevationVis<span class="op">,</span> <span class="st">'Elevation'</span>)<span class="op">;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">// Export to Google drive</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>Export<span class="op">.</span><span class="at">image</span><span class="op">.</span><span class="fu">toDrive</span>({</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="dt">image</span><span class="op">:</span> elevation<span class="op">,</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="dt">description</span><span class="op">:</span> <span class="st">'DEM'</span><span class="op">,</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="dt">scale</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="dt">region</span><span class="op">:</span> Boundary</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="data-bc" class="level2">
+<h2 class="anchored" data-anchor-id="data-bc">Data BC</h2>
+<p><a href="https://data.gov.bc.ca/">Data BC</a> has many different datasetes. You can search for them by key terms. Some useful data sets might include:</p>
+<ul>
+<li>Old Growth Forests <em>- legal - current</em></li>
+<li>Freshwater Atlas Stream Network</li>
+<li>Freshwater Atlas Rivers</li>
+<li>Freshwater Atlas Coastlines</li>
+<li>BC Wildfire Fire Centres</li>
+<li>Fire Burn Severity - Historical</li>
+<li>Some downloads from this site require you to filter by <a href="https://open.canada.ca/data/en/dataset/055919c2-101e-4329-bfd7-1d0c333c0e62">Map sheets</a></li>
+</ul>
+</section>
+<section id="municipal-data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="municipal-data-sources">Municipal Data Sources</h2>
+<p>The <a href="https://opendata.vancouver.ca/pages/home/">City of Vancouver Data Portal</a> has a lots of data for the city: parks, zoning, bike lanes, transit etc. Only for the <strong>City</strong> Vancouver. <a href="https://www.surrey.ca/services-payments/online-services/open-data">Surrey</a>, <a href="https://www.richmond.ca/discover/maps.htm">Richmond</a>, <a href="https://www.burnaby.ca/services-and-payments/maps-and-open-data">Burnaby</a>, etc. have their own. <a href="http://www.metrovancouver.org/data#k=">Metro-Vancouver</a>, which is inclusive of all thse cities has more data. Most large municipalities have some sort of data portal. * eg. Google: “Toronto open data” and see what comes up.</p>
+</section>
+<section id="bc-air-quality-data" class="level2">
+<h2 class="anchored" data-anchor-id="bc-air-quality-data">BC Air Quality Data</h2>
+<p>I’ve compiled BCs <a href="https://github.com/June-Skeeter/BCAirQuality">air quality data</a> into a format you can import into ArcGIS Pro. Follow the link and make sure to read the metadata.</p>
+</section>
+<section id="bc-precipitation-and-temperature-data" class="level2">
+<h2 class="anchored" data-anchor-id="bc-precipitation-and-temperature-data">BC Precipitation and Temperature Data</h2>
+<p>I’ve compiled Environment Canada’s Precipitation and Temperature data <a href="https://github.com/June-Skeeter/CA_wxData_Download/tree/main/Summaries">for all currently operating station in BC</a> into a format you can import into ArcGIS Pro. Follow the link and make sure to read the metadata.</p>
+</section>
+</section>
+<section id="tips-for-group-work" class="level1">
+<h1>Tips for Group Work</h1>
+<p>Two options for facilitating group work:</p>
+<ol type="1">
+<li>Use a file sharing service like Google Drive, Dropbox etc to share up to date version of the project with fellow group members. It is a good strategy to use one of these services so you don’t loose your data!!</li>
+</ol>
+<ul>
+<li>Make sure to remember: “Work Locally, Save Remotely!”</li>
+</ul>
+<ol start="2" type="1">
+<li>One group member can share their lab computer logon and everyone can use the same account for the project. You’ll all be able to access the same H:/ drive space. This <strong>won’t</strong> work well if you plan to work simultaneously. Don’t use the same account to log into two computers at the same time. Bad things might happen.</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

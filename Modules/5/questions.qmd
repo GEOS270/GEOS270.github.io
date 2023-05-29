@@ -21,7 +21,7 @@ library(knitr)
 #| tbl-cap: "Lab Quiz Rubric"
 #| tbl-colwidths: [10,35,35,10]
 
-rubric <- read.csv(file = '../../sheets/Rubric.csv',sep='|')
+rubric <- read.csv(file = '../../sheets/LabRubric.csv',sep='|')
 kable(rubric, col.names = gsub("[.]", " ", names(rubric)))
 
 ```

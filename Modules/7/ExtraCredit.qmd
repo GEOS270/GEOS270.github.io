@@ -1,0 +1,52 @@
+---
+title: "GIS Programming"
+format: html
+echo: false
+---
+
+
+{{< var Lab.assignments.quizInfo >}}
+
+# Rubric
+
+{{< var Lab.assignments.rubricInfo >}}
+
+```{r include=FALSE}
+
+library(knitr)
+```
+
+```{r}
+#| label: tbl-schedule
+#| tbl-cap: "Lab Quiz Rubric"
+#| tbl-colwidths: [10,35,35,10]
+
+rubric <- read.csv(file = '../../sheets/LabRubric.csv',sep='|')
+kable(rubric, col.names = gsub("[.]", " ", names(rubric)))
+
+```
+
+# Quiz Questions
+
+
+Unless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.
+
+
+(@) List the risk classification score for each of the shelters.  If the shelter did not have a risk classification, you can list it as "N/A"  [Hint](instructions.qmd#risk-level-of-shelter-locations)
+
+
+Echo Community Centre:
+AW Neil Elementary:
+5100 Tebo Ave:
+
+
+(@) Submit a .pdf of the model you created to identify the inundation zone. [Hint](instructions.qmd#your-model)
+
+
+(@) Submit a .pdf of the map you created to showing the updated inundation zone and shelter locations. [Hint](instructions.qmd#final-map)
+
+
+(@) Write a paragraph or two comparing the method used in Module 5 (previous method) model to identify the Inundation Zone vs. the method used in this Module 6 (this assignment) to identify the Inundation Zone.  **Things to consider:** What tools/steps were used in each model?  Which do you think produces a more useful result?  What are some potential pros/cons of the  different methods? [Hint](instructions.qmd#redoing-the-risk-assessment)
+
+
+(@) Read the highlighted portions of [Chae et al. (2015)](readings/Chae_et_al_2015.pdf) on racism and health outcomes.  Then use this information to a couple paragraphs outlining what they found, how the type of data they used can be a useful alternative for traditional metrics, and what are some potential limitations to this type of research.

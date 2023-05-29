@@ -7,6 +7,139 @@
     "text": "The University of British Columbia and the city of Vancouver are on the traditional, ancestral, and unceded territory of the Coast Salish Peoples. Specifically the UBC Vancouver campus is on xʷməθkʷəy̓əm (Musqueam) land.\n\nThere are nearly 200 First Nations spread through BC, and many more across the continent.\n\nIt is essential to recognize Indigenous territories and Indigenous sovereignty, especially within the context of geography courses.\nTo learn more about the Indigenous people, culture, and languages where you live and around the world, check out native-land.ca.\n\n\n\n\n\nMap Source\n\n\n\n\n\nWhy Do an Acknowledgement?\nA land acknowledgement is meant to convey a deep rooted cultural connection to the land and the historical and present day injustices and violence enacted on Indigenous communities through colonialism. For centuries, settler societies have perpetuated a genocide against Indigenous people across the globe. In many ways this genocide is still ongoing here in British Columbia and across Canada. There has been concerted effort by the government, religious organizations, and educational institutions to erase Indigenous cultures and identity from both the land and the map. Historically, maps have been used as tools of oppression and we must work to de-colonize our practices in GIS.\n\nAn acknowledgement is one small way to help with that, but it cannot be treated as a formality. It is a time to reflect and build understanding.\n\n\n\nWhat does it mean?\n\n\nTraditional and Ancestral Recognize by whom the lands were traditionally used and/or occupied and the cultures have been handed down from generation to generation. The area around UBC was used by many different people, including the xʷməθkʷəy̓əm, əl̓ilwətaɁɬ, and Skwxwú7mesh-ulh Nations.\nThese people are are part of a broader linguistic / cultural group of Coast Salish speaking people. The xʷməθkʷəy̓əm and əl̓ilwətaɁɬ speak dialects of Hul’q’umi’num’ / Halq’eméylem / hən̓q̓əmin̓əm̓ and the Skwxwú7mesh-ulh speak Sḵwx̱wú7mesh sníchim.\n\n\n\n\n\n\n\nUnceded: Refers to land that was not turned over to the government by a treaty or other agreement. Over 95% of the land in BC, and many lands elsewhere in the world were never ceded by treaty. Without treaties, these lands remain the sovereign territory of the First Nations that call them home. Yet at the same time, the lands have been claimed by Canada and these First Nations living on these lands lack a framework to express their sovereignty. This by no means absolves the Canadian government of their crimes where lands were “ceded” by treaty. Treaties were more frequently reached by coercion than negotiation. The RCMP was created specifically to force indigenous people off their lands by any means necessary."
   },
   {
+    "objectID": "FinalProjectInstructions.html",
+    "href": "FinalProjectInstructions.html",
+    "title": "Final Projects",
+    "section": "",
+    "text": "By the end of this project you will be able to:\n\nFormulate a Geographic Analysis Scenario\nIdentify geospatial datasets appropriate for the geographic analysis\nCreate a directory / geodatabase of datasets for the project (ensuring spatial and tabular data integrity)\nConduct GIS analyses that will demonstrate your knowledge of GIS analysis concepts and software tools\nVisualize your results (maps) and workflow (model/flow chart) and discuss them in a brief report\nFollow a project proposal to until the project is successfully completed\nBuild teamwork skills"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#project-proposal",
+    "href": "FinalProjectInstructions.html#project-proposal",
+    "title": "Final Projects",
+    "section": "Project Proposal",
+    "text": "Project Proposal\nYour proposal is a Tentative plan, you can change it after need/want. The proposal is intended to help you approach the project with a well rounded idea and provide clarity on the expectations for the project. Please use the proposal form here in .pdf or .docx. The form includes space for:\n\nA brief description of the topic\nThe data sets that you will use\n\nConfirmation that you are able to download them before submitting\n\nPreliminary analysis plans\n\nSome things to think about when formulating your project proposal:\n\nIs the project ambitious enough? Or is it overly ambitious? Would it be difficult to complete in the time remaining in the semester?\n\nYour project should not be a repeat of one of the labs. If you want to revisit a lab and use it as inspiration, that is fine. But you should incorporate additional analysis and look at a different areas.\n\nMake sure you have a clear understanding of how you are going to go from your data to your final deliverables.\nEnsure that your data is available and easy to obtain in a usable format.\n\n\nAssessment / Feedback\nThe proposal is worth 15 pts, minor comments/suggestions will be provided where applicable. For detailed feedback, your group should consider making time to meet with me either in person or over zoom during office hours (or by appointment).\n\nProposals turned in on time, will be promptly marked and returned within 24 hours.\nProposals will be assessed as follows:\n\n15pts - Great idea/outline, minimal changes needed\n10pts - Decent idea/outline, some changes needed, consider meeting with June to discuss\n5pts - Insufficient idea/outline, major changes needed, meet with June to discuss\n0pts - Missing\n\nIf you submit a proposal at least 2 days early (by midnight Wednesday March 29th) I will add two bonus points to your score and mark your proposal early!"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#written-report",
+    "href": "FinalProjectInstructions.html#written-report",
+    "title": "Final Projects",
+    "section": "Written Report",
+    "text": "Written Report\nEach group must produce a written report detailing their project. The report should contain the flowchart, maps, charts, and/or tables embedded in the document with in text references to the visualizations where applicable. The report should have the following sections:\nIntroduction – What is the problem? Why should we care? Briefly introduce the scope of the issue you are addressing and conclude your introduction with your research statement.\n\nResearch Statement – What is/are the specific question(s) you are looking to address?\n\nData Sources – What data are you using & where did they come from? What type of data are you working with (raster, vector, tabular)? What’s the scale & resolution, is these limiting factors? Are there any issues or special considerations with this data set? A table might be a useful way to help summarize this section concisely.\nMethods – What did you do? Why did you do it? Explain the analysis steps you took and justify the choices you made in your analysis. You can rely heavily on your flow charts for explaining the methods. You don’t need to detail every little step, be brief but throughout.\n\nDon’t Say things like: “We doubled clicked the buffer tool and set Layer A as the input. We set the buffer distance to 1000 meters and clicked dissolve all. We set the output name as Layer B and hit run. Then we merged Layer B with Layer C naming it Layer D”\nInstead Say: “We buffered Layer A by 1000 m because (justification). Then we merged it with Layer C”\nFlowchart is best included here!\n\nResults – What does your analysis say? Describe the general patterns and trends that your analysis yielded. * Maps/charts go here!\nConclusions – What are the overarching conclusions? Did you find what you expected? Did you answer the research statement? What are some potential future analysis that could result from this?\nBibliography – Cite any data sources used. Also cite any relevant literature. It is not expected that you conduct a literature review, just make sure to cite any you do use. Reference them in a consistent format\nThere is no word/page count. You can keep the report brief, just be thorough. Make sure you explain and discuss the key points."
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#groups",
+    "href": "FinalProjectInstructions.html#groups",
+    "title": "Final Projects",
+    "section": "Groups",
+    "text": "Groups\nThis is intended to be a group project. I suggest you work in a groups of 3. Groups larger than 4 are not allowed. If you are looking to join a group, try making a post to the Lab Discussion Board on canvas, list any topics you might be interested in working on. If you are still having trouble finding a group try reaching out to your TA for assistance.\nI encourage you to work in groups, however I also recognize group work can be very difficult for some; you may work alone but you must request approval first. Choosing to work alone will not lower the expectations for your project. Your project will be evaluated using the same standards as group projects."
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#project-proposal-explore-ideas-and-acquire-data",
+    "href": "FinalProjectInstructions.html#project-proposal-explore-ideas-and-acquire-data",
+    "title": "Final Projects",
+    "section": "Project Proposal: Explore Ideas and Acquire Data",
+    "text": "Project Proposal: Explore Ideas and Acquire Data\nThe proposal is intended to get you thinking about the project sooner rather than later, so you aren’t stuck scrambling at the last minute. See the Project Proposal page for details. The proposal is due Friday March 31st\nDownload and format your data during this step. Review the datasets and determine which layers and associated attributes you will need for your study. Pay special attention to the format of the data, and to the projection information before starting your analysis. It is important to ensure you can access the desired data before starting your project!"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#gis-analysis",
+    "href": "FinalProjectInstructions.html#gis-analysis",
+    "title": "Final Projects",
+    "section": "GIS Analysis",
+    "text": "GIS Analysis\nThe project should incorporate skills you’ve learned from the labs you completed during the course. Think about the different operations and tools that you have learned in lab and we have discussed in lecture. Try applying these to your topic. A list of potential analysis operations includes:\n\nCalculation of areas\nJoining tables\nSelect by attribute/location: various queries\nField calculation\nBuffers, dissolves, merges\nOverlay tools: clip, erase, union, intersect\nRaster overlay & reclassification\nWorking with DEMs (elevation, slope, aspect)\n\nIt might be beneficial to do your project in Model Builder. You are not required to do so, but it could be helpful for storing your workflow, which will make it easier to remember/describe your methods. Feel free to explore methods we didn’t cover in class as well."
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#flow-charts",
+    "href": "FinalProjectInstructions.html#flow-charts",
+    "title": "Final Projects",
+    "section": "Flow Charts",
+    "text": "Flow Charts\nAs you go through your GIS Analysis steps, document what you are doing and the specific operations you are performing (or use model builder!). You will produce a flow chart of your analysis and include it in the report. If you use model builder for your analysis, this can serve as the basis for your flowchart, but you should translate it into an easier to follow an more aesthetically pleasing format for the final submission.\nThere are a number of ways to create flowcharts. You can draw them by hand, you can use power point, or you can try Diagrams.net. This site allows you to make aesthetically pleasing flowcharts quickly and easily, the video bellow gives you a quick overview of how to use the too."
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#data-visualization",
+    "href": "FinalProjectInstructions.html#data-visualization",
+    "title": "Final Projects",
+    "section": "Data Visualization",
+    "text": "Data Visualization\nYou will need to make a series of maps/charts (number and type(s) depends on the specific analysis) to visualize your methods and final results. These visualizations must follow the conventions of data classification and data display as learned in the course, and include all relevant map elements (legend, title, scale, north arrow, sources, insets/reference maps where necessary etc.) and take into consideration cartographic design principals (lecture in class on design).\n\nSubmit full resolution copies of each visualization (flowchart, maps, charts). These will be evaluated for aesthetic quality and effectiveness at conveying your findings. The full resolution copies are required just in case the embedded figures in your project report are not clear enough to read."
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#access-to-green-space-and-bicycle-infrastructure-in-vancouver",
+    "href": "FinalProjectInstructions.html#access-to-green-space-and-bicycle-infrastructure-in-vancouver",
+    "title": "Final Projects",
+    "section": "Access to green space and bicycle infrastructure in Vancouver",
+    "text": "Access to green space and bicycle infrastructure in Vancouver\nScenario: Access to green space and bicycle infrastructure is important for quality of life in urban areas, promoting physical and mental health. Yet, green space and bike infrastructure are often inequitably distributed around cities. Explore the distribution of green space and bicycle infrastructure in Vancouver in relation to wealth, housing density, transit, etc. Check out the City of Vancouver Data Portal for data on parks, bicycle lanes, bike racks, trees, etc. that might be useful. It could also be helpful to incorporate some census data.\nPossible Analysis to consider * Geocoding (will be introduced in the coming weeks) * Select by location/attribute * Buffering to gauge accessibility * Intersections to count # bike racks, area of parks, length of bike lanes within census units"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#locations-for-a-ski-resort",
+    "href": "FinalProjectInstructions.html#locations-for-a-ski-resort",
+    "title": "Final Projects",
+    "section": "Locations for a Ski Resort",
+    "text": "Locations for a Ski Resort\nDefine a boundary region and download a DEM & other necessary data. You can use google earth engine to download a DEM and get some other files from DataBc that might be important to consider (eg. Old Growth Forests)\nPossible Analysis to consider\n* Slope, Aspect, & Reclassify * Weighted Overlay or Raster Calculator * Proximity Analysis"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#landslides-in-burn-zones",
+    "href": "FinalProjectInstructions.html#landslides-in-burn-zones",
+    "title": "Final Projects",
+    "section": "Landslides in Burn Zones",
+    "text": "Landslides in Burn Zones\nForest fires are also some of the worst natural disasters impacting the province. Climate change and human activity are changing fire dynamics and leading to costlier fire seasons. After severe fires, intense precipitation events can trigger landslides. The burn severity data is available for 2015-2019 for BC. Select a Fire Center (I suggest not doing Coastal Fire Centre). Use DEM data (google earth) to calculate slope and combine with burn severity and precipitation (HectaresBC) to create landslide risk classification. Your selected Fire Center can serve as your boundary file for the DEM download. This could also be adapted to look at logging instead of fires!\nPossible Analysis to consider\n* Slope & Reclassify * Weighted Overlay or Raster Calculator * Proximity Analysis * Flow Analysis"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#air-quality-in-bc",
+    "href": "FinalProjectInstructions.html#air-quality-in-bc",
+    "title": "Final Projects",
+    "section": "Air Quality in BC",
+    "text": "Air Quality in BC\nPoor air quality is a significant health risk for vulnerable populations. Over recent years there have been serious smoke events impacting air quality province wide. Additionally, traffic and industrial activities exacerbate air quality issues in urban areas. Use this air quality data to look at how air quality changes across the region annually/seasonlally or investigate some specific event(s) eg. a bad fire season. Consider incorporating census data to see if there arae significant at risk populations (eg. youth and seniors) in places with air quality? Note - Look at the data coverage before you decide which scale to analyze census data at.\nPossible Analysis to consider\n* Import tabular (x,y) data * Calculating Fields * Inverse Distance Weighting * Zonal statistics * Tabular joins"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#mapping-police-violence",
+    "href": "FinalProjectInstructions.html#mapping-police-violence",
+    "title": "Final Projects",
+    "section": "Mapping Police Violence",
+    "text": "Mapping Police Violence\nUse a dataset on police violence to map incidents of police violence in a specific region of your choice. You can choose a province (eg. Saskatchewan), or a specific city (eg. Toronto). Use census data to complement the analysis. If you choose this project, you can reach out directly to me for more information on the data and guidance how to approach the analysis.\nPossible Analysis to consider * Point in Polygon Analysis * Kernel Density * Linear Regression * Data Normalization & Classification"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#simply-analytics",
+    "href": "FinalProjectInstructions.html#simply-analytics",
+    "title": "Final Projects",
+    "section": "Simply Analytics",
+    "text": "Simply Analytics\nWith Simply Analytics, you can download Cenus Data for Canada and/or the United States. You can also download businesses locations."
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#google-earth-engine",
+    "href": "FinalProjectInstructions.html#google-earth-engine",
+    "title": "Final Projects",
+    "section": "Google Earth Engine",
+    "text": "Google Earth Engine\nGoogle Earth Engine has lots of datasets, we’ve only covered two; using Landsat8 to calculate NDVI and and working with DEMs (see code below). If you’d like to work with something we haven’t worked with I’m happy to help facilitate downloading it, just send me an email. Do not wait until the last minute to contact me asking for help with a download.\n\nThis code can be used to download a DEM via the google earth code editor, similar to what we did in to download NDVI, just make sure to upload an appropriate boundary file first.\n\n\nLANDSAT8 NDVI for a Single Year\nDownload a Landsat 8 NDVI greenest pixel composite for a single year, for any land area on earth. See the below video for further instructions.\n// Center Map on geometry object\nMap.centerObject(geometry, 8);\n\n// Import the Landsat 8 TOA image collection.\n// Filter out images with cloud covdf > 10%\nvar Collection = ee.ImageCollection('LANDSAT/LC08/C01/T1_TOA')\n.filter(ee.Filter.calendarRange(2021, 2021, 'year'))\n.filter(ee.Filter.lt('CLOUD_COVER_LAND', 10));\n\n// Get the number of images.\nvar count = Collection.size();\nprint('Count: ', count);\n\n// Define NDVI Function\nvar addNDVI_Landsat = function(image) {\n  var ndvi = image.normalizedDifference(['B5', 'B4']).rename('NDVI');\n  return image.addBands(ndvi);\n};\n\n// Apply Function to all Images\nvar withNDVI_Landsat = Collection.map(addNDVI_Landsat);\n\n// Make a \"greenest\" pixel composite.\nvar greenest = withNDVI_Landsat.qualityMosaic('NDVI');\nvar ndvi = greenest.select('NDVI')\n\n// Define Color Scheme for Visualization\nvar ndviParams = {min: -.5, max: 1, palette: ['blue', 'white', 'green']};\n\n// Display the result.\nMap.addLayer(ndvi, ndviParams, 'Greenest pixel composite');\n\n// Export to Google drive\nExport.image.toDrive({\n  image: ndvi,\n  description: 'Greenest Pixel Composite',\n  scale: 30,\n  region: geometry\n});\n\n\n\n\nNRCan DEM\nDownload the NRCan DEM for the metro Vancouver area using the same “Boundary” file as in Module 4\nvar dataset = ee.ImageCollection('NRCan/CDEM').mean();\nvar elevation = dataset.select('elevation');\nvar elevationVis = {\n  min: -50.0,\n  max: 1500.0,\n  palette: ['0905ff', 'ffefc4', 'ffffff'],\n};\n\n\nMap.centerObject(Boundary)\nMap.addLayer(Boundary)\nMap.addLayer(elevation, elevationVis, 'Elevation');\n\n// Export to Google drive\nExport.image.toDrive({\n  image: elevation,\n  description: 'DEM',\n  scale: 25,\n  region: Boundary\n});"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#data-bc",
+    "href": "FinalProjectInstructions.html#data-bc",
+    "title": "Final Projects",
+    "section": "Data BC",
+    "text": "Data BC\nData BC has many different datasetes. You can search for them by key terms. Some useful data sets might include:\n\nOld Growth Forests - legal - current\nFreshwater Atlas Stream Network\nFreshwater Atlas Rivers\nFreshwater Atlas Coastlines\nBC Wildfire Fire Centres\nFire Burn Severity - Historical\nSome downloads from this site require you to filter by Map sheets"
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#municipal-data-sources",
+    "href": "FinalProjectInstructions.html#municipal-data-sources",
+    "title": "Final Projects",
+    "section": "Municipal Data Sources",
+    "text": "Municipal Data Sources\nThe City of Vancouver Data Portal has a lots of data for the city: parks, zoning, bike lanes, transit etc. Only for the City Vancouver. Surrey, Richmond, Burnaby, etc. have their own. Metro-Vancouver, which is inclusive of all thse cities has more data. Most large municipalities have some sort of data portal. * eg. Google: “Toronto open data” and see what comes up."
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#bc-air-quality-data",
+    "href": "FinalProjectInstructions.html#bc-air-quality-data",
+    "title": "Final Projects",
+    "section": "BC Air Quality Data",
+    "text": "BC Air Quality Data\nI’ve compiled BCs air quality data into a format you can import into ArcGIS Pro. Follow the link and make sure to read the metadata."
+  },
+  {
+    "objectID": "FinalProjectInstructions.html#bc-precipitation-and-temperature-data",
+    "href": "FinalProjectInstructions.html#bc-precipitation-and-temperature-data",
+    "title": "Final Projects",
+    "section": "BC Precipitation and Temperature Data",
+    "text": "BC Precipitation and Temperature Data\nI’ve compiled Environment Canada’s Precipitation and Temperature data for all currently operating station in BC into a format you can import into ArcGIS Pro. Follow the link and make sure to read the metadata."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Syllabus",
@@ -46,7 +179,7 @@
     "href": "index.html#academic-concessions",
     "title": "Syllabus",
     "section": "Academic Concessions",
-    "text": "Academic Concessions\nIf you require an Academic Concession please email me promptly so that we can work together to figure out an accommodation for your situation. You are not obligated to explain your personal circumstances to me to justify the concession, my inent is to be accomodating. However, you must to communicate any need for a concession in a timely manner. If you require multiple concessions I may refer you to Arts Advising."
+    "text": "Academic Concessions\nIf you require an Academic Concession please email me promptly so that we can work together to figure out an accommodation for your situation. You are not obligated to explain your personal circumstances to me to justify the concession, my intent is to be accommodating. However, you must to communicate any need for a concession in a timely manner. If you require multiple concessions I may refer you to Arts Advising."
   },
   {
     "objectID": "index.html#academic-integrity",
@@ -770,10 +903,87 @@
     "text": "You can submit your answers to this Lab Quiz questions on via the corresponding Canvas Quiz. Questions in this document are hyperlinked to relevant content incase you need help finding answers. Feel free to work with peers in the lab, but make sure all work submitted is your own. Written answers can be brief and bullet point format is okay unless otherwise specified.\n\nRubric\nWritten answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable. Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics. For Lab 1, as long as you can make a map with the necessary elements, you’ll get full credit! As the term progresses, figure submissions will be evaluated to a higher standard.\n\n\n\n\nTable 1: Lab Quiz Rubric\n\n\n\n\n\n\n\n\nCategory\nWritten Answers\nFigure Submissions\nScore\n\n\n\n\nMissing\n\n\n0%\n\n\nInsufficient\nMissing major key points or serious logical flaws\nSerious errors in analysis, missing data, or major stylistic issues\n25%\n\n\nBelow Expectations\nMissing a few key points or minor logical flaws\nMinor errors in analysis or multiple stylistic issues\n50%\n\n\nMeets Expectations\nHits key points and mostly well constructed\nError free analysis, minor stylistic issue\n75%\n\n\nExceeds Expectations\nClearly thought out, concise, and astute\nError free analysis and clean, aesthetically pleasing map\n100%\n\n\n\n\n\n\n\n\nQuiz Questions\nUnless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.\n\nWhat does the example presented in Ludwin et al. 2005 say about the value that the sciences have historically attributed to traditional knowledge when it comes to understanding our world? Hint\nThe maximum wave height recorded at Tofino was only ____ meters. Despite this, wave heights exceeded 8 meters in Port Alberni. Hint\nLook back at Ludwin et al. 2005, specifically at the story of Pachena Bay (bottom pg 142 to top of pg 143). You can find a full transcription here. Find Pachena Bay on google maps. Where is it relative to Port Alberni? What can you infer from this story, the account in Fine et al (2008), and the simulation of wave heights about how a megathrust earthquake occurring just off of the coast of Vancouver Island would impact Port Alberni? Hint\nWhy do we use a feature dataset to hold all our input layers? Hint\n\n\nNo reason\nSo everything is neatly grouped in one folder\nTo ensure all our vector data is in the same projection, the feature dataset will automatically re-project our vector data when importing\nTo ensure all our vector and raster data is in the same projection, the feature dataset will automatically re-project our vector and raster data when importing\n\n\nWhy are we using model builder for this analysis? Select all that apply Hint\n\n\nYour analysis is easily repeatable when using model builder\nYou can easily update your analysis\nYou can visualize your workflow\nYou can share your workflow with others\n\n\nHow many km of roads are at risk? Rounded to the nearest tenth km is fine. Hint Open the attribute, of PA_Roads_Flood, click right Click Shape_Length >> Statistics to find the sum. Note make sure to use the answer for the model run with the 10m threshold. Hint\nHow many km of roads are at risk after updating the model to account for the new wave height (15m) estimates? Rounded to the nearest tenth km is fine. Note this answer will be higher than your answer to the question above because we increased the threshold. Hint\nHow many properties (of any kind) are at risk of flooding? Note make sure to use the answer for the model run with the 15m threshold. Hint\nHow many people are potentially at risk of displacement? Round up to the nearest whole number Hint\nWhy were you instructed to round the answer to the question above? Hint\n\n\nPopulation counts are continuous data\nPopulation counts are discrete data\nPopulation counts are qualitative data\nPopulation counts are interval data\n\n\nUpload your PA_RiskAssessment_Model.pdf Hint\nUpload your Properties_at_Risk_Chart.pdf Hint\nUpload your PA_RiskAssessment_Final_Map.pdf Hint"
   },
   {
+    "objectID": "Modules/6/instructions.html",
+    "href": "Modules/6/instructions.html",
+    "title": "Port Alberin Tsunami Risk Assessment v 2.0",
+    "section": "",
+    "text": "Please note: The Lab Questions corresponds to this lab assignment. There are questions you need to answer in the quiz that pertain to the lab, so its a good idea to skim the quiz questions before starting the lab.\nThis page contains instructions for the lab assignment, follow them to work through the lab in ArcGIS Pro. There are links to documentation where applicable along with embedded screenshots and videos in the instructions at some steps for reference. Feel free to work with peers in your lab section and don’t hesitate to ask your TA for help!"
+  },
+  {
+    "objectID": "Modules/6/instructions.html#risk-level-of-shelter-locations",
+    "href": "Modules/6/instructions.html#risk-level-of-shelter-locations",
+    "title": "Port Alberin Tsunami Risk Assessment v 2.0",
+    "section": "Risk level of shelter locations",
+    "text": "Risk level of shelter locations\nImport the shelters layer from the original PA_RiskAssessment (Module 5). Using either visual inspection, or the “Zonal Statistics as Table” tool, determine the risk classification for each of the 3 tsunami shelters in Port Alberni.\n\nHint - The easiest way is to import it to your Inputs Feature Dataset using the “import feature class” tool.\nIf using the zonal statistics tool, make sure to use the shelters as the feature zone data and to set “Name” as the zone field.\nTake note of the risk class (or lack thereof) for each shelter. This is a quiz answer."
+  },
+  {
+    "objectID": "Modules/6/instructions.html#your-model",
+    "href": "Modules/6/instructions.html#your-model",
+    "title": "Port Alberin Tsunami Risk Assessment v 2.0",
+    "section": "Your model",
+    "text": "Your model\nExport your model as a .pdf and submit it on canvas."
+  },
+  {
+    "objectID": "Modules/6/instructions.html#final-map",
+    "href": "Modules/6/instructions.html#final-map",
+    "title": "Port Alberin Tsunami Risk Assessment v 2.0",
+    "section": "Final Map",
+    "text": "Final Map\nCreate map showing the Tsunami Inundation risk classification for Port Alberni and the location of the tsunami evacuation shelters and submit it on canvas as well. The final map should include:\n\nThe inundation zone you created using the weighted overlay method.\n\n\nMake sure to use an appropriate color scheme.\n\n\nThe three tsunami shelters\nThe satellite base map\nAll relevant map elements.\n\n\nYou can list google earth engine as the DEM data source and the City of Port Alberni as the “Waterbodies” data source."
+  },
+  {
+    "objectID": "Modules/6/lecture.html",
+    "href": "Modules/6/lecture.html",
+    "title": "Spatial Sampling, Uncertainty, & Ethics",
+    "section": "",
+    "text": "This module will discuss techniques for spatial sampling and interpolation, followed by a broad discussion on types of uncertainty in GIS, both quantifiable errors and other issues that can be harder to explicitly define. Then we will close out the term with a discussion of ethical practices in GIS."
+  },
+  {
+    "objectID": "Modules/6/lecture.html#learning-outcomes",
+    "href": "Modules/6/lecture.html#learning-outcomes",
+    "title": "Spatial Sampling, Uncertainty, & Ethics",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nGain Experience with Raster Overlay Methods\nMore Practice with Model Builder"
+  },
+  {
+    "objectID": "Modules/6/questions.html",
+    "href": "Modules/6/questions.html",
+    "title": "Lab Assignment Questions",
+    "section": "",
+    "text": "You can submit your answers to this Lab Quiz questions on via the corresponding Canvas Quiz. Questions in this document are hyperlinked to relevant content incase you need help finding answers. Feel free to work with peers in the lab, but make sure all work submitted is your own. Written answers can be brief and bullet point format is okay unless otherwise specified.\n\nRubric\nWritten answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable. Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics. For Lab 1, as long as you can make a map with the necessary elements, you’ll get full credit! As the term progresses, figure submissions will be evaluated to a higher standard.\n\n\n\n\nTable 1: Lab Quiz Rubric\n\n\n\n\n\n\n\n\nCategory\nWritten Answers\nFigure Submissions\nScore\n\n\n\n\nMissing\n\n\n0%\n\n\nInsufficient\nMissing major key points or serious logical flaws\nSerious errors in analysis, missing data, or major stylistic issues\n25%\n\n\nBelow Expectations\nMissing a few key points or minor logical flaws\nMinor errors in analysis or multiple stylistic issues\n50%\n\n\nMeets Expectations\nHits key points and mostly well constructed\nError free analysis, minor stylistic issue\n75%\n\n\nExceeds Expectations\nClearly thought out, concise, and astute\nError free analysis and clean, aesthetically pleasing map\n100%\n\n\n\n\n\n\n\n\nQuiz Questions\nUnless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.\n\nList the risk classification score for each of the shelters. If the shelter did not have a risk classification, you can list it as “N/A” Hint\n\nEcho Community Centre: AW Neil Elementary: 5100 Tebo Ave:\n\nSubmit a .pdf of the model you created to identify the inundation zone. Hint\nSubmit a .pdf of the map you created to showing the updated inundation zone and shelter locations. Hint\nWrite a paragraph or two comparing the method used in Module 5 (previous method) model to identify the Inundation Zone vs. the method used in this Module 6 (this assignment) to identify the Inundation Zone. Things to consider: What tools/steps were used in each model? Which do you think produces a more useful result? What are some potential pros/cons of the different methods? Hint\nRead the highlighted portions of Chae et al. (2015) on racism and health outcomes. Then use this information to a couple paragraphs outlining what they found, how the type of data they used can be a useful alternative for traditional metrics, and what are some potential limitations to this type of research."
+  },
+  {
+    "objectID": "Modules/7/ExtraCredit.html",
+    "href": "Modules/7/ExtraCredit.html",
+    "title": "GIS Programming",
+    "section": "",
+    "text": "You can submit your answers to this Lab Quiz questions on via the corresponding Canvas Quiz. Questions in this document are hyperlinked to relevant content incase you need help finding answers. Feel free to work with peers in the lab, but make sure all work submitted is your own. Written answers can be brief and bullet point format is okay unless otherwise specified.\n\nRubric\nWritten answers and figure submissions will be evaluated using the rubric below and your TA will provide brief comments where applicable. Maps, charts, and other figure submissions will be evaluated for completeness and aesthetics. For Lab 1, as long as you can make a map with the necessary elements, you’ll get full credit! As the term progresses, figure submissions will be evaluated to a higher standard.\n\n\n\n\nTable 1: Lab Quiz Rubric\n\n\n\n\n\n\n\n\nCategory\nWritten Answers\nFigure Submissions\nScore\n\n\n\n\nMissing\n\n\n0%\n\n\nInsufficient\nMissing major key points or serious logical flaws\nSerious errors in analysis, missing data, or major stylistic issues\n25%\n\n\nBelow Expectations\nMissing a few key points or minor logical flaws\nMinor errors in analysis or multiple stylistic issues\n50%\n\n\nMeets Expectations\nHits key points and mostly well constructed\nError free analysis, minor stylistic issue\n75%\n\n\nExceeds Expectations\nClearly thought out, concise, and astute\nError free analysis and clean, aesthetically pleasing map\n100%\n\n\n\n\n\n\n\n\nQuiz Questions\nUnless otherwise specified, numeric answers have a margin of error of 0.01, so give all responses to at least the hundredths place.\n\nList the risk classification score for each of the shelters. If the shelter did not have a risk classification, you can list it as “N/A” Hint\n\nEcho Community Centre: AW Neil Elementary: 5100 Tebo Ave:\n\nSubmit a .pdf of the model you created to identify the inundation zone. Hint\nSubmit a .pdf of the map you created to showing the updated inundation zone and shelter locations. Hint\nWrite a paragraph or two comparing the method used in Module 5 (previous method) model to identify the Inundation Zone vs. the method used in this Module 6 (this assignment) to identify the Inundation Zone. Things to consider: What tools/steps were used in each model? Which do you think produces a more useful result? What are some potential pros/cons of the different methods? Hint\nRead the highlighted portions of Chae et al. (2015) on racism and health outcomes. Then use this information to a couple paragraphs outlining what they found, how the type of data they used can be a useful alternative for traditional metrics, and what are some potential limitations to this type of research."
+  },
+  {
+    "objectID": "Modules/7/lecture.html",
+    "href": "Modules/7/lecture.html",
+    "title": "Final Exam Review",
+    "section": "",
+    "text": "The final exam will be asynchronous over Canvas and is scheduled for June 28."
+  },
+  {
+    "objectID": "Modules/7/lecture.html#whats-on-the-exam",
+    "href": "Modules/7/lecture.html#whats-on-the-exam",
+    "title": "Final Exam Review",
+    "section": "What’s on the Exam?",
+    "text": "What’s on the Exam?\nThere will be four parts to your exam. Questions will be assigned randomly from a question bank. No two students will have the same exam. The following point breakdown is approximate and may change slightly:\n\nA Flowchart (50 pts)\nEssays (60 pts)\nShort Answer (50 pts)\nAutomated Questions (90 pts)\n\nFill in the Blank\nMultiple Choice\nMatching\nTrue False\nNumeric Answer\n\n\n\nFlowchart\nTests your ability to work through a problem using GIS methods. Create a flow chart outlining a GIS analysis in response to a prompt. I suggest you use diagrams.net because its easy to create clean flowcharts quickly, but this is not required - you can do it however you’d like (hand drawn, PowerPoint, etc.).\n\nYou can reference this tutorial video for an overview of diagrams.net. You might want to practice making a flowchart before exam time.\n\nThe processes you’ll want to be familiar with were covered in Module 5 & Module 6 * When exporting to submit, make sure to export/submit a .png, .jpg, or .pdf * Think about design principals - aesthetics will be a small portion of the flowchart grade.\n\nPractice Question 1\nPrompt: Based on your analysis from the Tsunami Risk Assessment, the city of Port Alberni has been given funding build a new evacuation shelter. You have been contracted by the city and tasked with finding a suitable location for the shelter.\nCriteria: The shelter must:\n\nBe located outside of any potential inundation zone (Elevation > 15 m or distance from coastline > 1 km).\nBe at least 1.5 km away from existing shelters.\nLocated no more than 250 m away from an Arterial Roadway.\nCannot be located on Residential, Commercial, or Industrial Parcels\n\nData\n\n\n\n\n\n\n\n\n\nName\nType\nCoordinate System\nAttributes\n\n\n\n\nDigital Elevation Model\nRaster\nUTM Zone 10N\nElevation (m)\n\n\nBC Coastal Boundary File\nVector (line)\nUTM Zone 10N\nName\n\n\nBC Roads Layer\nVector (line)\nUTM Zone 10N\nRoad Type (Arterial, Residential, Private), Name\n\n\nProperties\nVector (polygon)\nUTM Zone 10N\nZoning Type (Residential, Commercial, Industrial, Parks, Government/ Institutional)\n\n\nCurrent Shelters\nText (.csv)\nWGS 1984\nLatitude/Longitude, Name, Capacity\n\n\n\n\n\n\nPractice Question 2\nPrompt: June is looking for the best places in BC to pick salmonberries and they have asked you for help!\nCriteria: June will only pick on public land. Salmon berries prefer:\n\nDeciduous Tree Cover\nMoist forest (At least 1000 mm rainfall / year)\nCool summers (Mean July Temperatures < 25 C)\nLower Elevation (< 1500 m)\n\nData\n\n\n\n\n\n\n\n\n\nName\nType\nCoordinate System\nAttributes\n\n\n\n\nJuly NDVI\nRaster\nWGS 1984\nNDVI\n\n\nJanuary NDVI\nRaster\nWGS 1984\nNDVI\n\n\nDigital Elevation Model\nRaster\nWGS 1984\nElevation (m)\n\n\nBC Land Tenure\nVector (Polygon)\nBC Albers\nFirst Nation/Crown/Private/\n\n\nBC Climate Data\nText (.csv)\nWGS 1984\nLatitude/Longitude, Name, Monthly Mean Temperature, Monthly Total Rainfall\n\n\n\nSuggested Steps:\n\nJuly Temperature Data >> Display XY & Project (Albers) >> IDW\nBoth NDIV >> Reproject (Albers)\nReclassify >> NDVI & Temperature\nRaster Calculator/Weighted Overlay (All Raster Layers)\nRaster to Vector (Suitable Areas)\nSelect Crown Land > Clip Suitable Areas\n\n\n\n\nEssays\n\nNo definitive word count/limit. Responses can be brief, but should be thorough. Use full sentences and answer all parts of the question.\n\nGive examples!\nSketches/Illustrations can be incorporated (not required/expected)\nType them up and submit as .pdf\n\nMake Sure it’s a .pdf!\nFormats like .pages - are not readable across platforms\n\nRandomly assigned from a bank!\n\nYou can expect:\n\n1 essay on Spatial Coordinate Systems Module 2\n1 essay on Data Types and Spatial Data Models Module 3 & Module 4\n\n\n\n\nShort Answer Questions\nGenerally, no more than a paragraph needed. Bullet point lists are sufficient where applicable. Anything from lecture/lab is fair game.\n\nExplain a key concept in your own words or give examples of a specific issue.\n\n\n\nAutomated Questions\nThese questions will include a mix of different question types that will be marked automatically.\n\nI will provide you with a special answer sheet that you need to used to record and upload your answers. Make sure to follow the specific instructions provided so your answers are handled correctly."
+  },
+  {
+    "objectID": "Modules/7/lecture.html#what-is-plagiarism",
+    "href": "Modules/7/lecture.html#what-is-plagiarism",
+    "title": "Final Exam Review",
+    "section": "What is Plagiarism?",
+    "text": "What is Plagiarism?\n“Plagiarism is presenting work or ideas from another source as your own, with or without consent of the original author, by incorporating it into your work without full acknowledgement.” - Oxford English Dictionary\n\nHow to avoid plagiarizing on an open book exam?\nPut answers in your own words.\n\nIts perfectly okay to reference course material and other outside resources. However, the ideas presented must reflect your own understanding of the information presented.\n\n\nChatGPT?\nIts an amazingly powerful tool! That said … its a C student at best. Don’t copy/paste exam answers from ChatGPT - you’d be surprised how often it will generate incorrect information.\n\nYou can use Chat GPT as a study tool.\n\nUnsure what the difference between the a Geographic Coordinate System and a Map Projection?\n\nAsk Chat GPT and see what it says.\nCross reference its answer with other sources (e.g. lecture material) to solidify your understanding and make sure it didn’t give you any misinformation.\n\n\nYou cannot use Chat GPT to answer exam questions for you. That is plagiarism.\n\n\n\nTop Hat Question\nWhich of the following are examples of plagiarism?\n\nTyping exam questions into ChatGPT and using its response as your answer.\nParaphrasing a full paragraph from a research paper or other article without citation.\nUsing Chat GPT as a study tool to help prepare for an exam.\nSynthesizing information from multiple online sources to answer an essay question.\nCopying full sentences from lecture slides and putting them in an essay."
+  },
+  {
     "objectID": "Modules/moduleInfo.html",
     "href": "Modules/moduleInfo.html",
     "title": "Course Modules",
     "section": "",
-    "text": "Each module consists of lecture content and lab work. Click the corresponding module tab to see the lecture slides and to view links to each lab assignment.\n\n\n\n\nTable 1: Important Dates\n\n\n\n\n\n\n\nModule\nTopic\nDue Date\n\n\n\n\nModule 1\nHistory of GIS & Intro to ArcGIS Pro\nMay 22\n\n\nModule 2\nCoordinate Reference Systems\nMay 26\n\n\nModule 3\nData Types, Data Classification, & Data Visualization\nJune 2\n\n\nModule 4\nSpatial Data Models\nJune 7\n\n\nModule 5\nGIS Workflows, Spatial Analysis Methods\nJune 14\n\n\nModule 6\nFinal Project Proposal, Spatial Sampling, Uncertainty, & Ethics\nJune 19\n\n\nModule 7\nFinal Project, Extra Credit Programming Exercise, & Exam Review\nJune 27\n\n\nFinal Exam\nAsynchronous on Canvas\nJune 28"
+    "text": "Each module consists of lecture content and lab work. Click the corresponding module tab to see the lecture slides and to view links to each lab assignment.\n\n\n\n\nTable 1: Important Dates\n\n\n\n\n\n\n\nModule\nTopic\nDue Date\n\n\n\n\nModule 1\nHistory of GIS & Intro to ArcGIS Pro\nMay 22\n\n\nModule 2\nCoordinate Reference Systems\nMay 26\n\n\nModule 3\nData Types, Data Classification, & Data Visualization\nJune 2\n\n\nModule 4\nSpatial Data Models\nJune 7\n\n\nModule 5\nGIS Workflows, Spatial Analysis Methods\nJune 14\n\n\nModule 6\nFinal Project Proposal, Spatial Sampling, Uncertainty, & Ethics\nJune 19\n\n\nFinal Project Proposal\n\nJune 19\n\n\nModule 7\nExtra Credit Programming Exercise & Exam Review\nJune 23\n\n\nFinal Project\n\nJune 27\n\n\nFinal Exam\nAsynchronous on Canvas\nJune 28"
   }
 ]

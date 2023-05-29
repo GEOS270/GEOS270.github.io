@@ -1,0 +1,76 @@
+---
+title: "Spatial Sampling, Uncertainty, & Ethics"
+format: html
+echo: false
+---
+
+This module will discuss techniques for spatial sampling and interpolation, followed by a broad discussion on types of uncertainty in GIS, both quantifiable errors and other issues that can be harder to explicitly define.  Then we will close out the term with a discussion of ethical practices in GIS.
+
+
+## Learning Outcomes
+
+* Gain Experience with Raster Overlay Methods
+* More Practice with Model Builder
+
+
+
+# Spatial Sampling and Interpolation
+
+Collecting spatial data, reading between the lines, and filling in the blanks.
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Spatial_Sampling_Methods/Slides.html#/spatial-sampling" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Spatial_Sampling_Methods/Slides.html#/spatial-sampling" target="_blank">View Slides in New Tab</a>
+
+
+# Uncertainty in GIS
+
+What are the components of uncertainty in GIS and how does it compound as you work through an analysis?
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Uncertainty_in_GIS/Slides.html#/uncertainty-in-gis" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Uncertainty_in_GIS/Slides.html#/uncertainty-in-gis" target="_blank">View Slides in New Tab</a>
+
+
+# Ethic in GIS
+
+Moral principals guiding your practice of GIS.
+
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Ethics_in_GIS/Slides.html#/ethics-in-gis" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Ethics_in_GIS/Slides.html#/ethics-in-gis" target="_blank">View Slides in New Tab</a>
+

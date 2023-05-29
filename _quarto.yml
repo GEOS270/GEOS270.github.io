@@ -68,6 +68,20 @@ website:
           text: Lab Instructions
         - href: Modules/5/questions.qmd
           text: Lab Questions
+      - section: "Module 6"
+        href: Modules/6/lecture.qmd
+        contents:
+        - href: Modules/6/instructions.qmd
+          text: Lab Instructions
+        - href: Modules/6/questions.qmd
+          text: Lab Questions
+      - section: "Module 7"
+        href: Modules/7/lecture.qmd
+        contents:
+        - href: Modules/7/ExtraCredit.qmd
+          text: Extra Credit
+      - section: "Final Project"
+        href: FinalProjectInstructions.qmd
   # sidebar:
   #   style: "docked"
   #   search: true

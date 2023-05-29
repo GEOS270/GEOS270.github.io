@@ -92,5 +92,26 @@
   },
   "Modules/5/questions.qmd": {
     "questions.html": "d805584d"
+  },
+  "Modules/6/instructions.qmd": {
+    "instructions.html": "745dc8fa"
+  },
+  "Modules/6/lecture.qmd": {
+    "lecture.html": "f99f73f8"
+  },
+  "Modules/6/questions.qmd": {
+    "questions.html": "42f41a9c"
+  },
+  "Modules/7/ExtraCredit.qmd": {
+    "ExtraCredit.html": "ec27a6b8"
+  },
+  "Modules/7/FinalProjectInstructions.qmd": {
+    "FinalProjectInstructions.html": "f2b05780"
+  },
+  "Modules/7/lecture.qmd": {
+    "lecture.html": "8cf7540a"
+  },
+  "FinalProjectInstructions.qmd": {
+    "FinalProjectInstructions.html": "c84681a6"
   }
 }
