@@ -82,6 +82,10 @@ website:
           text: Extra Credit
       - section: "Final Project"
         href: FinalProjectInstructions.qmd
+        contents:
+        - href: proposals/Final-Project-Proposal-Form.docx
+          text: Proposal Form
+
   # sidebar:
   #   style: "docked"
   #   search: true
