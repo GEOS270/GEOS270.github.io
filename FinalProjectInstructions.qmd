@@ -80,7 +80,8 @@ The proposal is worth **`r tail(rubric$Points, 2)[1]`** pts, minor comments/sugg
 	* **5pts** - Insufficient idea/outline, major changes needed, meet with June to discuss
 	* **0pts** - Missing
 
-* If you submit a proposal at least **2 days early** (by midnight Wednesday March 29th) I will add **two bonus** points to your score and mark your proposal early!
+* You can submit your proposal early for up to 5 pts extra credit:
+  * You will get one point per day (up to 5 days) you submit in advance of the proposal due date (**`r ProposalDue`**).
 
 
 ## Project Report
