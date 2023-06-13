@@ -896,6 +896,20 @@
     "text": "Learning Outcomes\n\nLearn how to apply different analysis methods to both Raster and Vector data\nUse spatial overlay methods to answer a research question\nIntroduction to Model Builder\nGIS Applications in Hazards planning"
   },
   {
+    "objectID": "Modules/5/lecture.html#raster-methods",
+    "href": "Modules/5/lecture.html#raster-methods",
+    "title": "Spatial Data Models",
+    "section": "Raster Methods",
+    "text": "Raster Methods\nThis Raster Methods Examples Project contains models with examples of methods that can be applied to raster data, using some data from the NRCAN DEM covering Port Alberni and a LANDSAT 8 image of the Mackenzie River Delta. You can follow along in lecture or download the project and play around with the data on your own.\nThe methods covered include:\n\nEuclidean Distance\nReclassification\nSlope\nAspect\nRaster Calculator\nWeighted Overlay\nSpecifying Visible Bands & Creating False Color Images\nClipping Rasters\nCreating Mosaics\nCalculating NDVI & Other Raster Tools"
+  },
+  {
+    "objectID": "Modules/5/lecture.html#vector-methods",
+    "href": "Modules/5/lecture.html#vector-methods",
+    "title": "Spatial Data Models",
+    "section": "Vector Methods",
+    "text": "Vector Methods\nThis Vector Methods Example Project contains models with examples of methods that can be applied to vector data, using some data from Burns Bog. You can follow along in lecture or download the project and play around with the data on your own.\nThe methods covered include:\n\nMerging vector layers\nBuffering\nClipping\nErasing\nIntersecting\nUnioning\nDissolving\nConverting a vector to raster"
+  },
+  {
     "objectID": "Modules/5/questions.html",
     "href": "Modules/5/questions.html",
     "title": "Lab Assignment Questions",

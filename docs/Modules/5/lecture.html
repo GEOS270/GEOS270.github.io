@@ -280,8 +280,13 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
   <li><a href="#spatial-analysis-workflows" id="toc-spatial-analysis-workflows" class="nav-link" data-scroll-target="#spatial-analysis-workflows">Spatial Analysis Workflows</a></li>
-  <li><a href="#vector-analysis-methods" id="toc-vector-analysis-methods" class="nav-link" data-scroll-target="#vector-analysis-methods">Vector Analysis Methods</a></li>
   <li><a href="#raster-analysis-methods" id="toc-raster-analysis-methods" class="nav-link" data-scroll-target="#raster-analysis-methods">Raster Analysis Methods</a></li>
+  <li><a href="#vector-analysis-methods" id="toc-vector-analysis-methods" class="nav-link" data-scroll-target="#vector-analysis-methods">Vector Analysis Methods</a></li>
+  <li><a href="#working-examples" id="toc-working-examples" class="nav-link" data-scroll-target="#working-examples">Working Examples</a>
+  <ul class="collapse">
+  <li><a href="#raster-methods" id="toc-raster-methods" class="nav-link" data-scroll-target="#raster-methods">Raster Methods</a></li>
+  <li><a href="#vector-methods" id="toc-vector-methods" class="nav-link" data-scroll-target="#vector-methods">Vector Methods</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -334,6 +339,25 @@ Your browser does not support iframes.
 </div>
 <p><a href="https://geos270.github.io/LectureSlides/Spatial_Data_Workflows/Slides.html#/gis-workflows" target="_blank">View Slides in New Tab</a></p>
 </section>
+<section id="raster-analysis-methods" class="level1">
+<h1>Raster Analysis Methods</h1>
+<p>Raster data is less complex, but there are many different types of analysis we can conduct with it!</p>
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+<iframe src="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+<p>
+Your browser does not support iframes.
+</p>
+<p></iframe><p></p>
+</div>
+<p><a href="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" target="_blank">View Slides in New Tab</a></p>
+</section>
 <section id="vector-analysis-methods" class="level1">
 <h1>Vector Analysis Methods</h1>
 <p>Vector data structures are quite complex, so there are a number of different ways to see how features relate to each other.</p>
@@ -353,26 +377,42 @@ Your browser does not support iframes.
 </div>
 <p><a href="https://geos270.github.io/LectureSlides/Vector_Analysis_Methods/Slides.html#/vector-analysis-methods" target="_blank">View Slides in New Tab</a></p>
 </section>
-<section id="raster-analysis-methods" class="level1">
-<h1>Raster Analysis Methods</h1>
-<p>Raster data is less complex, but there are many different types of analysis we can conduct with it!</p>
-<div style="overflow: hidden;
-  padding-top: 56.25%;
-  position: relative">
-<iframe src="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" title="Processes" scrolling="no" frameborder="0" style="border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;">
-<p>
-Your browser does not support iframes.
-</p>
-<p></iframe><p></p>
-</div>
-<p><a href="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" target="_blank">View Slides in New Tab</a></p>
+<section id="working-examples" class="level1">
+<h1>Working Examples</h1>
+<section id="raster-methods" class="level2">
+<h2 class="anchored" data-anchor-id="raster-methods">Raster Methods</h2>
+<p>This <a href="https://github.com/GEOS270/LabData/raw/main/Module5_Method_Examples/RasterMethods.zip">Raster Methods Examples Project</a> contains models with examples of methods that can be applied to raster data, using some data from the NRCAN DEM covering Port Alberni and a LANDSAT 8 image of the Mackenzie River Delta. You can follow along in lecture or download the project and play around with the data on your own.</p>
+<p>The methods covered include:</p>
+<ul>
+<li>Euclidean Distance</li>
+<li>Reclassification</li>
+<li>Slope</li>
+<li>Aspect</li>
+<li>Raster Calculator</li>
+<li>Weighted Overlay</li>
+<li>Specifying Visible Bands &amp; Creating False Color Images</li>
+<li>Clipping Rasters</li>
+<li>Creating Mosaics</li>
+<li>Calculating NDVI &amp; Other Raster Tools</li>
+</ul>
+</section>
+<section id="vector-methods" class="level2">
+<h2 class="anchored" data-anchor-id="vector-methods">Vector Methods</h2>
+<p>This <a href="https://github.com/GEOS270/LabData/raw/main/Module5_Method_Examples/Vector_Overlay_BB_Data.zip">Vector Methods Example Project</a> contains models with examples of methods that can be applied to vector data, using some data from Burns Bog. You can follow along in lecture or download the project and play around with the data on your own.</p>
+<p>The methods covered include:</p>
+<ul>
+<li>Merging vector layers</li>
+<li>Buffering</li>
+<li>Clipping</li>
+<li>Erasing</li>
+<li>Intersecting</li>
+<li>Unioning</li>
+<li>Dissolving</li>
+<li>Converting a vector to raster</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

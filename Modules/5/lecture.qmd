@@ -36,6 +36,27 @@ Now that we've covered the different types of geospatial data, lets start thinki
 <a href="https://geos270.github.io/LectureSlides/Spatial_Data_Workflows/Slides.html#/gis-workflows" target="_blank">View Slides in New Tab</a>
 
 
+# Raster Analysis Methods
+
+Raster data is less complex, but there are many different types of analysis we can conduct with it!
+
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" target="_blank">View Slides in New Tab</a>
+
+
 # Vector Analysis Methods
 
 Vector data structures are quite complex, so there are a number of different ways to see how features relate to each other.
@@ -56,23 +77,40 @@ Vector data structures are quite complex, so there are a number of different way
 <a href="https://geos270.github.io/LectureSlides/Vector_Analysis_Methods/Slides.html#/vector-analysis-methods" target="_blank">View Slides in New Tab</a>
 
 
-# Raster Analysis Methods
-
-Raster data is less complex, but there are many different types of analysis we can conduct with it!
 
 
-<div style="overflow: hidden;
-  padding-top: 56.25%;
-  position: relative">
-  <iframe src="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" title="Processes" scrolling="no" frameborder="0"
-    style="border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;">
-   <p>Your browser does not support iframes.</p>
- </iframe>
-</div>
-<a href="https://geos270.github.io/LectureSlides/Raster_Analysis_Methods/Slides.html#/raster-analysis-methods" target="_blank">View Slides in New Tab</a>
+# Working Examples
+
+## Raster Methods
+
+This [Raster Methods Examples Project](https://github.com/GEOS270/LabData/raw/main/Module5_Method_Examples/RasterMethods.zip) contains models with examples of methods that can be applied to raster data, using some data from the NRCAN DEM covering Port Alberni and a LANDSAT 8 image of the Mackenzie River Delta.  You can follow along in lecture or download the project and play around with the data on your own.
+
+The methods covered include: 
+
+* Euclidean Distance
+* Reclassification
+* Slope
+* Aspect
+* Raster Calculator
+* Weighted Overlay
+* Specifying Visible Bands & Creating False Color Images
+* Clipping Rasters
+* Creating Mosaics
+* Calculating NDVI & Other Raster Tools
+
+
+## Vector Methods
+
+This [Vector Methods Example Project](https://github.com/GEOS270/LabData/raw/main/Module5_Method_Examples/Vector_Overlay_BB_Data.zip) contains models with examples of methods that can be applied to vector data, using some data from Burns Bog.  You can follow along in lecture or download the project and play around with the data on your own.
+
+The methods covered include: 
+
+* Merging vector layers
+* Buffering
+* Clipping
+* Erasing
+* Intersecting
+* Unioning
+* Dissolving
+* Converting a vector to raster
 
