@@ -959,6 +959,27 @@
     "text": "Learning Outcomes\n\nGain Experience with Raster Overlay Methods\nMore Practice with Model Builder"
   },
   {
+    "objectID": "Modules/6/lecture.html#sampling-and-interpolation",
+    "href": "Modules/6/lecture.html#sampling-and-interpolation",
+    "title": "Spatial Sampling, Uncertainty, & Ethics",
+    "section": "Sampling and Interpolation",
+    "text": "Sampling and Interpolation\nThis Example Project chow we can create random points in Arc and use them collect samples. It also shows how we can run inverse distance weighting and highlights the influence of sample size and sampling method."
+  },
+  {
+    "objectID": "Modules/6/lecture.html#data-resolution",
+    "href": "Modules/6/lecture.html#data-resolution",
+    "title": "Spatial Sampling, Uncertainty, & Ethics",
+    "section": "Data Resolution",
+    "text": "Data Resolution\nThis Example Project shows how we can create lines and polygons from points in Arc and illustrates the concept of vector resolution. It also shows how we can create rasters from vector features (points, lines, or polygons), illustrates the concept of raster resolution, and shows how errors can cascade when converting between data models."
+  },
+  {
+    "objectID": "Modules/6/lecture.html#the-atomistic-fallacy",
+    "href": "Modules/6/lecture.html#the-atomistic-fallacy",
+    "title": "Spatial Sampling, Uncertainty, & Ethics",
+    "section": "The Atomistic Fallacy",
+    "text": "The Atomistic Fallacy\nThis Example Project helps to explain the atomistic fallacy."
+  },
+  {
     "objectID": "Modules/6/questions.html",
     "href": "Modules/6/questions.html",
     "title": "Lab Assignment Questions",

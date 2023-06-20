@@ -74,3 +74,18 @@ Moral principals guiding your practice of GIS.
 </div>
 <a href="https://geos270.github.io/LectureSlides/Ethics_in_GIS/Slides.html#/ethics-in-gis" target="_blank">View Slides in New Tab</a>
 
+
+# Working Examples
+
+## Sampling and Interpolation
+
+This [Example Project](https://github.com/GEOS270/LabData/raw/main/Mod6/Sampling_Interpolation.zip) chow we can create random points in Arc and use them collect samples. It also shows how we can run inverse distance weighting and highlights the influence of sample size and sampling method.
+
+## Data Resolution 
+
+This [Example Project](https://github.com/GEOS270/LabData/raw/main/Mod6/Resolution_and_Conversion.zip) shows how we can create lines and polygons from points in Arc and illustrates the concept of vector resolution. It also shows how we can create rasters from vector features (points, lines, or polygons), illustrates the concept of raster resolution, and shows how errors can cascade when converting between data models.
+
+
+## The Atomistic Fallacy
+
+This [Example Project](https://github.com/GEOS270/LabData/raw/main/Mod6/AtomisticFallacy.zip) helps to explain the atomistic fallacy.
