@@ -4,4 +4,6 @@ format: html
 echo: false
 ---
 
-This will be updated closer to the end of term.
+This is an optional extra credit exercise which can be complete at the end of term.  It will give you a brief introduction into programmatic approaches to GIS using Python.
+
+* We'll do a guided walk through of the tutorial at the end of term.  You can find the tutorial [here](https://geos270.github.io/GIS_with_Python_Intro/).
