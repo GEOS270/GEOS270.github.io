@@ -1,9 +1,28 @@
 ---
-title: "Final Exam Review"
+title: "Wrapping up the Term"
 format: html
 echo: false
 ---
 
+# Teaching Evaluations
+
+I value your feedback! Please if you haven’t done so already, fill them out so I can think about how to improve my teaching going forward!
+
+* What worked for you & what didn’t?
+* How was the pace & format?
+  + Anything I should spend more time on?
+  + Did you find any modules particularly difficult?
+* They also help my future employment prospects!
+
+
+Follow this [link](https://go.blueja.io/eRz_GDhRVEO1l9CLQ1Y2Wg) or:
+
+
+![use this QR code](images/QRCode.png)
+
+## About Evaluations
+
+Teaching evaluations are completely anonymous and they not released to professors until after the final exam. If you’re curious what they look like on the professors’ end, you can see some of my evaluations from previous [here](https://github.com/June-Skeeter/june-skeeter.github.io/tree/main/Evaluations).
 
 
 
@@ -15,7 +34,7 @@ library(knitr)
 DueDates <- read.csv(file = '../../sheets/DueDates.csv',sep='|')
 ```
 
-
+# Final Exam Review
 
 
 The final exam will be {{< var exam.type >}} and is scheduled for **`r tail(DueDates$Due.Date, 1)`**.
@@ -45,7 +64,8 @@ Tests your ability to work through a problem using GIS methods.  Create a flow c
 
 * You can reference [this tutorial video](https://www.youtube.com/embed/jq5NxMpOSKI?start=135) for an overview of diagrams.net.  You might want to practice making a flowchart before exam time.
 
-The processes you'll want to be familiar with were covered in [Module 5](https://geos270.github.io/Module5/) & [Module 6](https://geos270.github.io/Module6/)
+The processes you'll want to be familiar with were covered in [Module 5](https://geos270.github.io/Module5/) & [Module 6](https://geos270.github.io/Module6/).
+
 * When exporting to submit, make sure to export/submit a .png, .jpg, or .pdf
 * Think about design principals - aesthetics will be a small portion of the flowchart grade.
 
@@ -70,8 +90,13 @@ The processes you'll want to be familiar with were covered in [Module 5](https:/
 |Properties |Vector (polygon) |UTM Zone 10N | Zoning Type (Residential, Commercial, Industrial, Parks, Government/ Institutional) |
 |Current Shelters |Text (.csv)|WGS 1984 | Latitude/Longitude, Name, Capacity |
 
+##### Answer:
 
-<img src='content/images/Flowchart_Example.png'>
+This flowchart is missing one step and would get ~ 45/50 pts if submitted on the exam.
+
+* Can you figure out what step is missing?
+
+![](images/Flowchart_Example.png)
 
 
 #### Practice Question 2
@@ -98,8 +123,8 @@ The processes you'll want to be familiar with were covered in [Module 5](https:/
 **Suggested Steps**:
 
 * July Temperature Data >> Display XY & Project (Albers) >> IDW
-* Both NDIV >> Reproject (Albers)
-* Reclassify >> NDVI & Temperature 
+* Both NDIV Layers & DEM Layer >> Reproject (Albers)
+* Reclassify >> NDVI, DEM, & Interpolated Temperature Data
 * Raster Calculator/Weighted Overlay (All Raster Layers)
 * Raster to Vector (Suitable Areas)
 * Select Crown Land > Clip Suitable Areas
